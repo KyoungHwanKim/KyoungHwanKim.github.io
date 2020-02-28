@@ -6,19 +6,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Cuws Study Blog">
-    <title>Algorithm 문제 풀이 - Cuws Study Blog</title>
+    <title>[CodeSignal] #2 centuryFromYear - Cuws Study Blog</title>
     <meta name="author" content="Cuws">
     
     
     
-    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Cuws","sameAs":["https://github.com/","http://stackoverflow.com/users","https://twitter.com/","https://facebook.com/","https://plus.google.com/","https://www.linkedin.com/profile/","mailto"]},"articleBody":"","dateCreated":"2020-02-28T11:02:24+09:00","dateModified":"2020-02-28T11:02:24+09:00","datePublished":"2020-02-28T11:02:24+09:00","description":"","headline":"Algorithm 문제 풀이","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"http://yoursite.com/2020/02/28/Algorithm-%EB%AC%B8%EC%A0%9C-%ED%92%80%EC%9D%B4/"},"publisher":{"@type":"Organization","name":"Cuws","sameAs":["https://github.com/","http://stackoverflow.com/users","https://twitter.com/","https://facebook.com/","https://plus.google.com/","https://www.linkedin.com/profile/","mailto"]},"url":"http://yoursite.com/2020/02/28/Algorithm-%EB%AC%B8%EC%A0%9C-%ED%92%80%EC%9D%B4/"}</script>
-    <meta property="og:type" content="blog">
-<meta property="og:title" content="Algorithm 문제 풀이">
-<meta property="og:url" content="http://yoursite.com/2020/02/28/Algorithm-%EB%AC%B8%EC%A0%9C-%ED%92%80%EC%9D%B4/index.html">
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Cuws","sameAs":["https://github.com/","http://stackoverflow.com/users","https://twitter.com/","https://facebook.com/","https://plus.google.com/","https://www.linkedin.com/profile/","mailto"]},"articleBody":"\nDescriptionGiven a year, return the century it is in. The first century spans from the year 1 up to and including the year 100, the second - from the year 101 up to and including the year 200, etc.\nExample\nFor year = 1905, the output should be centuryFromYear(year) = 20;\nFor year = 1700, the output should be centuryFromYear(year) = 17.\n\nInput/Output\n[execution time limit] 4 seconds (py3)\n\n[input] integer year\n  A positive integer, designating the year.  Guaranteed constraints : 1 ≤ year ≤ 2005.\n\n[output] integer  \n\nThe number of the century the year is in.\n\n\n\n\nSolution123import mathdef centuryFromYear(year):    return math.ceil(year / 100)\n","dateCreated":"2020-02-28T12:29:24+09:00","dateModified":"2020-02-28T12:49:54+09:00","datePublished":"2020-02-28T12:29:24+09:00","description":"","headline":"[CodeSignal] #2 centuryFromYear","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"http://yoursite.com/2020/02/28/CodeSignal-2-centuryFromYear/"},"publisher":{"@type":"Organization","name":"Cuws","sameAs":["https://github.com/","http://stackoverflow.com/users","https://twitter.com/","https://facebook.com/","https://plus.google.com/","https://www.linkedin.com/profile/","mailto"]},"url":"http://yoursite.com/2020/02/28/CodeSignal-2-centuryFromYear/"}</script>
+    <meta name="description" content="DescriptionGiven a year, return the century it is in. The first century spans from the year 1 up to and including the year 100, the second - from the year 101 up to and including the year 200, etc. E">
+<meta property="og:type" content="blog">
+<meta property="og:title" content="[CodeSignal] #2 centuryFromYear">
+<meta property="og:url" content="http://yoursite.com/2020/02/28/CodeSignal-2-centuryFromYear/index.html">
 <meta property="og:site_name" content="Cuws Study Blog">
+<meta property="og:description" content="DescriptionGiven a year, return the century it is in. The first century spans from the year 1 up to and including the year 100, the second - from the year 101 up to and including the year 200, etc. E">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-02-28T02:02:24.000Z">
-<meta property="article:modified_time" content="2020-02-28T02:02:24.338Z">
+<meta property="article:published_time" content="2020-02-28T03:29:24.000Z">
+<meta property="article:modified_time" content="2020-02-28T03:49:54.824Z">
 <meta property="article:author" content="Cuws">
 <meta name="twitter:card" content="summary">
     
@@ -325,16 +327,22 @@
         <div class="post-header main-content-wrap text-left">
     
         <h1 class="post-title">
-            Algorithm 문제 풀이
+            [CodeSignal] #2 centuryFromYear
         </h1>
     
     
         <div class="post-meta">
-    <time datetime="2020-02-28T11:02:24+09:00">
+    <time datetime="2020-02-28T12:29:24+09:00">
 	
 		    Feb 28, 2020
     	
     </time>
+    
+        <span>in </span>
+        
+    <a class="category-link" href="/categories/Algorithm/">Algorithm</a>, <a class="category-link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
+
+
     
 </div>
 
@@ -344,7 +352,27 @@
     
     <div class="post-content markdown">
         <div class="main-content-wrap">
-            
+            <!-- excerpt -->
+<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Given a year, return the century it is in. The first century spans from the year 1 up to and including the year 100, the second - from the year 101 up to and including the year 200, etc.</p>
+<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><ul>
+<li>For <code>year = 1905</code>, the output should be <code>centuryFromYear(year) = 20</code>;</li>
+<li>For <code>year = 1700</code>, the output should be <code>centuryFromYear(year) = 17</code>.</li>
+</ul>
+<h3 id="Input-Output"><a href="#Input-Output" class="headerlink" title="Input/Output"></a>Input/Output</h3><ul>
+<li><p><strong>[execution time limit] 4 seconds (py3)</strong></p>
+</li>
+<li><p><strong>[input] integer year</strong></p>
+<p>  A positive integer, designating the year.<br>  <em>Guaranteed constraints :</em> <code>1 ≤ year ≤ 2005</code>.</p>
+</li>
+<li><p><strong>[output] integer</strong>  </p>
+<ul>
+<li>The number of the century the year is in.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> math</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">centuryFromYear</span><span class="params">(year)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> math.ceil(year / <span class="number">100</span>)</span><br></pre></td></tr></table></figure>
+<h1 id="table-of-contents">Table of Contents</h1><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Description"><span class="toc-text">Description</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Example"><span class="toc-text">Example</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Input-Output"><span class="toc-text">Input&#x2F;Output</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Solution"><span class="toc-text">Solution</span></a></li></ol>
             
 
 
@@ -361,9 +389,9 @@
                     
                 <a
                     class="post-action-btn btn btn--default tooltip--top"
-                    href="/2020/02/28/Algorithm-%EB%AC%B8%EC%A0%9C-%ED%92%80%EC%9D%B41/"
-                    data-tooltip="Algorithm 문제 풀이1"
-                    aria-label="PREVIOUS: Algorithm 문제 풀이1"
+                    href="/2020/02/28/CodeSignal-3-checkPalindrome/"
+                    data-tooltip="[CodeSignal] #3 checkPalindrome"
+                    aria-label="PREVIOUS: [CodeSignal] #3 checkPalindrome"
                 >
                     
                         <i class="fa fa-angle-left" aria-hidden="true"></i>
@@ -375,9 +403,9 @@
                     
                 <a
                     class="post-action-btn btn btn--default tooltip--top"
-                    href="/2020/02/28/hello-world/"
-                    data-tooltip="Hello World"
-                    aria-label="NEXT: Hello World"
+                    href="/2020/02/28/CodeSignal-1-add/"
+                    data-tooltip="[CodeSignal] #1 add"
+                    aria-label="NEXT: [CodeSignal] #1 add"
                 >
                     
                         <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
@@ -402,7 +430,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2020/02/28/Algorithm-%EB%AC%B8%EC%A0%9C-%ED%92%80%EC%9D%B4/"
+                    target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2020/02/28/CodeSignal-2-centuryFromYear/"
                     title="Share on Facebook"
                     aria-label="Share on Facebook"
                 >
@@ -415,7 +443,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://twitter.com/intent/tweet?text=http://yoursite.com/2020/02/28/Algorithm-%EB%AC%B8%EC%A0%9C-%ED%92%80%EC%9D%B4/"
+                    target="new" href="https://twitter.com/intent/tweet?text=http://yoursite.com/2020/02/28/CodeSignal-2-centuryFromYear/"
                     title="Share on Twitter"
                     aria-label="Share on Twitter"
                 >
@@ -428,7 +456,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://plus.google.com/share?url=http://yoursite.com/2020/02/28/Algorithm-%EB%AC%B8%EC%A0%9C-%ED%92%80%EC%9D%B4/"
+                    target="new" href="https://plus.google.com/share?url=http://yoursite.com/2020/02/28/CodeSignal-2-centuryFromYear/"
                     title="Share on Google+"
                     aria-label="Share on Google+"
                 >
@@ -441,7 +469,7 @@
         
         <li class="post-action">
             
-                <a class="post-action-btn btn btn--default" href="#" aria-label="Back to top">
+                <a class="post-action-btn btn btn--default" href="#table-of-contents" aria-label="Table of Contents">
             
                 <i class="fa fa-list" aria-hidden="true"></i>
             </a>
@@ -476,9 +504,9 @@
                     
                 <a
                     class="post-action-btn btn btn--default tooltip--top"
-                    href="/2020/02/28/Algorithm-%EB%AC%B8%EC%A0%9C-%ED%92%80%EC%9D%B41/"
-                    data-tooltip="Algorithm 문제 풀이1"
-                    aria-label="PREVIOUS: Algorithm 문제 풀이1"
+                    href="/2020/02/28/CodeSignal-3-checkPalindrome/"
+                    data-tooltip="[CodeSignal] #3 checkPalindrome"
+                    aria-label="PREVIOUS: [CodeSignal] #3 checkPalindrome"
                 >
                     
                         <i class="fa fa-angle-left" aria-hidden="true"></i>
@@ -490,9 +518,9 @@
                     
                 <a
                     class="post-action-btn btn btn--default tooltip--top"
-                    href="/2020/02/28/hello-world/"
-                    data-tooltip="Hello World"
-                    aria-label="NEXT: Hello World"
+                    href="/2020/02/28/CodeSignal-1-add/"
+                    data-tooltip="[CodeSignal] #1 add"
+                    aria-label="NEXT: [CodeSignal] #1 add"
                 >
                     
                         <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
@@ -517,7 +545,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2020/02/28/Algorithm-%EB%AC%B8%EC%A0%9C-%ED%92%80%EC%9D%B4/"
+                    target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2020/02/28/CodeSignal-2-centuryFromYear/"
                     title="Share on Facebook"
                     aria-label="Share on Facebook"
                 >
@@ -530,7 +558,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://twitter.com/intent/tweet?text=http://yoursite.com/2020/02/28/Algorithm-%EB%AC%B8%EC%A0%9C-%ED%92%80%EC%9D%B4/"
+                    target="new" href="https://twitter.com/intent/tweet?text=http://yoursite.com/2020/02/28/CodeSignal-2-centuryFromYear/"
                     title="Share on Twitter"
                     aria-label="Share on Twitter"
                 >
@@ -543,7 +571,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://plus.google.com/share?url=http://yoursite.com/2020/02/28/Algorithm-%EB%AC%B8%EC%A0%9C-%ED%92%80%EC%9D%B4/"
+                    target="new" href="https://plus.google.com/share?url=http://yoursite.com/2020/02/28/CodeSignal-2-centuryFromYear/"
                     title="Share on Google+"
                     aria-label="Share on Google+"
                 >
@@ -556,7 +584,7 @@
         
         <li class="post-action">
             
-                <a class="post-action-btn btn btn--default" href="#" aria-label="Back to top">
+                <a class="post-action-btn btn btn--default" href="#table-of-contents" aria-label="Table of Contents">
             
                 <i class="fa fa-list" aria-hidden="true"></i>
             </a>
@@ -577,7 +605,7 @@
                     <a
                         class="share-option-btn"
                         target="new"
-                        href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2020/02/28/Algorithm-%EB%AC%B8%EC%A0%9C-%ED%92%80%EC%9D%B4/"
+                        href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2020/02/28/CodeSignal-2-centuryFromYear/"
                         aria-label="Share on Facebook"
                     >
                         <i class="fab fa-facebook" aria-hidden="true"></i><span>Share on Facebook</span>
@@ -590,7 +618,7 @@
                     <a
                         class="share-option-btn"
                         target="new"
-                        href="https://twitter.com/intent/tweet?text=http://yoursite.com/2020/02/28/Algorithm-%EB%AC%B8%EC%A0%9C-%ED%92%80%EC%9D%B4/"
+                        href="https://twitter.com/intent/tweet?text=http://yoursite.com/2020/02/28/CodeSignal-2-centuryFromYear/"
                         aria-label="Share on Twitter"
                     >
                         <i class="fab fa-twitter" aria-hidden="true"></i><span>Share on Twitter</span>
@@ -603,7 +631,7 @@
                     <a
                         class="share-option-btn"
                         target="new"
-                        href="https://plus.google.com/share?url=http://yoursite.com/2020/02/28/Algorithm-%EB%AC%B8%EC%A0%9C-%ED%92%80%EC%9D%B4/"
+                        href="https://plus.google.com/share?url=http://yoursite.com/2020/02/28/CodeSignal-2-centuryFromYear/"
                         aria-label="Share on Google+"
                     >
                         <i class="fab fa-google-plus" aria-hidden="true"></i><span>Share on Google+</span>
