@@ -6,21 +6,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Cuws&#39;s Note">
-    <title>[CodeSignal] #6 Make Array Consecutive 2 - Cuws&#39;s Note</title>
+    <title>[CodeSignal] #7 almostIncreasingSequence - Cuws&#39;s Note</title>
     <meta name="author" content="Cuws">
     
     
     
-    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Cuws","sameAs":["https://github.com/","http://stackoverflow.com/users","https://twitter.com/","https://facebook.com/","https://plus.google.com/","https://www.linkedin.com/profile/","mailto"]},"articleBody":"\nDescriptionRatiorg got statues of different sizes as a present from CodeMaster for his birthday, each statue having an non-negative integer size. Since he likes to make things perfect, he wants to arrange them from smallest to largest so that each statue will be bigger than the previous one exactly by 1. He may need some additional statues to be able to accomplish that. Help him figure out the minimum number of additional statues needed.\nExampleFor statues = [6, 2, 3, 8], the output should be makeArrayConsecutive2(statues) = 3.\nRatiorg needs statues of sizes 4, 5 and 7.\nInput/Output\n[execution time limit] 4 seconds (py3)\n\n[input] array.integer statues\n  An array of distinct non-negative integers.\n  Guaranteed constraints : 1 ≤ statues.length ≤ 10, 0 ≤ statues[i] ≤ 20.\n\n[output] integer  \n\nThe minimal number of statues that need to be added to existing statues such that it contains every integer size from an interval [L, R] (for some L, R) and no other sizes.\n\n\n\n\nSolution12345678910def makeArrayConsecutive2(statues):    statues.sort()    check = [0 for _ in range(statues[-1]+1)]    for i in statues:        check[i] = 1    answer = 0    for i in range(statues[0], statues[-1]+1):        if check[i] != 1:            answer += 1    return answer\n","dateCreated":"2020-03-03T23:23:23+09:00","dateModified":"2020-03-03T23:35:26+09:00","datePublished":"2020-03-03T23:23:23+09:00","description":"","headline":"[CodeSignal] #6 Make Array Consecutive 2","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"https://kyounghwankim.github.io/2020/03/03/CodeSignal-6-Make-Array-Consecutive-2/"},"publisher":{"@type":"Organization","name":"Cuws","sameAs":["https://github.com/","http://stackoverflow.com/users","https://twitter.com/","https://facebook.com/","https://plus.google.com/","https://www.linkedin.com/profile/","mailto"]},"url":"https://kyounghwankim.github.io/2020/03/03/CodeSignal-6-Make-Array-Consecutive-2/"}</script>
-    <meta name="description" content="DescriptionRatiorg got statues of different sizes as a present from CodeMaster for his birthday, each statue having an non-negative integer size. Since he likes to make things perfect, he wants to ar">
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Cuws","sameAs":["https://github.com/","http://stackoverflow.com/users","https://twitter.com/","https://facebook.com/","https://plus.google.com/","https://www.linkedin.com/profile/","mailto"]},"articleBody":"\nDescriptionGiven a sequence of integers as an array, determine whether it is possible to obtain a strictly increasing sequence by removing no more than one element from the array.\nNote: sequence a0, a1, …, an is considered to be a strictly increasing if a0 &lt; a1 &lt; … &lt; an. Sequence containing only one element is also considered to be strictly increasing.\nExampleFor sequence = [1, 3, 2, 1], the output should be almostIncreasingSequence(sequence) = false.\nThere is no one element in this array that can be removed in order to get a strictly increasing sequence.\nFor sequence = [1, 3, 2], the output should be almostIncreasingSequence(sequence) = true.\nYou can remove 3 from the array to get the strictly increasing sequence [1, 2]. Alternately, you can remove 2 to get the strictly increasing sequence [1, 3].\nInput/Output\n[execution time limit] 4 seconds (py3)\n\n[input] array.integer sequence\n  Guaranteed constraints : 2 ≤ sequence.length ≤ 105, -105 ≤ sequence[i] ≤ 105.\n\n[output] boolean  \n\nReturn true if it is possible to remove one element from the array in order to get a strictly increasing sequence, otherwise return false.\n\n\n\n\nSolution123456789101112def almostIncreasingSequence(sequence):    ans = 0    for i in range(len(sequence) - 1):        if sequence[i] &gt;= sequence[i + 1]:            ans += 1            if i &gt;= 1 and sequence[i + 1] &lt;= sequence[i - 1]:                if len(sequence) - 2 &gt; i and sequence[i] &gt;= sequence[i + 2]:                    ans += 1    if ans &gt; 1:        return False    else:        return True\n","dateCreated":"2020-03-03T23:38:07+09:00","dateModified":"2020-03-04T00:21:27+09:00","datePublished":"2020-03-03T23:38:07+09:00","description":"","headline":"[CodeSignal] #7 almostIncreasingSequence","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"https://kyounghwankim.github.io/2020/03/03/CodeSignal-7-almostIncreasingSequence/"},"publisher":{"@type":"Organization","name":"Cuws","sameAs":["https://github.com/","http://stackoverflow.com/users","https://twitter.com/","https://facebook.com/","https://plus.google.com/","https://www.linkedin.com/profile/","mailto"]},"url":"https://kyounghwankim.github.io/2020/03/03/CodeSignal-7-almostIncreasingSequence/"}</script>
+    <meta name="description" content="DescriptionGiven a sequence of integers as an array, determine whether it is possible to obtain a strictly increasing sequence by removing no more than one element from the array. Note: sequence a0,">
 <meta property="og:type" content="blog">
-<meta property="og:title" content="[CodeSignal] #6 Make Array Consecutive 2">
-<meta property="og:url" content="https://kyounghwankim.github.io/2020/03/03/CodeSignal-6-Make-Array-Consecutive-2/index.html">
+<meta property="og:title" content="[CodeSignal] #7 almostIncreasingSequence">
+<meta property="og:url" content="https://kyounghwankim.github.io/2020/03/03/CodeSignal-7-almostIncreasingSequence/index.html">
 <meta property="og:site_name" content="Cuws&#39;s Note">
-<meta property="og:description" content="DescriptionRatiorg got statues of different sizes as a present from CodeMaster for his birthday, each statue having an non-negative integer size. Since he likes to make things perfect, he wants to ar">
+<meta property="og:description" content="DescriptionGiven a sequence of integers as an array, determine whether it is possible to obtain a strictly increasing sequence by removing no more than one element from the array. Note: sequence a0,">
 <meta property="og:locale" content="ko_KR">
-<meta property="article:published_time" content="2020-03-03T14:23:23.000Z">
-<meta property="article:modified_time" content="2020-03-03T14:35:26.126Z">
+<meta property="article:published_time" content="2020-03-03T14:38:07.000Z">
+<meta property="article:modified_time" content="2020-03-03T15:21:27.973Z">
 <meta property="article:author" content="Cuws">
 <meta name="twitter:card" content="summary">
     
@@ -336,12 +336,12 @@
         <div class="post-header main-content-wrap text-left">
     
         <h1 class="post-title">
-            [CodeSignal] #6 Make Array Consecutive 2
+            [CodeSignal] #7 almostIncreasingSequence
         </h1>
     
     
         <div class="post-meta">
-    <time datetime="2020-03-03T23:23:23+09:00">
+    <time datetime="2020-03-03T23:38:07+09:00">
 	
 		    2020/03/03
     	
@@ -362,24 +362,26 @@
     <div class="post-content markdown">
         <div class="main-content-wrap">
             <!-- excerpt -->
-<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Ratiorg got <code>statues</code> of different sizes as a present from CodeMaster for his birthday, each statue having an non-negative integer size. Since he likes to make things perfect, he wants to arrange them from smallest to largest so that each statue will be bigger than the previous one exactly by <code>1</code>. He may need some additional statues to be able to accomplish that. Help him figure out the minimum number of additional statues needed.</p>
-<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><p>For <code>statues = [6, 2, 3, 8]</code>, the output should be <code>makeArrayConsecutive2(statues) = 3</code>.</p>
-<p>Ratiorg needs statues of sizes <code>4</code>, <code>5</code> and <code>7</code>.</p>
+<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Given a sequence of integers as an array, determine whether it is possible to obtain a strictly increasing sequence by removing no more than one element from the array.</p>
+<p>Note: sequence a<sub>0</sub>, a<sub>1</sub>, …, a<sub>n</sub> is considered to be a strictly increasing if a<sub>0</sub> &lt; a<sub>1</sub> &lt; … &lt; a<sub>n</sub>. Sequence containing only one element is also considered to be strictly increasing.</p>
+<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><p>For <code>sequence = [1, 3, 2, 1]</code>, the output should be <code>almostIncreasingSequence(sequence) = false</code>.</p>
+<p>There is no one element in this array that can be removed in order to get a strictly increasing sequence.</p>
+<p>For <code>sequence = [1, 3, 2]</code>, the output should be <code>almostIncreasingSequence(sequence) = true</code>.</p>
+<p>You can remove <code>3</code> from the array to get the strictly increasing sequence <code>[1, 2]</code>. Alternately, you can remove <code>2</code> to get the strictly increasing sequence <code>[1, 3]</code>.</p>
 <h3 id="Input-Output"><a href="#Input-Output" class="headerlink" title="Input/Output"></a>Input/Output</h3><ul>
 <li><p><strong>[execution time limit] 4 seconds (py3)</strong></p>
 </li>
-<li><p><strong>[input] array.integer statues</strong></p>
-<p>  An array of distinct non-negative integers.</p>
-<p>  <em>Guaranteed constraints :</em> <code>1 ≤ statues.length ≤ 10</code>, <code>0 ≤ statues[i] ≤ 20</code>.</p>
+<li><p><strong>[input] array.integer sequence</strong></p>
+<p>  <em>Guaranteed constraints :</em> 2 ≤ sequence.length ≤ 10<sup>5</sup>, -10<sup>5</sup> ≤ sequence[i] ≤ 10<sup>5</sup>.</p>
 </li>
-<li><p><strong>[output] integer</strong>  </p>
+<li><p><strong>[output] boolean</strong>  </p>
 <ul>
-<li>The minimal number of statues that need to be added to existing <code>statues</code> such that it contains every integer size from an interval <code>[L, R]</code> (for some <code>L, R</code>) and no other sizes.</li>
+<li>Return <code>true</code> if it is possible to remove one element from the array in order to get a strictly increasing sequence, otherwise return <code>false</code>.</li>
 </ul>
 </li>
 </ul>
 <hr>
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">makeArrayConsecutive2</span><span class="params">(statues)</span>:</span></span><br><span class="line">    statues.sort()</span><br><span class="line">    check = [<span class="number">0</span> <span class="keyword">for</span> _ <span class="keyword">in</span> range(statues[<span class="number">-1</span>]+<span class="number">1</span>)]</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> statues:</span><br><span class="line">        check[i] = <span class="number">1</span></span><br><span class="line">    answer = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(statues[<span class="number">0</span>], statues[<span class="number">-1</span>]+<span class="number">1</span>):</span><br><span class="line">        <span class="keyword">if</span> check[i] != <span class="number">1</span>:</span><br><span class="line">            answer += <span class="number">1</span></span><br><span class="line">    <span class="keyword">return</span> answer</span><br></pre></td></tr></table></figure>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">almostIncreasingSequence</span><span class="params">(sequence)</span>:</span></span><br><span class="line">    ans = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(len(sequence) - <span class="number">1</span>):</span><br><span class="line">        <span class="keyword">if</span> sequence[i] &gt;= sequence[i + <span class="number">1</span>]:</span><br><span class="line">            ans += <span class="number">1</span></span><br><span class="line">            <span class="keyword">if</span> i &gt;= <span class="number">1</span> <span class="keyword">and</span> sequence[i + <span class="number">1</span>] &lt;= sequence[i - <span class="number">1</span>]:</span><br><span class="line">                <span class="keyword">if</span> len(sequence) - <span class="number">2</span> &gt; i <span class="keyword">and</span> sequence[i] &gt;= sequence[i + <span class="number">2</span>]:</span><br><span class="line">                    ans += <span class="number">1</span></span><br><span class="line">    <span class="keyword">if</span> ans &gt; <span class="number">1</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">True</span></span><br></pre></td></tr></table></figure>
 <h1 id="table-of-contents">목차</h1><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Description"><span class="toc-text">Description</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Example"><span class="toc-text">Example</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Input-Output"><span class="toc-text">Input&#x2F;Output</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Solution"><span class="toc-text">Solution</span></a></li></ol>
             
 
@@ -394,14 +396,11 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    
-                <a
-                    class="post-action-btn btn btn--default tooltip--top"
-                    href="/2020/03/03/CodeSignal-7-almostIncreasingSequence/"
-                    data-tooltip="[CodeSignal] #7 almostIncreasingSequence"
-                    aria-label="이전: [CodeSignal] #7 almostIncreasingSequence"
-                >
-                    
+                    <a
+                        class="post-action-btn btn btn--disabled"
+                        aria-hidden="true"
+                    >
+                        
                         <i class="fa fa-angle-left" aria-hidden="true"></i>
                         <span class="hide-xs hide-sm text-small icon-ml">이전</span>
                     </a>
@@ -411,9 +410,9 @@
                     
                 <a
                     class="post-action-btn btn btn--default tooltip--top"
-                    href="/2020/03/02/CodeSignal-5-shapeArea/"
-                    data-tooltip="[CodeSignal] #5 shapeArea"
-                    aria-label="다음: [CodeSignal] #5 shapeArea"
+                    href="/2020/03/03/CodeSignal-6-Make-Array-Consecutive-2/"
+                    data-tooltip="[CodeSignal] #6 Make Array Consecutive 2"
+                    aria-label="다음: [CodeSignal] #6 Make Array Consecutive 2"
                 >
                     
                         <span class="hide-xs hide-sm text-small icon-mr">다음</span>
@@ -438,7 +437,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://kyounghwankim.github.io/2020/03/03/CodeSignal-6-Make-Array-Consecutive-2/"
+                    target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://kyounghwankim.github.io/2020/03/03/CodeSignal-7-almostIncreasingSequence/"
                     title="Facebook에 공유하기"
                     aria-label="Facebook에 공유하기"
                 >
@@ -451,7 +450,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://twitter.com/intent/tweet?text=https://kyounghwankim.github.io/2020/03/03/CodeSignal-6-Make-Array-Consecutive-2/"
+                    target="new" href="https://twitter.com/intent/tweet?text=https://kyounghwankim.github.io/2020/03/03/CodeSignal-7-almostIncreasingSequence/"
                     title="Twitter에 공유하기"
                     aria-label="Twitter에 공유하기"
                 >
@@ -464,7 +463,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://plus.google.com/share?url=https://kyounghwankim.github.io/2020/03/03/CodeSignal-6-Make-Array-Consecutive-2/"
+                    target="new" href="https://plus.google.com/share?url=https://kyounghwankim.github.io/2020/03/03/CodeSignal-7-almostIncreasingSequence/"
                     title="Google+에 공유하기"
                     aria-label="Google+에 공유하기"
                 >
@@ -509,14 +508,11 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    
-                <a
-                    class="post-action-btn btn btn--default tooltip--top"
-                    href="/2020/03/03/CodeSignal-7-almostIncreasingSequence/"
-                    data-tooltip="[CodeSignal] #7 almostIncreasingSequence"
-                    aria-label="이전: [CodeSignal] #7 almostIncreasingSequence"
-                >
-                    
+                    <a
+                        class="post-action-btn btn btn--disabled"
+                        aria-hidden="true"
+                    >
+                        
                         <i class="fa fa-angle-left" aria-hidden="true"></i>
                         <span class="hide-xs hide-sm text-small icon-ml">이전</span>
                     </a>
@@ -526,9 +522,9 @@
                     
                 <a
                     class="post-action-btn btn btn--default tooltip--top"
-                    href="/2020/03/02/CodeSignal-5-shapeArea/"
-                    data-tooltip="[CodeSignal] #5 shapeArea"
-                    aria-label="다음: [CodeSignal] #5 shapeArea"
+                    href="/2020/03/03/CodeSignal-6-Make-Array-Consecutive-2/"
+                    data-tooltip="[CodeSignal] #6 Make Array Consecutive 2"
+                    aria-label="다음: [CodeSignal] #6 Make Array Consecutive 2"
                 >
                     
                         <span class="hide-xs hide-sm text-small icon-mr">다음</span>
@@ -553,7 +549,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://kyounghwankim.github.io/2020/03/03/CodeSignal-6-Make-Array-Consecutive-2/"
+                    target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://kyounghwankim.github.io/2020/03/03/CodeSignal-7-almostIncreasingSequence/"
                     title="Facebook에 공유하기"
                     aria-label="Facebook에 공유하기"
                 >
@@ -566,7 +562,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://twitter.com/intent/tweet?text=https://kyounghwankim.github.io/2020/03/03/CodeSignal-6-Make-Array-Consecutive-2/"
+                    target="new" href="https://twitter.com/intent/tweet?text=https://kyounghwankim.github.io/2020/03/03/CodeSignal-7-almostIncreasingSequence/"
                     title="Twitter에 공유하기"
                     aria-label="Twitter에 공유하기"
                 >
@@ -579,7 +575,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://plus.google.com/share?url=https://kyounghwankim.github.io/2020/03/03/CodeSignal-6-Make-Array-Consecutive-2/"
+                    target="new" href="https://plus.google.com/share?url=https://kyounghwankim.github.io/2020/03/03/CodeSignal-7-almostIncreasingSequence/"
                     title="Google+에 공유하기"
                     aria-label="Google+에 공유하기"
                 >
@@ -613,7 +609,7 @@
                     <a
                         class="share-option-btn"
                         target="new"
-                        href="https://www.facebook.com/sharer/sharer.php?u=https://kyounghwankim.github.io/2020/03/03/CodeSignal-6-Make-Array-Consecutive-2/"
+                        href="https://www.facebook.com/sharer/sharer.php?u=https://kyounghwankim.github.io/2020/03/03/CodeSignal-7-almostIncreasingSequence/"
                         aria-label="Facebook에 공유하기"
                     >
                         <i class="fab fa-facebook" aria-hidden="true"></i><span>Facebook에 공유하기</span>
@@ -626,7 +622,7 @@
                     <a
                         class="share-option-btn"
                         target="new"
-                        href="https://twitter.com/intent/tweet?text=https://kyounghwankim.github.io/2020/03/03/CodeSignal-6-Make-Array-Consecutive-2/"
+                        href="https://twitter.com/intent/tweet?text=https://kyounghwankim.github.io/2020/03/03/CodeSignal-7-almostIncreasingSequence/"
                         aria-label="Twitter에 공유하기"
                     >
                         <i class="fab fa-twitter" aria-hidden="true"></i><span>Twitter에 공유하기</span>
@@ -639,7 +635,7 @@
                     <a
                         class="share-option-btn"
                         target="new"
-                        href="https://plus.google.com/share?url=https://kyounghwankim.github.io/2020/03/03/CodeSignal-6-Make-Array-Consecutive-2/"
+                        href="https://plus.google.com/share?url=https://kyounghwankim.github.io/2020/03/03/CodeSignal-7-almostIncreasingSequence/"
                         aria-label="Google+에 공유하기"
                     >
                         <i class="fab fa-google-plus" aria-hidden="true"></i><span>Google+에 공유하기</span>

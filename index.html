@@ -334,6 +334,84 @@
                     
                         <a
                             class="link-unstyled"
+                            href="/2020/03/03/CodeSignal-7-almostIncreasingSequence/"
+                            aria-label=": [CodeSignal] #7 almostIncreasingSequence"
+                        >
+                            [CodeSignal] #7 almostIncreasingSequence
+                        </a>
+                    
+                </h1>
+                <div class="postShorten-meta">
+    <time datetime="2020-03-03T23:38:07+09:00">
+	
+		    2020/03/03
+    	
+    </time>
+    
+        <span>카테고리 </span>
+        
+    <a class="category-link" href="/categories/Algorithm/">Algorithm</a>, <a class="category-link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
+
+
+    
+</div>
+
+            </div>
+            
+                <div class="postShorten-content">
+                    <!-- excerpt -->
+<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Given a sequence of integers as an array, determine whether it is possible to obtain a strictly increasing sequence by removing no more than one element from the array.</p>
+<p>Note: sequence a<sub>0</sub>, a<sub>1</sub>, …, a<sub>n</sub> is considered to be a strictly increasing if a<sub>0</sub> &lt; a<sub>1</sub> &lt; … &lt; a<sub>n</sub>. Sequence containing only one element is also considered to be strictly increasing.</p>
+<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><p>For <code>sequence = [1, 3, 2, 1]</code>, the output should be <code>almostIncreasingSequence(sequence) = false</code>.</p>
+<p>There is no one element in this array that can be removed in order to get a strictly increasing sequence.</p>
+<p>For <code>sequence = [1, 3, 2]</code>, the output should be <code>almostIncreasingSequence(sequence) = true</code>.</p>
+<p>You can remove <code>3</code> from the array to get the strictly increasing sequence <code>[1, 2]</code>. Alternately, you can remove <code>2</code> to get the strictly increasing sequence <code>[1, 3]</code>.</p>
+<h3 id="Input-Output"><a href="#Input-Output" class="headerlink" title="Input/Output"></a>Input/Output</h3><ul>
+<li><p><strong>[execution time limit] 4 seconds (py3)</strong></p>
+</li>
+<li><p><strong>[input] array.integer sequence</strong></p>
+<p>  <em>Guaranteed constraints :</em> 2 ≤ sequence.length ≤ 10<sup>5</sup>, -10<sup>5</sup> ≤ sequence[i] ≤ 10<sup>5</sup>.</p>
+</li>
+<li><p><strong>[output] boolean</strong>  </p>
+<ul>
+<li>Return <code>true</code> if it is possible to remove one element from the array in order to get a strictly increasing sequence, otherwise return <code>false</code>.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">almostIncreasingSequence</span><span class="params">(sequence)</span>:</span></span><br><span class="line">    ans = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(len(sequence) - <span class="number">1</span>):</span><br><span class="line">        <span class="keyword">if</span> sequence[i] &gt;= sequence[i + <span class="number">1</span>]:</span><br><span class="line">            ans += <span class="number">1</span></span><br><span class="line">            <span class="keyword">if</span> i &gt;= <span class="number">1</span> <span class="keyword">and</span> sequence[i + <span class="number">1</span>] &lt;= sequence[i - <span class="number">1</span>]:</span><br><span class="line">                <span class="keyword">if</span> len(sequence) - <span class="number">2</span> &gt; i <span class="keyword">and</span> sequence[i] &gt;= sequence[i + <span class="number">2</span>]:</span><br><span class="line">                    ans += <span class="number">1</span></span><br><span class="line">    <span class="keyword">if</span> ans &gt; <span class="number">1</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">True</span></span><br></pre></td></tr></table></figure>
+<h1 id="table-of-contents">목차</h1><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Description"><span class="toc-text">Description</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Example"><span class="toc-text">Example</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Input-Output"><span class="toc-text">Input&#x2F;Output</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Solution"><span class="toc-text">Solution</span></a></li></ol>
+                    
+                        
+
+
+                    
+                    
+                        <p>
+                            <a
+                                href="/2020/03/03/CodeSignal-7-almostIncreasingSequence/#post-footer"
+                                class="postShorten-excerpt_link link"
+                                aria-label=""
+                            >
+                                댓글 공유
+                            </a>
+                        </p>
+                    
+                </div>
+            
+        </div>
+        
+    </article>
+    
+    
+    <article class="postShorten postShorten--thumbnailimg-bottom">
+        <div class="postShorten-wrap">
+            
+            <div class="postShorten-header">
+                <h1 class="postShorten-title">
+                    
+                        <a
+                            class="link-unstyled"
                             href="/2020/03/03/CodeSignal-6-Make-Array-Consecutive-2/"
                             aria-label=": [CodeSignal] #6 Make Array Consecutive 2"
                         >
