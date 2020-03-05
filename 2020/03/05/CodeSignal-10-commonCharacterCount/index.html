@@ -6,26 +6,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Cuws&#39;s Note">
-    <title>[CodeSignal] #8 matrixElementsSum - Cuws&#39;s Note</title>
+    <title>[CodeSignal] #10 commonCharacterCount - Cuws&#39;s Note</title>
     <meta name="author" content="Cuws">
     
     
     
-    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Cuws","sameAs":["https://github.com/","http://stackoverflow.com/users","https://twitter.com/","https://facebook.com/","https://plus.google.com/","https://www.linkedin.com/profile/","mailto"]},"articleBody":"\nDescriptionAfter becoming famous, the CodeBots decided to move into a new building together. Each of the rooms has a different cost, and some of them are free, but there’s a rumour that all the free rooms are haunted! Since the CodeBots are quite superstitious, they refuse to stay in any of the free rooms, or any of the rooms below any of the free rooms.\nGiven matrix, a rectangular matrix of integers, where each value represents the cost of the room, your task is to return the total sum of all rooms that are suitable for the CodeBots (ie: add up all the values that don’t appear below a 0).\nExample\nFor matrix = [[0, 1, 1, 2], [0, 5, 0, 0], [2, 0, 3, 3]] the output should be matrixElementsSum(matrix) = 9.\n  \n  There are several haunted rooms, so we’ll disregard them as well as any rooms beneath them. Thus, the answer is 1 + 5 + 1 + 2 = 9.\n\nFor matrix = [[1, 1, 1, 0], [0, 5, 0, 1], [2, 1, 3, 10]] the output should be matrixElementsSum(matrix) = 9.\n  \n  Note that the free room in the final column makes the full column unsuitable for bots (not just the room directly beneath it). Thus, the answer is 1 + 1 + 1 + 5 + 1 = 9.\n\n\nInput/Output\n[execution time limit] 4 seconds (py3)\n\n[input] array.array.integer matrix\n  A 2-dimensional array of integers representing the cost of each room in the building. A value of 0 indicates that the room is haunted.\n  Guaranteed constraints : 1 ≤ matrix.length ≤ 5, 1 ≤ matrix[i].length ≤ 5, 0 ≤ matrix[i][j] ≤ 10.\n\n[output] integer  \n\nThe total price of all the rooms that are suitable for the CodeBots to live in.\n\n\n\n\nSolution123456789def matrixElementsSum(matrix):    answer = 0    for i in range(len(matrix[0])):        for j in range(len(matrix)):            if matrix[j][i] == 0:                break            else:                answer += matrix[j][i]    return answer\n","dateCreated":"2020-03-05T14:45:26+09:00","dateModified":"2020-03-05T15:00:20+09:00","datePublished":"2020-03-05T14:45:26+09:00","description":"","headline":"[CodeSignal] #8 matrixElementsSum","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"https://kyounghwankim.github.io/2020/03/05/CodeSignal-8-matrixElementsSum/"},"publisher":{"@type":"Organization","name":"Cuws","sameAs":["https://github.com/","http://stackoverflow.com/users","https://twitter.com/","https://facebook.com/","https://plus.google.com/","https://www.linkedin.com/profile/","mailto"]},"url":"https://kyounghwankim.github.io/2020/03/05/CodeSignal-8-matrixElementsSum/"}</script>
-    <meta name="description" content="DescriptionAfter becoming famous, the CodeBots decided to move into a new building together. Each of the rooms has a different cost, and some of them are free, but there’s a rumour that all the free">
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Cuws","sameAs":["https://github.com/","http://stackoverflow.com/users","https://twitter.com/","https://facebook.com/","https://plus.google.com/","https://www.linkedin.com/profile/","mailto"]},"articleBody":"\nDescriptionGiven two strings, find the number of common characters between them.\nExampleFor s1 = &quot;aabcc&quot; and s2 = &quot;adcaa&quot;, the output should be commonCharacterCount(s1, s2) = 3.\nStrings have 3 common characters - 2 “a”s and 1 “c”.\nInput/Output\n[execution time limit] 4 seconds (py3)\n\n[input] string s1\n  A string consisting of lowercase English letters.\n  Guaranteed constraints : 1 ≤ s1.length &lt; 15.\n\n[input] string s2\n  A string consisting of lowercase English letters.\n  Guaranteed constraints : 1 ≤ s2.length &lt; 15.\n\n[output] integer\n\n\n\nSolution123456789101112def commonCharacterCount(s1, s2):    check1 = [0 for _ in range(26)]    check2 = [0 for _ in range(26)]    for i in s1:        check1[ord(i) - ord('a')] += 1    for i in s2:        check2[ord(i) - ord('a')] += 1    answer = 0    for i, j in zip(check1, check2):        if i != 0 and j != 0:            answer += min(i, j)    return answer\n","dateCreated":"2020-03-05T15:31:46+09:00","dateModified":"2020-03-05T15:37:40+09:00","datePublished":"2020-03-05T15:31:46+09:00","description":"","headline":"[CodeSignal] #10 commonCharacterCount","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"https://kyounghwankim.github.io/2020/03/05/CodeSignal-10-commonCharacterCount/"},"publisher":{"@type":"Organization","name":"Cuws","sameAs":["https://github.com/","http://stackoverflow.com/users","https://twitter.com/","https://facebook.com/","https://plus.google.com/","https://www.linkedin.com/profile/","mailto"]},"url":"https://kyounghwankim.github.io/2020/03/05/CodeSignal-10-commonCharacterCount/"}</script>
+    <meta name="description" content="DescriptionGiven two strings, find the number of common characters between them. ExampleFor s1 &#x3D; &quot;aabcc&quot; and s2 &#x3D; &quot;adcaa&quot;, the output should be commonCharacterCount(s1, s2) &#x3D; 3. S">
 <meta property="og:type" content="blog">
-<meta property="og:title" content="[CodeSignal] #8 matrixElementsSum">
-<meta property="og:url" content="https://kyounghwankim.github.io/2020/03/05/CodeSignal-8-matrixElementsSum/index.html">
+<meta property="og:title" content="[CodeSignal] #10 commonCharacterCount">
+<meta property="og:url" content="https://kyounghwankim.github.io/2020/03/05/CodeSignal-10-commonCharacterCount/index.html">
 <meta property="og:site_name" content="Cuws&#39;s Note">
-<meta property="og:description" content="DescriptionAfter becoming famous, the CodeBots decided to move into a new building together. Each of the rooms has a different cost, and some of them are free, but there’s a rumour that all the free">
+<meta property="og:description" content="DescriptionGiven two strings, find the number of common characters between them. ExampleFor s1 &#x3D; &quot;aabcc&quot; and s2 &#x3D; &quot;adcaa&quot;, the output should be commonCharacterCount(s1, s2) &#x3D; 3. S">
 <meta property="og:locale" content="ko_KR">
-<meta property="og:image" content="https://kyounghwankim.github.io/img/matrixElementsSum1.png">
-<meta property="og:image" content="https://kyounghwankim.github.io/img/matrixElementsSum2.png">
-<meta property="article:published_time" content="2020-03-05T05:45:26.000Z">
-<meta property="article:modified_time" content="2020-03-05T06:00:20.774Z">
+<meta property="article:published_time" content="2020-03-05T06:31:46.000Z">
+<meta property="article:modified_time" content="2020-03-05T06:37:40.096Z">
 <meta property="article:author" content="Cuws">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://kyounghwankim.github.io/img/matrixElementsSum1.png">
     
     
         
@@ -339,12 +336,12 @@
         <div class="post-header main-content-wrap text-left">
     
         <h1 class="post-title">
-            [CodeSignal] #8 matrixElementsSum
+            [CodeSignal] #10 commonCharacterCount
         </h1>
     
     
         <div class="post-meta">
-    <time datetime="2020-03-05T14:45:26+09:00">
+    <time datetime="2020-03-05T15:31:46+09:00">
 	
 		    2020/03/05
     	
@@ -365,33 +362,25 @@
     <div class="post-content markdown">
         <div class="main-content-wrap">
             <!-- excerpt -->
-<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>After becoming famous, the CodeBots decided to move into a new building together. Each of the rooms has a different cost, and some of them are free, but there’s a rumour that all the free rooms are haunted! Since the CodeBots are quite superstitious, they refuse to stay in any of the free rooms, <strong>or any of the rooms below any of the free rooms.</strong></p>
-<p>Given <code>matrix</code>, a rectangular matrix of integers, where each value represents the cost of the room, your task is to return the total sum of all rooms that are suitable for the CodeBots (ie: add up all the values that don’t appear below a <code>0</code>).</p>
-<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><ul>
-<li><p>For <code>matrix = [[0, 1, 1, 2], [0, 5, 0, 0], [2, 0, 3, 3]]</code> the output should be <code>matrixElementsSum(matrix) = 9</code>.</p>
-<p>  <img src="/img/matrixElementsSum1.png" alt="Description"></p>
-<p>  There are several haunted rooms, so we’ll disregard them as well as any rooms beneath them. Thus, the answer is <code>1 + 5 + 1 + 2 = 9</code>.</p>
-</li>
-<li><p>For <code>matrix = [[1, 1, 1, 0], [0, 5, 0, 1], [2, 1, 3, 10]]</code> the output should be <code>matrixElementsSum(matrix) = 9</code>.</p>
-<p>  <img src="/img/matrixElementsSum2.png" alt="Description"></p>
-<p>  Note that the free room in the final column makes the full column unsuitable for bots (not just the room directly beneath it). Thus, the answer is <code>1 + 1 + 1 + 5 + 1 = 9</code>.</p>
-</li>
-</ul>
+<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Given two strings, find the number of common characters between them.</p>
+<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><p>For <code>s1 = &quot;aabcc&quot;</code> and <code>s2 = &quot;adcaa&quot;</code>, the output should be <code>commonCharacterCount(s1, s2) = 3</code>.</p>
+<p>Strings have <code>3</code> common characters - <code>2</code> “a”s and <code>1</code> “c”.</p>
 <h3 id="Input-Output"><a href="#Input-Output" class="headerlink" title="Input/Output"></a>Input/Output</h3><ul>
 <li><p><strong>[execution time limit] 4 seconds (py3)</strong></p>
 </li>
-<li><p><strong>[input] array.array.integer matrix</strong></p>
-<p>  A 2-dimensional array of integers representing the cost of each room in the building. A value of <code>0</code> indicates that the room is haunted.</p>
-<p>  <em>Guaranteed constraints :</em> <code>1 ≤ matrix.length ≤ 5</code>, <code>1 ≤ matrix[i].length ≤ 5</code>, <code>0 ≤ matrix[i][j] ≤ 10</code>.</p>
+<li><p><strong>[input] string s1</strong></p>
+<p>  A string consisting of lowercase English letters.</p>
+<p>  <em>Guaranteed constraints :</em> <code>1 ≤ s1.length &lt; 15</code>.</p>
 </li>
-<li><p><strong>[output] integer</strong>  </p>
-<ul>
-<li>The total price of all the rooms that are suitable for the CodeBots to live in.</li>
-</ul>
+<li><p><strong>[input] string s2</strong></p>
+<p>  A string consisting of lowercase English letters.</p>
+<p>  <em>Guaranteed constraints :</em> <code>1 ≤ s2.length &lt; 15</code>.</p>
+</li>
+<li><p><strong>[output] integer</strong></p>
 </li>
 </ul>
 <hr>
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">matrixElementsSum</span><span class="params">(matrix)</span>:</span></span><br><span class="line">    answer = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(len(matrix[<span class="number">0</span>])):</span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> range(len(matrix)):</span><br><span class="line">            <span class="keyword">if</span> matrix[j][i] == <span class="number">0</span>:</span><br><span class="line">                <span class="keyword">break</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                answer += matrix[j][i]</span><br><span class="line">    <span class="keyword">return</span> answer</span><br></pre></td></tr></table></figure>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">commonCharacterCount</span><span class="params">(s1, s2)</span>:</span></span><br><span class="line">    check1 = [<span class="number">0</span> <span class="keyword">for</span> _ <span class="keyword">in</span> range(<span class="number">26</span>)]</span><br><span class="line">    check2 = [<span class="number">0</span> <span class="keyword">for</span> _ <span class="keyword">in</span> range(<span class="number">26</span>)]</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> s1:</span><br><span class="line">        check1[ord(i) - ord(<span class="string">'a'</span>)] += <span class="number">1</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> s2:</span><br><span class="line">        check2[ord(i) - ord(<span class="string">'a'</span>)] += <span class="number">1</span></span><br><span class="line">    answer = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i, j <span class="keyword">in</span> zip(check1, check2):</span><br><span class="line">        <span class="keyword">if</span> i != <span class="number">0</span> <span class="keyword">and</span> j != <span class="number">0</span>:</span><br><span class="line">            answer += min(i, j)</span><br><span class="line">    <span class="keyword">return</span> answer</span><br></pre></td></tr></table></figure>
 <h1 id="table-of-contents">목차</h1><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Description"><span class="toc-text">Description</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Example"><span class="toc-text">Example</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Input-Output"><span class="toc-text">Input&#x2F;Output</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Solution"><span class="toc-text">Solution</span></a></li></ol>
             
 
@@ -406,14 +395,11 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    
-                <a
-                    class="post-action-btn btn btn--default tooltip--top"
-                    href="/2020/03/05/CodeSignal-9-All-Longest-Strings/"
-                    data-tooltip="[CodeSignal] #9 All Longest Strings"
-                    aria-label="이전: [CodeSignal] #9 All Longest Strings"
-                >
-                    
+                    <a
+                        class="post-action-btn btn btn--disabled"
+                        aria-hidden="true"
+                    >
+                        
                         <i class="fa fa-angle-left" aria-hidden="true"></i>
                         <span class="hide-xs hide-sm text-small icon-ml">이전</span>
                     </a>
@@ -423,9 +409,9 @@
                     
                 <a
                     class="post-action-btn btn btn--default tooltip--top"
-                    href="/2020/03/03/CodeSignal-7-almostIncreasingSequence/"
-                    data-tooltip="[CodeSignal] #7 almostIncreasingSequence"
-                    aria-label="다음: [CodeSignal] #7 almostIncreasingSequence"
+                    href="/2020/03/05/CodeSignal-9-All-Longest-Strings/"
+                    data-tooltip="[CodeSignal] #9 All Longest Strings"
+                    aria-label="다음: [CodeSignal] #9 All Longest Strings"
                 >
                     
                         <span class="hide-xs hide-sm text-small icon-mr">다음</span>
@@ -450,7 +436,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://kyounghwankim.github.io/2020/03/05/CodeSignal-8-matrixElementsSum/"
+                    target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://kyounghwankim.github.io/2020/03/05/CodeSignal-10-commonCharacterCount/"
                     title="Facebook에 공유하기"
                     aria-label="Facebook에 공유하기"
                 >
@@ -463,7 +449,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://twitter.com/intent/tweet?text=https://kyounghwankim.github.io/2020/03/05/CodeSignal-8-matrixElementsSum/"
+                    target="new" href="https://twitter.com/intent/tweet?text=https://kyounghwankim.github.io/2020/03/05/CodeSignal-10-commonCharacterCount/"
                     title="Twitter에 공유하기"
                     aria-label="Twitter에 공유하기"
                 >
@@ -476,7 +462,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://plus.google.com/share?url=https://kyounghwankim.github.io/2020/03/05/CodeSignal-8-matrixElementsSum/"
+                    target="new" href="https://plus.google.com/share?url=https://kyounghwankim.github.io/2020/03/05/CodeSignal-10-commonCharacterCount/"
                     title="Google+에 공유하기"
                     aria-label="Google+에 공유하기"
                 >
@@ -521,14 +507,11 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    
-                <a
-                    class="post-action-btn btn btn--default tooltip--top"
-                    href="/2020/03/05/CodeSignal-9-All-Longest-Strings/"
-                    data-tooltip="[CodeSignal] #9 All Longest Strings"
-                    aria-label="이전: [CodeSignal] #9 All Longest Strings"
-                >
-                    
+                    <a
+                        class="post-action-btn btn btn--disabled"
+                        aria-hidden="true"
+                    >
+                        
                         <i class="fa fa-angle-left" aria-hidden="true"></i>
                         <span class="hide-xs hide-sm text-small icon-ml">이전</span>
                     </a>
@@ -538,9 +521,9 @@
                     
                 <a
                     class="post-action-btn btn btn--default tooltip--top"
-                    href="/2020/03/03/CodeSignal-7-almostIncreasingSequence/"
-                    data-tooltip="[CodeSignal] #7 almostIncreasingSequence"
-                    aria-label="다음: [CodeSignal] #7 almostIncreasingSequence"
+                    href="/2020/03/05/CodeSignal-9-All-Longest-Strings/"
+                    data-tooltip="[CodeSignal] #9 All Longest Strings"
+                    aria-label="다음: [CodeSignal] #9 All Longest Strings"
                 >
                     
                         <span class="hide-xs hide-sm text-small icon-mr">다음</span>
@@ -565,7 +548,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://kyounghwankim.github.io/2020/03/05/CodeSignal-8-matrixElementsSum/"
+                    target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://kyounghwankim.github.io/2020/03/05/CodeSignal-10-commonCharacterCount/"
                     title="Facebook에 공유하기"
                     aria-label="Facebook에 공유하기"
                 >
@@ -578,7 +561,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://twitter.com/intent/tweet?text=https://kyounghwankim.github.io/2020/03/05/CodeSignal-8-matrixElementsSum/"
+                    target="new" href="https://twitter.com/intent/tweet?text=https://kyounghwankim.github.io/2020/03/05/CodeSignal-10-commonCharacterCount/"
                     title="Twitter에 공유하기"
                     aria-label="Twitter에 공유하기"
                 >
@@ -591,7 +574,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://plus.google.com/share?url=https://kyounghwankim.github.io/2020/03/05/CodeSignal-8-matrixElementsSum/"
+                    target="new" href="https://plus.google.com/share?url=https://kyounghwankim.github.io/2020/03/05/CodeSignal-10-commonCharacterCount/"
                     title="Google+에 공유하기"
                     aria-label="Google+에 공유하기"
                 >
@@ -625,7 +608,7 @@
                     <a
                         class="share-option-btn"
                         target="new"
-                        href="https://www.facebook.com/sharer/sharer.php?u=https://kyounghwankim.github.io/2020/03/05/CodeSignal-8-matrixElementsSum/"
+                        href="https://www.facebook.com/sharer/sharer.php?u=https://kyounghwankim.github.io/2020/03/05/CodeSignal-10-commonCharacterCount/"
                         aria-label="Facebook에 공유하기"
                     >
                         <i class="fab fa-facebook" aria-hidden="true"></i><span>Facebook에 공유하기</span>
@@ -638,7 +621,7 @@
                     <a
                         class="share-option-btn"
                         target="new"
-                        href="https://twitter.com/intent/tweet?text=https://kyounghwankim.github.io/2020/03/05/CodeSignal-8-matrixElementsSum/"
+                        href="https://twitter.com/intent/tweet?text=https://kyounghwankim.github.io/2020/03/05/CodeSignal-10-commonCharacterCount/"
                         aria-label="Twitter에 공유하기"
                     >
                         <i class="fab fa-twitter" aria-hidden="true"></i><span>Twitter에 공유하기</span>
@@ -651,7 +634,7 @@
                     <a
                         class="share-option-btn"
                         target="new"
-                        href="https://plus.google.com/share?url=https://kyounghwankim.github.io/2020/03/05/CodeSignal-8-matrixElementsSum/"
+                        href="https://plus.google.com/share?url=https://kyounghwankim.github.io/2020/03/05/CodeSignal-10-commonCharacterCount/"
                         aria-label="Google+에 공유하기"
                     >
                         <i class="fab fa-google-plus" aria-hidden="true"></i><span>Google+에 공유하기</span>
