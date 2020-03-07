@@ -334,6 +334,95 @@
                     
                         <a
                             class="link-unstyled"
+                            href="/2020/03/07/CodeSignal-13-reverseInParentheses/"
+                            aria-label=": [CodeSignal] #13 reverseInParentheses"
+                        >
+                            [CodeSignal] #13 reverseInParentheses
+                        </a>
+                    
+                </h1>
+                <div class="postShorten-meta">
+    <time datetime="2020-03-07T18:09:23+09:00">
+	
+		    2020/03/07
+    	
+    </time>
+    
+        <span>카테고리 </span>
+        
+    <a class="category-link" href="/categories/Algorithm/">Algorithm</a>, <a class="category-link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
+
+
+    
+</div>
+
+            </div>
+            
+                <div class="postShorten-content">
+                    <!-- excerpt -->
+<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Write a function that reverses characters in (possibly nested) parentheses in the input string.</p>
+<p>Input strings will always be well-formed with matching <code>()</code>s.</p>
+<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><ul>
+<li><p>For <code>inputString = &quot;(bar)&quot;</code>, the output should be <code>reverseInParentheses(inputString) = &quot;rab&quot;</code>;</p>
+</li>
+<li><p>For <code>inputString = &quot;foo(bar)baz&quot;</code>, the output should be <code>reverseInParentheses(inputString) = &quot;foorabbaz&quot;</code>;</p>
+</li>
+<li><p>For <code>inputString = &quot;foo(bar)baz(blim)&quot;</code>, the output should be <code>reverseInParentheses(inputString) = &quot;foorabbazmilb&quot;</code>;</p>
+</li>
+<li><p>For <code>inputString = &quot;foo(bar(baz))blim&quot;</code>, the output should be <code>reverseInParentheses(inputString) = &quot;foobazrabblim&quot;</code>.</p>
+<p>  Because <code>&quot;foo(bar(baz))blim&quot;</code> becomes <code>&quot;foo(barzab)blim&quot;</code> and then <code>&quot;foobazrabblim&quot;</code>.</p>
+</li>
+</ul>
+<h3 id="Input-Output"><a href="#Input-Output" class="headerlink" title="Input/Output"></a>Input/Output</h3><ul>
+<li><p><strong>[execution time limit] 4 seconds (py3)</strong></p>
+</li>
+<li><p><strong>[input] string inputString</strong></p>
+<p>  A string consisting of lowercase English letters and the characters <code>(</code> and <code>)</code>. It is guaranteed that all parentheses in <code>inputString</code> form a regular bracket sequence<sup><a href="#footnote_1">1</a></sup>.</p>
+<p>  <em>Guaranteed constraints :</em> <code>0 ≤ inputString.length ≤ 50</code>.</p>
+</li>
+<li><p><strong>[output] string</strong></p>
+<ul>
+<li>Return <code>inputString</code>, with all the characters that were in parentheses reversed.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">reverseInParentheses</span><span class="params">(inputString)</span>:</span></span><br><span class="line">    result = []</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> inputString:</span><br><span class="line">        <span class="keyword">if</span> i != <span class="string">')'</span>:</span><br><span class="line">            result.append(i)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            temp = []</span><br><span class="line">            <span class="keyword">while</span> result[<span class="number">-1</span>] != <span class="string">'('</span>:</span><br><span class="line">                temp.append(result[<span class="number">-1</span>])</span><br><span class="line">                result.pop(<span class="number">-1</span>)</span><br><span class="line">            result.pop(<span class="number">-1</span>)</span><br><span class="line">            <span class="keyword">for</span> j <span class="keyword">in</span> temp:</span><br><span class="line">                result.append(j)</span><br><span class="line">    <span class="keyword">return</span> <span class="string">''</span>.join(result)</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id=""><a href="#" class="headerlink" title=""></a></h1><p><a name="footnote_1">1.</a> A bracket sequence is called regular if it is possible to insert some numbers and signs into the sequence in such a way that the new sequence will represent a correct arithmetic expression.</p>
+<h1 id="table-of-contents">목차</h1><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Description"><span class="toc-text">Description</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Example"><span class="toc-text">Example</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Input-Output"><span class="toc-text">Input&#x2F;Output</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Solution"><span class="toc-text">Solution</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#null"><span class="toc-text"></span></a>
+                    
+                        
+
+
+                    
+                    
+                        <p>
+                            <a
+                                href="/2020/03/07/CodeSignal-13-reverseInParentheses/#post-footer"
+                                class="postShorten-excerpt_link link"
+                                aria-label=""
+                            >
+                                댓글 공유
+                            </a>
+                        </p>
+                    
+                </div>
+            
+        </div>
+        
+    </article>
+    
+    
+    <article class="postShorten postShorten--thumbnailimg-bottom">
+        <div class="postShorten-wrap">
+            
+            <div class="postShorten-header">
+                <h1 class="postShorten-title">
+                    
+                        <a
+                            class="link-unstyled"
                             href="/2020/03/07/CodeSignal-12-sortByHeight/"
                             aria-label=": [CodeSignal] #12 sortByHeight"
                         >
@@ -1012,87 +1101,6 @@
                         <p>
                             <a
                                 href="/2020/03/02/CodeSignal-4-adjacentElementsProduct/#post-footer"
-                                class="postShorten-excerpt_link link"
-                                aria-label=""
-                            >
-                                댓글 공유
-                            </a>
-                        </p>
-                    
-                </div>
-            
-        </div>
-        
-    </article>
-    
-    
-    <article class="postShorten postShorten--thumbnailimg-bottom">
-        <div class="postShorten-wrap">
-            
-            <div class="postShorten-header">
-                <h1 class="postShorten-title">
-                    
-                        <a
-                            class="link-unstyled"
-                            href="/2020/02/28/CodeSignal-3-checkPalindrome/"
-                            aria-label=": [CodeSignal] #3 checkPalindrome"
-                        >
-                            [CodeSignal] #3 checkPalindrome
-                        </a>
-                    
-                </h1>
-                <div class="postShorten-meta">
-    <time datetime="2020-02-28T12:55:24+09:00">
-	
-		    2020/02/28
-    	
-    </time>
-    
-        <span>카테고리 </span>
-        
-    <a class="category-link" href="/categories/Algorithm/">Algorithm</a>, <a class="category-link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
-
-
-    
-</div>
-
-            </div>
-            
-                <div class="postShorten-content">
-                    <!-- excerpt -->
-<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Given the string, check if it is a palindrome<sup><a href="#footnote_1">1</a></sup> .</p>
-<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><ul>
-<li>For <code>inputString = &quot;aabaa&quot;</code>, the output should be <code>checkPalindrome(inputString) = true</code>;</li>
-<li>For <code>inputString = &quot;abac&quot;</code>, the output should be <code>checkPalindrome(inputString) = false</code>;</li>
-<li>For <code>inputString = &quot;a&quot;</code>, the output should be <code>checkPalindrome(inputString) = true</code>.</li>
-</ul>
-<h3 id="Input-Output"><a href="#Input-Output" class="headerlink" title="Input/Output"></a>Input/Output</h3><ul>
-<li><p><strong>[execution time limit] 4 seconds (py3)</strong></p>
-</li>
-<li><p><strong>[input] string inputString</strong></p>
-<p>  A non-empty string consisting of lowercase characters.<br>  <em>Guaranteed constraints :</em> 1 ≤ inputString.length ≤ 10<sup>5</sup>.</p>
-</li>
-<li><p><strong>[output] boolean</strong>  </p>
-<ul>
-<li><code>true</code> if <code>inputString</code> is palindrome, <code>false</code> otherwise.</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">checkPalindrome</span><span class="params">(inputString)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> inputString == inputString[::<span class="number">-1</span>] <span class="comment">#[::-1]은 문자열을 뒤집어 준다.</span></span><br></pre></td></tr></table></figure>
-
-<hr>
-<h1 id=""><a href="#" class="headerlink" title=""></a></h1><p><a name="footnote_1">1.</a> A palindrome is a string that reads the same left-to-right and right-to-left.</p>
-<h1 id="table-of-contents">목차</h1><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Description"><span class="toc-text">Description</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Example"><span class="toc-text">Example</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Input-Output"><span class="toc-text">Input&#x2F;Output</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Solution"><span class="toc-text">Solution</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#null"><span class="toc-text"></span></a>
-                    
-                        
-
-
-                    
-                    
-                        <p>
-                            <a
-                                href="/2020/02/28/CodeSignal-3-checkPalindrome/#post-footer"
                                 class="postShorten-excerpt_link link"
                                 aria-label=""
                             >
