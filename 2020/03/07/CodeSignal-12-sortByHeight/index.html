@@ -6,21 +6,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Cuws&#39;s Note">
-    <title>[CodeSignal] #10 commonCharacterCount - Cuws&#39;s Note</title>
+    <title>[CodeSignal] #12 sortByHeight - Cuws&#39;s Note</title>
     <meta name="author" content="Cuws">
     
     
     
-    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Cuws","sameAs":["https://github.com/","http://stackoverflow.com/users","https://twitter.com/","https://facebook.com/","https://plus.google.com/","https://www.linkedin.com/profile/","mailto"]},"articleBody":"\nDescriptionGiven two strings, find the number of common characters between them.\nExampleFor s1 = &quot;aabcc&quot; and s2 = &quot;adcaa&quot;, the output should be commonCharacterCount(s1, s2) = 3.\nStrings have 3 common characters - 2 “a”s and 1 “c”.\nInput/Output\n[execution time limit] 4 seconds (py3)\n\n[input] string s1\n  A string consisting of lowercase English letters.\n  Guaranteed constraints : 1 ≤ s1.length &lt; 15.\n\n[input] string s2\n  A string consisting of lowercase English letters.\n  Guaranteed constraints : 1 ≤ s2.length &lt; 15.\n\n[output] integer\n\n\n\nSolution123456789101112def commonCharacterCount(s1, s2):    check1 = [0 for _ in range(26)]    check2 = [0 for _ in range(26)]    for i in s1:        check1[ord(i) - ord('a')] += 1    for i in s2:        check2[ord(i) - ord('a')] += 1    answer = 0    for i, j in zip(check1, check2):        if i != 0 and j != 0:            answer += min(i, j)    return answer\n","dateCreated":"2020-03-05T15:31:46+09:00","dateModified":"2020-03-05T15:37:40+09:00","datePublished":"2020-03-05T15:31:46+09:00","description":"","headline":"[CodeSignal] #10 commonCharacterCount","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"https://kyounghwankim.github.io/2020/03/05/CodeSignal-10-commonCharacterCount/"},"publisher":{"@type":"Organization","name":"Cuws","sameAs":["https://github.com/","http://stackoverflow.com/users","https://twitter.com/","https://facebook.com/","https://plus.google.com/","https://www.linkedin.com/profile/","mailto"]},"url":"https://kyounghwankim.github.io/2020/03/05/CodeSignal-10-commonCharacterCount/"}</script>
-    <meta name="description" content="DescriptionGiven two strings, find the number of common characters between them. ExampleFor s1 &#x3D; &quot;aabcc&quot; and s2 &#x3D; &quot;adcaa&quot;, the output should be commonCharacterCount(s1, s2) &#x3D; 3. S">
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Cuws","sameAs":["https://github.com/","http://stackoverflow.com/users","https://twitter.com/","https://facebook.com/","https://plus.google.com/","https://www.linkedin.com/profile/","mailto"]},"articleBody":"\nDescriptionSome people are standing in a row in a park. There are trees between them which cannot be moved. Your task is to rearrange the people by their heights in a non-descending order without moving the trees. People can be very tall!\nExampleFor a = [-1, 150, 190, 170, -1, -1, 160, 180], the output should be sortByHeight(a) = [-1, 150, 160, 170, -1, -1, 180, 190].\nInput/Output\n[execution time limit] 4 seconds (py3)\n\n[input] array.integer a\n  If a[i] = -1, then the ith position is occupied by a tree. Otherwise a[i] is the height of a person standing in the ith position.\n  Guaranteed constraints : 1 ≤ a.length ≤ 1000, -1 ≤ a[i] ≤ 1000.\n\n[output] array.integer\n\nSorted array a with all the trees untouched.\n\n\n\n\nSolution1234567891011121314151617def sortByHeight(a):    arr = []    tree = []    for i in range(len(a)):        if a[i] == -1:            tree.append(i)        else:            arr.append(a[i])    arr.sort()    result = []    for i in range(len(a)):        if i in tree:            result.append(-1)        else:            result.append(arr[0])            arr.pop(0)    return result\n","dateCreated":"2020-03-07T16:35:35+09:00","dateModified":"2020-03-07T16:42:07+09:00","datePublished":"2020-03-07T16:35:35+09:00","description":"","headline":"[CodeSignal] #12 sortByHeight","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"https://kyounghwankim.github.io/2020/03/07/CodeSignal-12-sortByHeight/"},"publisher":{"@type":"Organization","name":"Cuws","sameAs":["https://github.com/","http://stackoverflow.com/users","https://twitter.com/","https://facebook.com/","https://plus.google.com/","https://www.linkedin.com/profile/","mailto"]},"url":"https://kyounghwankim.github.io/2020/03/07/CodeSignal-12-sortByHeight/"}</script>
+    <meta name="description" content="DescriptionSome people are standing in a row in a park. There are trees between them which cannot be moved. Your task is to rearrange the people by their heights in a non-descending order without mov">
 <meta property="og:type" content="blog">
-<meta property="og:title" content="[CodeSignal] #10 commonCharacterCount">
-<meta property="og:url" content="https://kyounghwankim.github.io/2020/03/05/CodeSignal-10-commonCharacterCount/index.html">
+<meta property="og:title" content="[CodeSignal] #12 sortByHeight">
+<meta property="og:url" content="https://kyounghwankim.github.io/2020/03/07/CodeSignal-12-sortByHeight/index.html">
 <meta property="og:site_name" content="Cuws&#39;s Note">
-<meta property="og:description" content="DescriptionGiven two strings, find the number of common characters between them. ExampleFor s1 &#x3D; &quot;aabcc&quot; and s2 &#x3D; &quot;adcaa&quot;, the output should be commonCharacterCount(s1, s2) &#x3D; 3. S">
+<meta property="og:description" content="DescriptionSome people are standing in a row in a park. There are trees between them which cannot be moved. Your task is to rearrange the people by their heights in a non-descending order without mov">
 <meta property="og:locale" content="ko_KR">
-<meta property="article:published_time" content="2020-03-05T06:31:46.000Z">
-<meta property="article:modified_time" content="2020-03-05T06:37:40.096Z">
+<meta property="article:published_time" content="2020-03-07T07:35:35.000Z">
+<meta property="article:modified_time" content="2020-03-07T07:42:07.080Z">
 <meta property="article:author" content="Cuws">
 <meta name="twitter:card" content="summary">
     
@@ -336,14 +336,14 @@
         <div class="post-header main-content-wrap text-left">
     
         <h1 class="post-title">
-            [CodeSignal] #10 commonCharacterCount
+            [CodeSignal] #12 sortByHeight
         </h1>
     
     
         <div class="post-meta">
-    <time datetime="2020-03-05T15:31:46+09:00">
+    <time datetime="2020-03-07T16:35:35+09:00">
 	
-		    2020/03/05
+		    2020/03/07
     	
     </time>
     
@@ -362,25 +362,23 @@
     <div class="post-content markdown">
         <div class="main-content-wrap">
             <!-- excerpt -->
-<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Given two strings, find the number of common characters between them.</p>
-<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><p>For <code>s1 = &quot;aabcc&quot;</code> and <code>s2 = &quot;adcaa&quot;</code>, the output should be <code>commonCharacterCount(s1, s2) = 3</code>.</p>
-<p>Strings have <code>3</code> common characters - <code>2</code> “a”s and <code>1</code> “c”.</p>
+<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Some people are standing in a row in a park. There are trees between them which cannot be moved. Your task is to rearrange the people by their heights in a non-descending order without moving the trees. People can be very tall!</p>
+<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><p>For <code>a = [-1, 150, 190, 170, -1, -1, 160, 180]</code>, the output should be <code>sortByHeight(a) = [-1, 150, 160, 170, -1, -1, 180, 190]</code>.</p>
 <h3 id="Input-Output"><a href="#Input-Output" class="headerlink" title="Input/Output"></a>Input/Output</h3><ul>
 <li><p><strong>[execution time limit] 4 seconds (py3)</strong></p>
 </li>
-<li><p><strong>[input] string s1</strong></p>
-<p>  A string consisting of lowercase English letters.</p>
-<p>  <em>Guaranteed constraints :</em> <code>1 ≤ s1.length &lt; 15</code>.</p>
+<li><p><strong>[input] array.integer a</strong></p>
+<p>  If <code>a[i] = -1</code>, then the i<sup>th</sup> position is occupied by a tree. Otherwise <code>a[i]</code> is the height of a person standing in the i<sup>th</sup> position.</p>
+<p>  <em>Guaranteed constraints :</em> <code>1 ≤ a.length ≤ 1000</code>, <code>-1 ≤ a[i] ≤ 1000</code>.</p>
 </li>
-<li><p><strong>[input] string s2</strong></p>
-<p>  A string consisting of lowercase English letters.</p>
-<p>  <em>Guaranteed constraints :</em> <code>1 ≤ s2.length &lt; 15</code>.</p>
-</li>
-<li><p><strong>[output] integer</strong></p>
+<li><p><strong>[output] array.integer</strong></p>
+<ul>
+<li>Sorted array <code>a</code> with all the trees untouched.</li>
+</ul>
 </li>
 </ul>
 <hr>
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">commonCharacterCount</span><span class="params">(s1, s2)</span>:</span></span><br><span class="line">    check1 = [<span class="number">0</span> <span class="keyword">for</span> _ <span class="keyword">in</span> range(<span class="number">26</span>)]</span><br><span class="line">    check2 = [<span class="number">0</span> <span class="keyword">for</span> _ <span class="keyword">in</span> range(<span class="number">26</span>)]</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> s1:</span><br><span class="line">        check1[ord(i) - ord(<span class="string">'a'</span>)] += <span class="number">1</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> s2:</span><br><span class="line">        check2[ord(i) - ord(<span class="string">'a'</span>)] += <span class="number">1</span></span><br><span class="line">    answer = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i, j <span class="keyword">in</span> zip(check1, check2):</span><br><span class="line">        <span class="keyword">if</span> i != <span class="number">0</span> <span class="keyword">and</span> j != <span class="number">0</span>:</span><br><span class="line">            answer += min(i, j)</span><br><span class="line">    <span class="keyword">return</span> answer</span><br></pre></td></tr></table></figure>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">sortByHeight</span><span class="params">(a)</span>:</span></span><br><span class="line">    arr = []</span><br><span class="line">    tree = []</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(len(a)):</span><br><span class="line">        <span class="keyword">if</span> a[i] == <span class="number">-1</span>:</span><br><span class="line">            tree.append(i)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            arr.append(a[i])</span><br><span class="line">    arr.sort()</span><br><span class="line">    result = []</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(len(a)):</span><br><span class="line">        <span class="keyword">if</span> i <span class="keyword">in</span> tree:</span><br><span class="line">            result.append(<span class="number">-1</span>)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            result.append(arr[<span class="number">0</span>])</span><br><span class="line">            arr.pop(<span class="number">0</span>)</span><br><span class="line">    <span class="keyword">return</span> result</span><br></pre></td></tr></table></figure>
 <h1 id="table-of-contents">목차</h1><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Description"><span class="toc-text">Description</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Example"><span class="toc-text">Example</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Input-Output"><span class="toc-text">Input&#x2F;Output</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Solution"><span class="toc-text">Solution</span></a></li></ol>
             
 
@@ -395,14 +393,11 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    
-                <a
-                    class="post-action-btn btn btn--default tooltip--top"
-                    href="/2020/03/07/CodeSignal-11-isLucky/"
-                    data-tooltip="[CodeSignal] #11 isLucky"
-                    aria-label="이전: [CodeSignal] #11 isLucky"
-                >
-                    
+                    <a
+                        class="post-action-btn btn btn--disabled"
+                        aria-hidden="true"
+                    >
+                        
                         <i class="fa fa-angle-left" aria-hidden="true"></i>
                         <span class="hide-xs hide-sm text-small icon-ml">이전</span>
                     </a>
@@ -412,9 +407,9 @@
                     
                 <a
                     class="post-action-btn btn btn--default tooltip--top"
-                    href="/2020/03/05/CodeSignal-9-All-Longest-Strings/"
-                    data-tooltip="[CodeSignal] #9 All Longest Strings"
-                    aria-label="다음: [CodeSignal] #9 All Longest Strings"
+                    href="/2020/03/07/CodeSignal-11-isLucky/"
+                    data-tooltip="[CodeSignal] #11 isLucky"
+                    aria-label="다음: [CodeSignal] #11 isLucky"
                 >
                     
                         <span class="hide-xs hide-sm text-small icon-mr">다음</span>
@@ -439,7 +434,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://kyounghwankim.github.io/2020/03/05/CodeSignal-10-commonCharacterCount/"
+                    target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://kyounghwankim.github.io/2020/03/07/CodeSignal-12-sortByHeight/"
                     title="Facebook에 공유하기"
                     aria-label="Facebook에 공유하기"
                 >
@@ -452,7 +447,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://twitter.com/intent/tweet?text=https://kyounghwankim.github.io/2020/03/05/CodeSignal-10-commonCharacterCount/"
+                    target="new" href="https://twitter.com/intent/tweet?text=https://kyounghwankim.github.io/2020/03/07/CodeSignal-12-sortByHeight/"
                     title="Twitter에 공유하기"
                     aria-label="Twitter에 공유하기"
                 >
@@ -465,7 +460,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://plus.google.com/share?url=https://kyounghwankim.github.io/2020/03/05/CodeSignal-10-commonCharacterCount/"
+                    target="new" href="https://plus.google.com/share?url=https://kyounghwankim.github.io/2020/03/07/CodeSignal-12-sortByHeight/"
                     title="Google+에 공유하기"
                     aria-label="Google+에 공유하기"
                 >
@@ -510,14 +505,11 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    
-                <a
-                    class="post-action-btn btn btn--default tooltip--top"
-                    href="/2020/03/07/CodeSignal-11-isLucky/"
-                    data-tooltip="[CodeSignal] #11 isLucky"
-                    aria-label="이전: [CodeSignal] #11 isLucky"
-                >
-                    
+                    <a
+                        class="post-action-btn btn btn--disabled"
+                        aria-hidden="true"
+                    >
+                        
                         <i class="fa fa-angle-left" aria-hidden="true"></i>
                         <span class="hide-xs hide-sm text-small icon-ml">이전</span>
                     </a>
@@ -527,9 +519,9 @@
                     
                 <a
                     class="post-action-btn btn btn--default tooltip--top"
-                    href="/2020/03/05/CodeSignal-9-All-Longest-Strings/"
-                    data-tooltip="[CodeSignal] #9 All Longest Strings"
-                    aria-label="다음: [CodeSignal] #9 All Longest Strings"
+                    href="/2020/03/07/CodeSignal-11-isLucky/"
+                    data-tooltip="[CodeSignal] #11 isLucky"
+                    aria-label="다음: [CodeSignal] #11 isLucky"
                 >
                     
                         <span class="hide-xs hide-sm text-small icon-mr">다음</span>
@@ -554,7 +546,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://kyounghwankim.github.io/2020/03/05/CodeSignal-10-commonCharacterCount/"
+                    target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://kyounghwankim.github.io/2020/03/07/CodeSignal-12-sortByHeight/"
                     title="Facebook에 공유하기"
                     aria-label="Facebook에 공유하기"
                 >
@@ -567,7 +559,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://twitter.com/intent/tweet?text=https://kyounghwankim.github.io/2020/03/05/CodeSignal-10-commonCharacterCount/"
+                    target="new" href="https://twitter.com/intent/tweet?text=https://kyounghwankim.github.io/2020/03/07/CodeSignal-12-sortByHeight/"
                     title="Twitter에 공유하기"
                     aria-label="Twitter에 공유하기"
                 >
@@ -580,7 +572,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://plus.google.com/share?url=https://kyounghwankim.github.io/2020/03/05/CodeSignal-10-commonCharacterCount/"
+                    target="new" href="https://plus.google.com/share?url=https://kyounghwankim.github.io/2020/03/07/CodeSignal-12-sortByHeight/"
                     title="Google+에 공유하기"
                     aria-label="Google+에 공유하기"
                 >
@@ -614,7 +606,7 @@
                     <a
                         class="share-option-btn"
                         target="new"
-                        href="https://www.facebook.com/sharer/sharer.php?u=https://kyounghwankim.github.io/2020/03/05/CodeSignal-10-commonCharacterCount/"
+                        href="https://www.facebook.com/sharer/sharer.php?u=https://kyounghwankim.github.io/2020/03/07/CodeSignal-12-sortByHeight/"
                         aria-label="Facebook에 공유하기"
                     >
                         <i class="fab fa-facebook" aria-hidden="true"></i><span>Facebook에 공유하기</span>
@@ -627,7 +619,7 @@
                     <a
                         class="share-option-btn"
                         target="new"
-                        href="https://twitter.com/intent/tweet?text=https://kyounghwankim.github.io/2020/03/05/CodeSignal-10-commonCharacterCount/"
+                        href="https://twitter.com/intent/tweet?text=https://kyounghwankim.github.io/2020/03/07/CodeSignal-12-sortByHeight/"
                         aria-label="Twitter에 공유하기"
                     >
                         <i class="fab fa-twitter" aria-hidden="true"></i><span>Twitter에 공유하기</span>
@@ -640,7 +632,7 @@
                     <a
                         class="share-option-btn"
                         target="new"
-                        href="https://plus.google.com/share?url=https://kyounghwankim.github.io/2020/03/05/CodeSignal-10-commonCharacterCount/"
+                        href="https://plus.google.com/share?url=https://kyounghwankim.github.io/2020/03/07/CodeSignal-12-sortByHeight/"
                         aria-label="Google+에 공유하기"
                     >
                         <i class="fab fa-google-plus" aria-hidden="true"></i><span>Google+에 공유하기</span>

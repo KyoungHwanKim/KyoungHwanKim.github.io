@@ -6,21 +6,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Cuws&#39;s Note">
-    <title>[CodeSignal] #10 commonCharacterCount - Cuws&#39;s Note</title>
+    <title>[CodeSignal] #11 isLucky - Cuws&#39;s Note</title>
     <meta name="author" content="Cuws">
     
     
     
-    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Cuws","sameAs":["https://github.com/","http://stackoverflow.com/users","https://twitter.com/","https://facebook.com/","https://plus.google.com/","https://www.linkedin.com/profile/","mailto"]},"articleBody":"\nDescriptionGiven two strings, find the number of common characters between them.\nExampleFor s1 = &quot;aabcc&quot; and s2 = &quot;adcaa&quot;, the output should be commonCharacterCount(s1, s2) = 3.\nStrings have 3 common characters - 2 “a”s and 1 “c”.\nInput/Output\n[execution time limit] 4 seconds (py3)\n\n[input] string s1\n  A string consisting of lowercase English letters.\n  Guaranteed constraints : 1 ≤ s1.length &lt; 15.\n\n[input] string s2\n  A string consisting of lowercase English letters.\n  Guaranteed constraints : 1 ≤ s2.length &lt; 15.\n\n[output] integer\n\n\n\nSolution123456789101112def commonCharacterCount(s1, s2):    check1 = [0 for _ in range(26)]    check2 = [0 for _ in range(26)]    for i in s1:        check1[ord(i) - ord('a')] += 1    for i in s2:        check2[ord(i) - ord('a')] += 1    answer = 0    for i, j in zip(check1, check2):        if i != 0 and j != 0:            answer += min(i, j)    return answer\n","dateCreated":"2020-03-05T15:31:46+09:00","dateModified":"2020-03-05T15:37:40+09:00","datePublished":"2020-03-05T15:31:46+09:00","description":"","headline":"[CodeSignal] #10 commonCharacterCount","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"https://kyounghwankim.github.io/2020/03/05/CodeSignal-10-commonCharacterCount/"},"publisher":{"@type":"Organization","name":"Cuws","sameAs":["https://github.com/","http://stackoverflow.com/users","https://twitter.com/","https://facebook.com/","https://plus.google.com/","https://www.linkedin.com/profile/","mailto"]},"url":"https://kyounghwankim.github.io/2020/03/05/CodeSignal-10-commonCharacterCount/"}</script>
-    <meta name="description" content="DescriptionGiven two strings, find the number of common characters between them. ExampleFor s1 &#x3D; &quot;aabcc&quot; and s2 &#x3D; &quot;adcaa&quot;, the output should be commonCharacterCount(s1, s2) &#x3D; 3. S">
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Cuws","sameAs":["https://github.com/","http://stackoverflow.com/users","https://twitter.com/","https://facebook.com/","https://plus.google.com/","https://www.linkedin.com/profile/","mailto"]},"articleBody":"\nDescriptionTicket numbers usually consist of an even number of digits. A ticket number is considered lucky if the sum of the first half of the digits is equal to the sum of the second half.\nGiven a ticket number n, determine if it’s lucky or not.\nExample\nFor n = 1230, the output should be isLucky(n) = true;\n\nFor n = 239017, the output should be isLucky(n) = false.\n\n\nInput/Output\n[execution time limit] 4 seconds (py3)\n\n[input] integer n\n  A ticket number represented as a positive integer with an even number of digits.\n  Guaranteed constraints : 10 ≤ n &lt; 106.\n\n[output] boolean\n\ntrue if n is a lucky ticket number, false otherwise.\n\n\n\n\nSolution12345678def isLucky(n):    n = str(n)    result1 = result2 = 0    for i in n[:len(n)//2]:        result1 += int(i)    for i in n[len(n)//2:]:        result2 += int(i)    return result1 == result2\n","dateCreated":"2020-03-07T16:23:47+09:00","dateModified":"2020-03-07T16:34:50+09:00","datePublished":"2020-03-07T16:23:47+09:00","description":"","headline":"[CodeSignal] #11 isLucky","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"https://kyounghwankim.github.io/2020/03/07/CodeSignal-11-isLucky/"},"publisher":{"@type":"Organization","name":"Cuws","sameAs":["https://github.com/","http://stackoverflow.com/users","https://twitter.com/","https://facebook.com/","https://plus.google.com/","https://www.linkedin.com/profile/","mailto"]},"url":"https://kyounghwankim.github.io/2020/03/07/CodeSignal-11-isLucky/"}</script>
+    <meta name="description" content="DescriptionTicket numbers usually consist of an even number of digits. A ticket number is considered lucky if the sum of the first half of the digits is equal to the sum of the second half. Given a t">
 <meta property="og:type" content="blog">
-<meta property="og:title" content="[CodeSignal] #10 commonCharacterCount">
-<meta property="og:url" content="https://kyounghwankim.github.io/2020/03/05/CodeSignal-10-commonCharacterCount/index.html">
+<meta property="og:title" content="[CodeSignal] #11 isLucky">
+<meta property="og:url" content="https://kyounghwankim.github.io/2020/03/07/CodeSignal-11-isLucky/index.html">
 <meta property="og:site_name" content="Cuws&#39;s Note">
-<meta property="og:description" content="DescriptionGiven two strings, find the number of common characters between them. ExampleFor s1 &#x3D; &quot;aabcc&quot; and s2 &#x3D; &quot;adcaa&quot;, the output should be commonCharacterCount(s1, s2) &#x3D; 3. S">
+<meta property="og:description" content="DescriptionTicket numbers usually consist of an even number of digits. A ticket number is considered lucky if the sum of the first half of the digits is equal to the sum of the second half. Given a t">
 <meta property="og:locale" content="ko_KR">
-<meta property="article:published_time" content="2020-03-05T06:31:46.000Z">
-<meta property="article:modified_time" content="2020-03-05T06:37:40.096Z">
+<meta property="article:published_time" content="2020-03-07T07:23:47.000Z">
+<meta property="article:modified_time" content="2020-03-07T07:34:50.578Z">
 <meta property="article:author" content="Cuws">
 <meta name="twitter:card" content="summary">
     
@@ -336,14 +336,14 @@
         <div class="post-header main-content-wrap text-left">
     
         <h1 class="post-title">
-            [CodeSignal] #10 commonCharacterCount
+            [CodeSignal] #11 isLucky
         </h1>
     
     
         <div class="post-meta">
-    <time datetime="2020-03-05T15:31:46+09:00">
+    <time datetime="2020-03-07T16:23:47+09:00">
 	
-		    2020/03/05
+		    2020/03/07
     	
     </time>
     
@@ -362,25 +362,29 @@
     <div class="post-content markdown">
         <div class="main-content-wrap">
             <!-- excerpt -->
-<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Given two strings, find the number of common characters between them.</p>
-<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><p>For <code>s1 = &quot;aabcc&quot;</code> and <code>s2 = &quot;adcaa&quot;</code>, the output should be <code>commonCharacterCount(s1, s2) = 3</code>.</p>
-<p>Strings have <code>3</code> common characters - <code>2</code> “a”s and <code>1</code> “c”.</p>
+<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Ticket numbers usually consist of an even number of digits. A ticket number is considered lucky if the sum of the first half of the digits is equal to the sum of the second half.</p>
+<p>Given a ticket number <code>n</code>, determine if it’s lucky or not.</p>
+<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><ul>
+<li><p>For <code>n = 1230</code>, the output should be <code>isLucky(n) = true</code>;</p>
+</li>
+<li><p>For <code>n = 239017</code>, the output should be <code>isLucky(n) = false</code>.</p>
+</li>
+</ul>
 <h3 id="Input-Output"><a href="#Input-Output" class="headerlink" title="Input/Output"></a>Input/Output</h3><ul>
 <li><p><strong>[execution time limit] 4 seconds (py3)</strong></p>
 </li>
-<li><p><strong>[input] string s1</strong></p>
-<p>  A string consisting of lowercase English letters.</p>
-<p>  <em>Guaranteed constraints :</em> <code>1 ≤ s1.length &lt; 15</code>.</p>
+<li><p><strong>[input] integer n</strong></p>
+<p>  A ticket number represented as a positive integer with an even number of digits.</p>
+<p>  <em>Guaranteed constraints :</em> 10 ≤ n &lt; 10<sup>6</sup>.</p>
 </li>
-<li><p><strong>[input] string s2</strong></p>
-<p>  A string consisting of lowercase English letters.</p>
-<p>  <em>Guaranteed constraints :</em> <code>1 ≤ s2.length &lt; 15</code>.</p>
-</li>
-<li><p><strong>[output] integer</strong></p>
+<li><p><strong>[output] boolean</strong></p>
+<ul>
+<li><code>true</code> if <code>n</code> is a lucky ticket number, <code>false</code> otherwise.</li>
+</ul>
 </li>
 </ul>
 <hr>
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">commonCharacterCount</span><span class="params">(s1, s2)</span>:</span></span><br><span class="line">    check1 = [<span class="number">0</span> <span class="keyword">for</span> _ <span class="keyword">in</span> range(<span class="number">26</span>)]</span><br><span class="line">    check2 = [<span class="number">0</span> <span class="keyword">for</span> _ <span class="keyword">in</span> range(<span class="number">26</span>)]</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> s1:</span><br><span class="line">        check1[ord(i) - ord(<span class="string">'a'</span>)] += <span class="number">1</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> s2:</span><br><span class="line">        check2[ord(i) - ord(<span class="string">'a'</span>)] += <span class="number">1</span></span><br><span class="line">    answer = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i, j <span class="keyword">in</span> zip(check1, check2):</span><br><span class="line">        <span class="keyword">if</span> i != <span class="number">0</span> <span class="keyword">and</span> j != <span class="number">0</span>:</span><br><span class="line">            answer += min(i, j)</span><br><span class="line">    <span class="keyword">return</span> answer</span><br></pre></td></tr></table></figure>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">isLucky</span><span class="params">(n)</span>:</span></span><br><span class="line">    n = str(n)</span><br><span class="line">    result1 = result2 = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> n[:len(n)//<span class="number">2</span>]:</span><br><span class="line">        result1 += int(i)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> n[len(n)//<span class="number">2</span>:]:</span><br><span class="line">        result2 += int(i)</span><br><span class="line">    <span class="keyword">return</span> result1 == result2</span><br></pre></td></tr></table></figure>
 <h1 id="table-of-contents">목차</h1><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Description"><span class="toc-text">Description</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Example"><span class="toc-text">Example</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Input-Output"><span class="toc-text">Input&#x2F;Output</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Solution"><span class="toc-text">Solution</span></a></li></ol>
             
 
@@ -398,9 +402,9 @@
                     
                 <a
                     class="post-action-btn btn btn--default tooltip--top"
-                    href="/2020/03/07/CodeSignal-11-isLucky/"
-                    data-tooltip="[CodeSignal] #11 isLucky"
-                    aria-label="이전: [CodeSignal] #11 isLucky"
+                    href="/2020/03/07/CodeSignal-12-sortByHeight/"
+                    data-tooltip="[CodeSignal] #12 sortByHeight"
+                    aria-label="이전: [CodeSignal] #12 sortByHeight"
                 >
                     
                         <i class="fa fa-angle-left" aria-hidden="true"></i>
@@ -412,9 +416,9 @@
                     
                 <a
                     class="post-action-btn btn btn--default tooltip--top"
-                    href="/2020/03/05/CodeSignal-9-All-Longest-Strings/"
-                    data-tooltip="[CodeSignal] #9 All Longest Strings"
-                    aria-label="다음: [CodeSignal] #9 All Longest Strings"
+                    href="/2020/03/05/CodeSignal-10-commonCharacterCount/"
+                    data-tooltip="[CodeSignal] #10 commonCharacterCount"
+                    aria-label="다음: [CodeSignal] #10 commonCharacterCount"
                 >
                     
                         <span class="hide-xs hide-sm text-small icon-mr">다음</span>
@@ -439,7 +443,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://kyounghwankim.github.io/2020/03/05/CodeSignal-10-commonCharacterCount/"
+                    target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://kyounghwankim.github.io/2020/03/07/CodeSignal-11-isLucky/"
                     title="Facebook에 공유하기"
                     aria-label="Facebook에 공유하기"
                 >
@@ -452,7 +456,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://twitter.com/intent/tweet?text=https://kyounghwankim.github.io/2020/03/05/CodeSignal-10-commonCharacterCount/"
+                    target="new" href="https://twitter.com/intent/tweet?text=https://kyounghwankim.github.io/2020/03/07/CodeSignal-11-isLucky/"
                     title="Twitter에 공유하기"
                     aria-label="Twitter에 공유하기"
                 >
@@ -465,7 +469,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://plus.google.com/share?url=https://kyounghwankim.github.io/2020/03/05/CodeSignal-10-commonCharacterCount/"
+                    target="new" href="https://plus.google.com/share?url=https://kyounghwankim.github.io/2020/03/07/CodeSignal-11-isLucky/"
                     title="Google+에 공유하기"
                     aria-label="Google+에 공유하기"
                 >
@@ -513,9 +517,9 @@
                     
                 <a
                     class="post-action-btn btn btn--default tooltip--top"
-                    href="/2020/03/07/CodeSignal-11-isLucky/"
-                    data-tooltip="[CodeSignal] #11 isLucky"
-                    aria-label="이전: [CodeSignal] #11 isLucky"
+                    href="/2020/03/07/CodeSignal-12-sortByHeight/"
+                    data-tooltip="[CodeSignal] #12 sortByHeight"
+                    aria-label="이전: [CodeSignal] #12 sortByHeight"
                 >
                     
                         <i class="fa fa-angle-left" aria-hidden="true"></i>
@@ -527,9 +531,9 @@
                     
                 <a
                     class="post-action-btn btn btn--default tooltip--top"
-                    href="/2020/03/05/CodeSignal-9-All-Longest-Strings/"
-                    data-tooltip="[CodeSignal] #9 All Longest Strings"
-                    aria-label="다음: [CodeSignal] #9 All Longest Strings"
+                    href="/2020/03/05/CodeSignal-10-commonCharacterCount/"
+                    data-tooltip="[CodeSignal] #10 commonCharacterCount"
+                    aria-label="다음: [CodeSignal] #10 commonCharacterCount"
                 >
                     
                         <span class="hide-xs hide-sm text-small icon-mr">다음</span>
@@ -554,7 +558,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://kyounghwankim.github.io/2020/03/05/CodeSignal-10-commonCharacterCount/"
+                    target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://kyounghwankim.github.io/2020/03/07/CodeSignal-11-isLucky/"
                     title="Facebook에 공유하기"
                     aria-label="Facebook에 공유하기"
                 >
@@ -567,7 +571,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://twitter.com/intent/tweet?text=https://kyounghwankim.github.io/2020/03/05/CodeSignal-10-commonCharacterCount/"
+                    target="new" href="https://twitter.com/intent/tweet?text=https://kyounghwankim.github.io/2020/03/07/CodeSignal-11-isLucky/"
                     title="Twitter에 공유하기"
                     aria-label="Twitter에 공유하기"
                 >
@@ -580,7 +584,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://plus.google.com/share?url=https://kyounghwankim.github.io/2020/03/05/CodeSignal-10-commonCharacterCount/"
+                    target="new" href="https://plus.google.com/share?url=https://kyounghwankim.github.io/2020/03/07/CodeSignal-11-isLucky/"
                     title="Google+에 공유하기"
                     aria-label="Google+에 공유하기"
                 >
@@ -614,7 +618,7 @@
                     <a
                         class="share-option-btn"
                         target="new"
-                        href="https://www.facebook.com/sharer/sharer.php?u=https://kyounghwankim.github.io/2020/03/05/CodeSignal-10-commonCharacterCount/"
+                        href="https://www.facebook.com/sharer/sharer.php?u=https://kyounghwankim.github.io/2020/03/07/CodeSignal-11-isLucky/"
                         aria-label="Facebook에 공유하기"
                     >
                         <i class="fab fa-facebook" aria-hidden="true"></i><span>Facebook에 공유하기</span>
@@ -627,7 +631,7 @@
                     <a
                         class="share-option-btn"
                         target="new"
-                        href="https://twitter.com/intent/tweet?text=https://kyounghwankim.github.io/2020/03/05/CodeSignal-10-commonCharacterCount/"
+                        href="https://twitter.com/intent/tweet?text=https://kyounghwankim.github.io/2020/03/07/CodeSignal-11-isLucky/"
                         aria-label="Twitter에 공유하기"
                     >
                         <i class="fab fa-twitter" aria-hidden="true"></i><span>Twitter에 공유하기</span>
@@ -640,7 +644,7 @@
                     <a
                         class="share-option-btn"
                         target="new"
-                        href="https://plus.google.com/share?url=https://kyounghwankim.github.io/2020/03/05/CodeSignal-10-commonCharacterCount/"
+                        href="https://plus.google.com/share?url=https://kyounghwankim.github.io/2020/03/07/CodeSignal-11-isLucky/"
                         aria-label="Google+에 공유하기"
                     >
                         <i class="fab fa-google-plus" aria-hidden="true"></i><span>Google+에 공유하기</span>
