@@ -7,19 +7,17 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>[CodeSignal] #4 adjacentElementsProduct - Cuws&#39;s Note</title>
+<title>[CodeSignal] #16 Are Similar? - Cuws&#39;s Note</title>
 
 
-    <meta name="description" content="DescriptionGiven an array of integers, find the pair of adjacent elements that has the largest product and return that product. ExampleFor inputArray &#x3D; [3, 6, -2, -5, 7, 3], the output should be adja">
-<meta property="og:type" content="article">
-<meta property="og:title" content="[CodeSignal] #4 adjacentElementsProduct">
-<meta property="og:url" content="https://kyounghwankim.github.io/2020/03/02/CodeSignal-4-adjacentElementsProduct/index.html">
+    <meta property="og:type" content="article">
+<meta property="og:title" content="[CodeSignal] #16 Are Similar?">
+<meta property="og:url" content="https://kyounghwankim.github.io/2020/03/08/CodeSignal-16-Are-Similar/index.html">
 <meta property="og:site_name" content="Cuws&#39;s Note">
-<meta property="og:description" content="DescriptionGiven an array of integers, find the pair of adjacent elements that has the largest product and return that product. ExampleFor inputArray &#x3D; [3, 6, -2, -5, 7, 3], the output should be adja">
 <meta property="og:locale" content="ko_KR">
 <meta property="og:image" content="https://kyounghwankim.github.io/images/og_image.png">
-<meta property="article:published_time" content="2020-03-02T08:31:08.000Z">
-<meta property="article:modified_time" content="2020-03-02T08:56:07.043Z">
+<meta property="article:published_time" content="2020-03-08T04:50:40.000Z">
+<meta property="article:modified_time" content="2020-03-08T04:50:40.782Z">
 <meta property="article:author" content="Cuws">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://kyounghwankim.github.io/images/og_image.png">
@@ -80,7 +78,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.svg" alt="[CodeSignal] #4 adjacentElementsProduct" height="28">
+                <img src="/images/logo.svg" alt="[CodeSignal] #16 Are Similar?" height="28">
             
             </a>
         </div>
@@ -136,11 +134,7 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-03-02T08:31:08.000Z">2020-03-02</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
-                </div>
+                <time class="level-item has-text-grey" datetime="2020-03-08T04:50:40.000Z">2020-03-08</time>
                 
                 
                 
@@ -149,29 +143,11 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                [CodeSignal] #4 adjacentElementsProduct
+                [CodeSignal] #16 Are Similar?
             
         </h1>
         <div class="content">
             <!-- excerpt -->
-<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Given an array of integers, find the pair of adjacent elements that has the largest product and return that product.</p>
-<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><p>For <code>inputArray = [3, 6, -2, -5, 7, 3]</code>, the output should be <code>adjacentElementsProduct(inputArray) = 21</code>.</p>
-<p><code>7</code> and <code>3</code> produce the largest product.</p>
-<h3 id="Input-Output"><a href="#Input-Output" class="headerlink" title="Input/Output"></a>Input/Output</h3><ul>
-<li><p><strong>[execution time limit] 4 seconds (py3)</strong></p>
-</li>
-<li><p><strong>[input] array.integer inputArray</strong></p>
-<p>  An array of integers containing at least two elements.</p>
-<p>  <em>Guaranteed constraints :</em> <code>2 ≤ inputArray.length ≤ 10</code>, <code>-1000 ≤ inputArray[i] ≤ 1000</code>.</p>
-</li>
-<li><p><strong>[output] integer</strong>  </p>
-<ul>
-<li>The largest product of adjacent elements.</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">adjacentElementsProduct</span><span class="params">(inputArray)</span>:</span></span><br><span class="line">    m = <span class="number">-2222</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>, len(inputArray)):</span><br><span class="line">        <span class="keyword">if</span> m &lt; inputArray[i<span class="number">-1</span>] * inputArray[i]:</span><br><span class="line">            m = inputArray[i<span class="number">-1</span>] * inputArray[i]</span><br><span class="line">    <span class="keyword">return</span> m</span><br></pre></td></tr></table></figure>
 <!-- toc -->
         </div>
         
@@ -221,17 +197,10 @@
 <div class="card card-transparent">
     <div class="level post-navigation is-flex-wrap is-mobile">
         
-        <div class="level-start">
-            <a class="level level-item has-link-grey  article-nav-prev" href="/2020/03/02/CodeSignal-5-shapeArea/">
-                <i class="level-item fas fa-chevron-left"></i>
-                <span class="level-item">[CodeSignal] #5 shapeArea</span>
-            </a>
-        </div>
-        
         
         <div class="level-end">
-            <a class="level level-item has-link-grey  article-nav-next" href="/2020/02/28/CodeSignal-3-checkPalindrome/">
-                <span class="level-item">[CodeSignal] #3 checkPalindrome</span>
+            <a class="level level-item has-link-grey  article-nav-next" href="/2020/03/08/CodeSignal-15-Add-Border/">
+                <span class="level-item">[CodeSignal] #15 Add Border</span>
                 <i class="level-item fas fa-chevron-right"></i>
             </a>
         </div>
@@ -705,7 +674,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.svg" alt="[CodeSignal] #4 adjacentElementsProduct" height="28">
+                    <img src="/images/logo.svg" alt="[CodeSignal] #16 Are Similar?" height="28">
                 
                 </a>
                 <p class="is-size-7">
