@@ -146,6 +146,65 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-03-05T06:31:46.000Z">2020-03-05</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2020/03/05/CodeSignal-10-commonCharacterCount/">[CodeSignal] #10 commonCharacterCount</a>
+            
+        </h1>
+        <div class="content">
+            <!-- excerpt -->
+<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Given two strings, find the number of common characters between them.</p>
+<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><p>For <code>s1 = &quot;aabcc&quot;</code> and <code>s2 = &quot;adcaa&quot;</code>, the output should be <code>commonCharacterCount(s1, s2) = 3</code>.</p>
+<p>Strings have <code>3</code> common characters - <code>2</code> “a”s and <code>1</code> “c”.</p>
+<h3 id="Input-Output"><a href="#Input-Output" class="headerlink" title="Input/Output"></a>Input/Output</h3><ul>
+<li><p><strong>[execution time limit] 4 seconds (py3)</strong></p>
+</li>
+<li><p><strong>[input] string s1</strong></p>
+<p>  A string consisting of lowercase English letters.</p>
+<p>  <em>Guaranteed constraints :</em> <code>1 ≤ s1.length &lt; 15</code>.</p>
+</li>
+<li><p><strong>[input] string s2</strong></p>
+<p>  A string consisting of lowercase English letters.</p>
+<p>  <em>Guaranteed constraints :</em> <code>1 ≤ s2.length &lt; 15</code>.</p>
+</li>
+<li><p><strong>[output] integer</strong></p>
+</li>
+</ul>
+<hr>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">commonCharacterCount</span><span class="params">(s1, s2)</span>:</span></span><br><span class="line">    check1 = [<span class="number">0</span> <span class="keyword">for</span> _ <span class="keyword">in</span> range(<span class="number">26</span>)]</span><br><span class="line">    check2 = [<span class="number">0</span> <span class="keyword">for</span> _ <span class="keyword">in</span> range(<span class="number">26</span>)]</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> s1:</span><br><span class="line">        check1[ord(i) - ord(<span class="string">'a'</span>)] += <span class="number">1</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> s2:</span><br><span class="line">        check2[ord(i) - ord(<span class="string">'a'</span>)] += <span class="number">1</span></span><br><span class="line">    answer = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i, j <span class="keyword">in</span> zip(check1, check2):</span><br><span class="line">        <span class="keyword">if</span> i != <span class="number">0</span> <span class="keyword">and</span> j != <span class="number">0</span>:</span><br><span class="line">            answer += min(i, j)</span><br><span class="line">    <span class="keyword">return</span> answer</span><br></pre></td></tr></table></figure>
+<!-- toc -->
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    
+<div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
                 <time class="level-item has-text-grey" datetime="2020-03-05T06:07:26.000Z">2020-03-05</time>
                 
                 <div class="level-item">
@@ -743,7 +802,7 @@
                     </p>
                     <a href="/archives">
                         <p class="title has-text-weight-normal">
-                            19
+                            20
                         </p>
                     </a>
                 </div>
@@ -875,7 +934,7 @@
                 <span class="level-item">Algorithm</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">19</span>
+                <span class="level-item tag">20</span>
             </span>
         </a><ul><li>
         <a class="level is-marginless" href="/categories/Algorithm/CodeSignal/">
@@ -883,7 +942,7 @@
                 <span class="level-item">CodeSignal</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">19</span>
+                <span class="level-item tag">20</span>
             </span>
         </a></li></ul></li>
             </ul>
@@ -901,6 +960,19 @@
         <h3 class="menu-label">
             최근 글
         </h3>
+        
+        <article class="media">
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-08T16:33:25.000Z">2020-03-09</time></div>
+                    <a href="/2020/03/09/CodeSignal-20-arrayMaximalAdjacentDifference/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #20 arrayMaximalAdjacentDifference</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -954,19 +1026,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-08T04:13:31.000Z">2020-03-08</time></div>
-                    <a href="/2020/03/08/CodeSignal-15-Add-Border/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #15 Add Border</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
         
@@ -984,7 +1043,7 @@
                     <span class="level-item">3월 2020</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">16</span>
+                    <span class="level-item tag">17</span>
                 </span>
             </a>
         </li>
@@ -1039,6 +1098,19 @@
             
             <div class="media-content">
                 <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-08T16:33:25.000Z">2020-03-09</time></div>
+                    <a href="/2020/03/09/CodeSignal-20-arrayMaximalAdjacentDifference/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #20 arrayMaximalAdjacentDifference</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <div class="media-content">
+                <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-08T16:25:49.000Z">2020-03-09</time></div>
                     <a href="/2020/03/09/CodeSignal-19-areEquallyStrong/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #19 areEquallyStrong</a>
                     <p class="is-size-7 is-uppercase">
@@ -1087,19 +1159,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-08T04:13:31.000Z">2020-03-08</time></div>
-                    <a href="/2020/03/08/CodeSignal-15-Add-Border/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #15 Add Border</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
     
@@ -1117,7 +1176,7 @@
                     <span class="level-item">3월 2020</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">16</span>
+                    <span class="level-item tag">17</span>
                 </span>
             </a>
         </li>
@@ -1286,7 +1345,7 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
 
 
-<a id="back-to-top" title="Zurück nach oben" href="javascript:;">
+<a id="back-to-top" title="Back to Top" href="javascript:;">
     <i class="fas fa-chevron-up"></i>
 </a>
 <script src="/js/back-to-top.js" defer></script>
