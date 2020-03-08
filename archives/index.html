@@ -335,6 +335,85 @@
                     
                         <a
                             class="link-unstyled"
+                            href="/2020/03/08/CodeSignal-15-Add-Border/"
+                            aria-label=": [CodeSignal] #15 Add Border"
+                        >
+                            [CodeSignal] #15 Add Border
+                        </a>
+                    
+                </h1>
+                <div class="postShorten-meta">
+    <time datetime="2020-03-08T13:13:31+09:00">
+	
+		    2020/03/08
+    	
+    </time>
+    
+        <span>카테고리 </span>
+        
+    <a class="category-link" href="/categories/Algorithm/">Algorithm</a>, <a class="category-link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
+
+
+    
+</div>
+
+            </div>
+            
+                <div class="postShorten-content">
+                    <!-- excerpt -->
+<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Given a rectangular matrix of characters, add a border of asterisks(<code>*</code>) to it.</p>
+<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><p>For</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">picture &#x3D; [&quot;abc&quot;,</span><br><span class="line">                    &quot;ded&quot;]</span><br></pre></td></tr></table></figure>
+<p>the output should be</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">addBorder(picture) &#x3D; [&quot;*****&quot;, </span><br><span class="line">                                           &quot;*abc*&quot;,</span><br><span class="line">                                           &quot;*ded*&quot;,</span><br><span class="line">                                           &quot;*****&quot;]</span><br></pre></td></tr></table></figure>
+
+<h3 id="Input-Output"><a href="#Input-Output" class="headerlink" title="Input/Output"></a>Input/Output</h3><ul>
+<li><p><strong>[execution time limit] 4 seconds (py3)</strong></p>
+</li>
+<li><p><strong>[input] array.string picture</strong></p>
+<p>  A non-empty array of non-empty equal-length strings.</p>
+<p>  <em>Guaranteed constraints :</em> <code>1 ≤ picture.length ≤ 100</code>, <code>1 ≤ picture[i].length ≤ 100</code>.</p>
+</li>
+<li><p><strong>[output] array.string</strong></p>
+<ul>
+<li>The same matrix of characters, framed with a border of asterisks of width <code>1</code>.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">addBorder</span><span class="params">(picture)</span>:</span></span><br><span class="line">    result = []</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(len(picture) + <span class="number">2</span>):</span><br><span class="line">        <span class="keyword">if</span> i == <span class="number">0</span> <span class="keyword">or</span> i == len(picture) + <span class="number">1</span>:</span><br><span class="line">            temp = <span class="string">'*'</span> * (len(picture[<span class="number">0</span>]) + <span class="number">2</span>)</span><br><span class="line">            result.append(temp)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            result.append(<span class="string">'*'</span> + picture[i<span class="number">-1</span>] + <span class="string">'*'</span>)</span><br><span class="line">    <span class="keyword">return</span> result</span><br></pre></td></tr></table></figure>
+<h1 id="table-of-contents">목차</h1><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Description"><span class="toc-text">Description</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Example"><span class="toc-text">Example</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Input-Output"><span class="toc-text">Input&#x2F;Output</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Solution"><span class="toc-text">Solution</span></a></li></ol>
+                    
+                        
+
+
+                    
+                    
+                        <p>
+                            <a
+                                href="/2020/03/08/CodeSignal-15-Add-Border/#post-footer"
+                                class="postShorten-excerpt_link link"
+                                aria-label=""
+                            >
+                                댓글 공유
+                            </a>
+                        </p>
+                    
+                </div>
+            
+        </div>
+        
+    </article>
+    
+    
+    <article class="postShorten postShorten--thumbnailimg-bottom">
+        <div class="postShorten-wrap">
+            
+            <div class="postShorten-header">
+                <h1 class="postShorten-title">
+                    
+                        <a
+                            class="link-unstyled"
                             href="/2020/03/07/CodeSignal-14-alternatingSums/"
                             aria-label=": [CodeSignal] #14 alternatingSums"
                         >
@@ -1021,83 +1100,6 @@
                         <p>
                             <a
                                 href="/2020/03/03/CodeSignal-6-Make-Array-Consecutive-2/#post-footer"
-                                class="postShorten-excerpt_link link"
-                                aria-label=""
-                            >
-                                댓글 공유
-                            </a>
-                        </p>
-                    
-                </div>
-            
-        </div>
-        
-    </article>
-    
-    
-    <article class="postShorten postShorten--thumbnailimg-bottom">
-        <div class="postShorten-wrap">
-            
-            <div class="postShorten-header">
-                <h1 class="postShorten-title">
-                    
-                        <a
-                            class="link-unstyled"
-                            href="/2020/03/02/CodeSignal-5-shapeArea/"
-                            aria-label=": [CodeSignal] #5 shapeArea"
-                        >
-                            [CodeSignal] #5 shapeArea
-                        </a>
-                    
-                </h1>
-                <div class="postShorten-meta">
-    <time datetime="2020-03-02T17:58:26+09:00">
-	
-		    2020/03/02
-    	
-    </time>
-    
-        <span>카테고리 </span>
-        
-    <a class="category-link" href="/categories/Algorithm/">Algorithm</a>, <a class="category-link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
-
-
-    
-</div>
-
-            </div>
-            
-                <div class="postShorten-content">
-                    <!-- excerpt -->
-<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Below we will define an <code>n</code>-interesting polygon. Your task is to find the area of a polygon for a given <code>n</code>.</p>
-<p>A <code>1</code>-interesting polygon is just a square with a side of length <code>1</code>. An <code>n</code>-interesting polygon is obtained by taking the <code>n - 1</code>-interesting polygon and appending 1-interesting polygons to its rim, side by side. You can see the <code>1</code>-, <code>2</code>-, <code>3</code>- and <code>4</code>-interesting polygons in the picture below.</p>
-<p><img src="img/shapeArea1.png" alt="Deascription"></p>
-<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><p>For <code>n = 2</code>, the output should be <code>shapeArea(n) = 5</code>.</p>
-<p>For <code>n = 3</code>, the output should be <code>shapeArea(n) = 13</code>.</p>
-<h3 id="Input-Output"><a href="#Input-Output" class="headerlink" title="Input/Output"></a>Input/Output</h3><ul>
-<li><p><strong>[execution time limit] 4 seconds (py3)</strong></p>
-</li>
-<li><p><strong>[input] integer n</strong></p>
-<p>  <em>Guaranteed constraints :</em> 1 ≤ n &lt; 10<sup>4</sup>.</p>
-</li>
-<li><p><strong>[output] integer</strong>  </p>
-<ul>
-<li>The area of the <code>n</code>-interesting polygon.</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">shapeArea</span><span class="params">(n)</span>:</span></span><br><span class="line">    result = <span class="number">1</span></span><br><span class="line">    add = <span class="number">4</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>, n):</span><br><span class="line">        result += add * i</span><br><span class="line">    <span class="keyword">return</span> result</span><br></pre></td></tr></table></figure>
-<h1 id="table-of-contents">목차</h1><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Description"><span class="toc-text">Description</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Example"><span class="toc-text">Example</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Input-Output"><span class="toc-text">Input&#x2F;Output</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Solution"><span class="toc-text">Solution</span></a></li></ol>
-                    
-                        
-
-
-                    
-                    
-                        <p>
-                            <a
-                                href="/2020/03/02/CodeSignal-5-shapeArea/#post-footer"
                                 class="postShorten-excerpt_link link"
                                 aria-label=""
                             >
