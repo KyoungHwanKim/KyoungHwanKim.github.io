@@ -144,6 +144,191 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-03-05T05:45:26.000Z">2020-03-05</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2020/03/05/CodeSignal-8-matrixElementsSum/">[CodeSignal] #8 matrixElementsSum</a>
+            
+        </h1>
+        <div class="content">
+            <!-- excerpt -->
+<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>After becoming famous, the CodeBots decided to move into a new building together. Each of the rooms has a different cost, and some of them are free, but there’s a rumour that all the free rooms are haunted! Since the CodeBots are quite superstitious, they refuse to stay in any of the free rooms, <strong>or any of the rooms below any of the free rooms.</strong></p>
+<p>Given <code>matrix</code>, a rectangular matrix of integers, where each value represents the cost of the room, your task is to return the total sum of all rooms that are suitable for the CodeBots (ie: add up all the values that don’t appear below a <code>0</code>).</p>
+<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><ul>
+<li><p>For <code>matrix = [[0, 1, 1, 2], [0, 5, 0, 0], [2, 0, 3, 3]]</code> the output should be <code>matrixElementsSum(matrix) = 9</code>.</p>
+<p>  <img src="/img/matrixElementsSum1.png" alt="Description"></p>
+<p>  There are several haunted rooms, so we’ll disregard them as well as any rooms beneath them. Thus, the answer is <code>1 + 5 + 1 + 2 = 9</code>.</p>
+</li>
+<li><p>For <code>matrix = [[1, 1, 1, 0], [0, 5, 0, 1], [2, 1, 3, 10]]</code> the output should be <code>matrixElementsSum(matrix) = 9</code>.</p>
+<p>  <img src="/img/matrixElementsSum2.png" alt="Description"></p>
+<p>  Note that the free room in the final column makes the full column unsuitable for bots (not just the room directly beneath it). Thus, the answer is <code>1 + 1 + 1 + 5 + 1 = 9</code>.</p>
+</li>
+</ul>
+<h3 id="Input-Output"><a href="#Input-Output" class="headerlink" title="Input/Output"></a>Input/Output</h3><ul>
+<li><p><strong>[execution time limit] 4 seconds (py3)</strong></p>
+</li>
+<li><p><strong>[input] array.array.integer matrix</strong></p>
+<p>  A 2-dimensional array of integers representing the cost of each room in the building. A value of <code>0</code> indicates that the room is haunted.</p>
+<p>  <em>Guaranteed constraints :</em> <code>1 ≤ matrix.length ≤ 5</code>, <code>1 ≤ matrix[i].length ≤ 5</code>, <code>0 ≤ matrix[i][j] ≤ 10</code>.</p>
+</li>
+<li><p><strong>[output] integer</strong>  </p>
+<ul>
+<li>The total price of all the rooms that are suitable for the CodeBots to live in.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">matrixElementsSum</span><span class="params">(matrix)</span>:</span></span><br><span class="line">    answer = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(len(matrix[<span class="number">0</span>])):</span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> range(len(matrix)):</span><br><span class="line">            <span class="keyword">if</span> matrix[j][i] == <span class="number">0</span>:</span><br><span class="line">                <span class="keyword">break</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                answer += matrix[j][i]</span><br><span class="line">    <span class="keyword">return</span> answer</span><br></pre></td></tr></table></figure>
+<!-- toc -->
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    
+<div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-03-03T14:38:07.000Z">2020-03-03</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2020/03/03/CodeSignal-7-almostIncreasingSequence/">[CodeSignal] #7 almostIncreasingSequence</a>
+            
+        </h1>
+        <div class="content">
+            <!-- excerpt -->
+<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Given a sequence of integers as an array, determine whether it is possible to obtain a strictly increasing sequence by removing no more than one element from the array.</p>
+<p>Note: sequence a<sub>0</sub>, a<sub>1</sub>, …, a<sub>n</sub> is considered to be a strictly increasing if a<sub>0</sub> &lt; a<sub>1</sub> &lt; … &lt; a<sub>n</sub>. Sequence containing only one element is also considered to be strictly increasing.</p>
+<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><p>For <code>sequence = [1, 3, 2, 1]</code>, the output should be <code>almostIncreasingSequence(sequence) = false</code>.</p>
+<p>There is no one element in this array that can be removed in order to get a strictly increasing sequence.</p>
+<p>For <code>sequence = [1, 3, 2]</code>, the output should be <code>almostIncreasingSequence(sequence) = true</code>.</p>
+<p>You can remove <code>3</code> from the array to get the strictly increasing sequence <code>[1, 2]</code>. Alternately, you can remove <code>2</code> to get the strictly increasing sequence <code>[1, 3]</code>.</p>
+<h3 id="Input-Output"><a href="#Input-Output" class="headerlink" title="Input/Output"></a>Input/Output</h3><ul>
+<li><p><strong>[execution time limit] 4 seconds (py3)</strong></p>
+</li>
+<li><p><strong>[input] array.integer sequence</strong></p>
+<p>  <em>Guaranteed constraints :</em> 2 ≤ sequence.length ≤ 10<sup>5</sup>, -10<sup>5</sup> ≤ sequence[i] ≤ 10<sup>5</sup>.</p>
+</li>
+<li><p><strong>[output] boolean</strong>  </p>
+<ul>
+<li>Return <code>true</code> if it is possible to remove one element from the array in order to get a strictly increasing sequence, otherwise return <code>false</code>.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">almostIncreasingSequence</span><span class="params">(sequence)</span>:</span></span><br><span class="line">    ans = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(len(sequence) - <span class="number">1</span>):</span><br><span class="line">        <span class="keyword">if</span> sequence[i] &gt;= sequence[i + <span class="number">1</span>]:</span><br><span class="line">            ans += <span class="number">1</span></span><br><span class="line">            <span class="keyword">if</span> i &gt;= <span class="number">1</span> <span class="keyword">and</span> sequence[i + <span class="number">1</span>] &lt;= sequence[i - <span class="number">1</span>]:</span><br><span class="line">                <span class="keyword">if</span> len(sequence) - <span class="number">2</span> &gt; i <span class="keyword">and</span> sequence[i] &gt;= sequence[i + <span class="number">2</span>]:</span><br><span class="line">                    ans += <span class="number">1</span></span><br><span class="line">    <span class="keyword">if</span> ans &gt; <span class="number">1</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">True</span></span><br></pre></td></tr></table></figure>
+<!-- toc -->
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    
+<div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-03-03T14:23:23.000Z">2020-03-03</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2020/03/03/CodeSignal-6-Make-Array-Consecutive-2/">[CodeSignal] #6 Make Array Consecutive 2</a>
+            
+        </h1>
+        <div class="content">
+            <!-- excerpt -->
+<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Ratiorg got <code>statues</code> of different sizes as a present from CodeMaster for his birthday, each statue having an non-negative integer size. Since he likes to make things perfect, he wants to arrange them from smallest to largest so that each statue will be bigger than the previous one exactly by <code>1</code>. He may need some additional statues to be able to accomplish that. Help him figure out the minimum number of additional statues needed.</p>
+<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><p>For <code>statues = [6, 2, 3, 8]</code>, the output should be <code>makeArrayConsecutive2(statues) = 3</code>.</p>
+<p>Ratiorg needs statues of sizes <code>4</code>, <code>5</code> and <code>7</code>.</p>
+<h3 id="Input-Output"><a href="#Input-Output" class="headerlink" title="Input/Output"></a>Input/Output</h3><ul>
+<li><p><strong>[execution time limit] 4 seconds (py3)</strong></p>
+</li>
+<li><p><strong>[input] array.integer statues</strong></p>
+<p>  An array of distinct non-negative integers.</p>
+<p>  <em>Guaranteed constraints :</em> <code>1 ≤ statues.length ≤ 10</code>, <code>0 ≤ statues[i] ≤ 20</code>.</p>
+</li>
+<li><p><strong>[output] integer</strong>  </p>
+<ul>
+<li>The minimal number of statues that need to be added to existing <code>statues</code> such that it contains every integer size from an interval <code>[L, R]</code> (for some <code>L, R</code>) and no other sizes.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">makeArrayConsecutive2</span><span class="params">(statues)</span>:</span></span><br><span class="line">    statues.sort()</span><br><span class="line">    check = [<span class="number">0</span> <span class="keyword">for</span> _ <span class="keyword">in</span> range(statues[<span class="number">-1</span>]+<span class="number">1</span>)]</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> statues:</span><br><span class="line">        check[i] = <span class="number">1</span></span><br><span class="line">    answer = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(statues[<span class="number">0</span>], statues[<span class="number">-1</span>]+<span class="number">1</span>):</span><br><span class="line">        <span class="keyword">if</span> check[i] != <span class="number">1</span>:</span><br><span class="line">            answer += <span class="number">1</span></span><br><span class="line">    <span class="keyword">return</span> answer</span><br></pre></td></tr></table></figure>
+<!-- toc -->
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    
+<div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
                 <time class="level-item has-text-grey" datetime="2020-03-02T08:58:26.000Z">2020-03-02</time>
                 
                 <div class="level-item">
@@ -499,7 +684,7 @@
                     </p>
                     <a href="/archives">
                         <p class="title has-text-weight-normal">
-                            16
+                            18
                         </p>
                     </a>
                 </div>
@@ -631,7 +816,7 @@
                 <span class="level-item">Algorithm</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">15</span>
+                <span class="level-item tag">18</span>
             </span>
         </a><ul><li>
         <a class="level is-marginless" href="/categories/Algorithm/CodeSignal/">
@@ -639,7 +824,7 @@
                 <span class="level-item">CodeSignal</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">15</span>
+                <span class="level-item tag">18</span>
             </span>
         </a></li></ul></li>
             </ul>
@@ -662,10 +847,36 @@
             
             <div class="media-content">
                 <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-08T14:12:01.000Z">2020-03-08</time></div>
+                    <a href="/2020/03/08/CodeSignal-18-palindromeRearranging/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #18 palindromeRearranging</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-08T13:53:25.000Z">2020-03-08</time></div>
+                    <a href="/2020/03/08/CodeSignal-17-arrayChange/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #17 arrayChange</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <div class="media-content">
+                <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-08T04:50:40.000Z">2020-03-08</time></div>
                     <a href="/2020/03/08/CodeSignal-16-Are-Similar/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #16 Are Similar?</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
                     </p>
                 </div>
             </div>
@@ -697,32 +908,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-07T09:09:23.000Z">2020-03-07</time></div>
-                    <a href="/2020/03/07/CodeSignal-13-reverseInParentheses/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #13 reverseInParentheses</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-07T07:35:35.000Z">2020-03-07</time></div>
-                    <a href="/2020/03/07/CodeSignal-12-sortByHeight/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #12 sortByHeight</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
         
@@ -740,7 +925,7 @@
                     <span class="level-item">3월 2020</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">13</span>
+                    <span class="level-item tag">15</span>
                 </span>
             </a>
         </li>
@@ -795,10 +980,36 @@
             
             <div class="media-content">
                 <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-08T14:12:01.000Z">2020-03-08</time></div>
+                    <a href="/2020/03/08/CodeSignal-18-palindromeRearranging/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #18 palindromeRearranging</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-08T13:53:25.000Z">2020-03-08</time></div>
+                    <a href="/2020/03/08/CodeSignal-17-arrayChange/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #17 arrayChange</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <div class="media-content">
+                <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-08T04:50:40.000Z">2020-03-08</time></div>
                     <a href="/2020/03/08/CodeSignal-16-Are-Similar/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #16 Are Similar?</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
                     </p>
                 </div>
             </div>
@@ -830,32 +1041,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-07T09:09:23.000Z">2020-03-07</time></div>
-                    <a href="/2020/03/07/CodeSignal-13-reverseInParentheses/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #13 reverseInParentheses</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-07T07:35:35.000Z">2020-03-07</time></div>
-                    <a href="/2020/03/07/CodeSignal-12-sortByHeight/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #12 sortByHeight</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
     
@@ -873,7 +1058,7 @@
                     <span class="level-item">3월 2020</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">13</span>
+                    <span class="level-item tag">15</span>
                 </span>
             </a>
         </li>
