@@ -146,6 +146,69 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-03-07T07:23:47.000Z">2020-03-07</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2020/03/07/CodeSignal-11-isLucky/">[CodeSignal] #11 isLucky</a>
+            
+        </h1>
+        <div class="content">
+            <!-- excerpt -->
+<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Ticket numbers usually consist of an even number of digits. A ticket number is considered lucky if the sum of the first half of the digits is equal to the sum of the second half.</p>
+<p>Given a ticket number <code>n</code>, determine if it’s lucky or not.</p>
+<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><ul>
+<li><p>For <code>n = 1230</code>, the output should be <code>isLucky(n) = true</code>;</p>
+</li>
+<li><p>For <code>n = 239017</code>, the output should be <code>isLucky(n) = false</code>.</p>
+</li>
+</ul>
+<h3 id="Input-Output"><a href="#Input-Output" class="headerlink" title="Input/Output"></a>Input/Output</h3><ul>
+<li><p><strong>[execution time limit] 4 seconds (py3)</strong></p>
+</li>
+<li><p><strong>[input] integer n</strong></p>
+<p>  A ticket number represented as a positive integer with an even number of digits.</p>
+<p>  <em>Guaranteed constraints :</em> 10 ≤ n &lt; 10<sup>6</sup>.</p>
+</li>
+<li><p><strong>[output] boolean</strong></p>
+<ul>
+<li><code>true</code> if <code>n</code> is a lucky ticket number, <code>false</code> otherwise.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">isLucky</span><span class="params">(n)</span>:</span></span><br><span class="line">    n = str(n)</span><br><span class="line">    result1 = result2 = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> n[:len(n)//<span class="number">2</span>]:</span><br><span class="line">        result1 += int(i)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> n[len(n)//<span class="number">2</span>:]:</span><br><span class="line">        result2 += int(i)</span><br><span class="line">    <span class="keyword">return</span> result1 == result2</span><br></pre></td></tr></table></figure>
+<!-- toc -->
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    
+<div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
                 <time class="level-item has-text-grey" datetime="2020-03-05T06:31:46.000Z">2020-03-05</time>
                 
                 <div class="level-item">
@@ -679,65 +742,6 @@
 
 
 
-    
-<div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-02-28T02:34:45.000Z">2020-02-28</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
-                </div>
-                
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2020/02/28/CodeSignal-1-add/">[CodeSignal] #1 add</a>
-            
-        </h1>
-        <div class="content">
-            <!-- excerpt -->
-<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Write a function that returns the sum of two numbers.</p>
-<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><p>For <code>param1 = 1</code> and <code>param2 = 2</code>, the output should be <code>add(param1, param2) = 3</code>.</p>
-<h3 id="Input-Output"><a href="#Input-Output" class="headerlink" title="Input/Output"></a>Input/Output</h3><ul>
-<li><p><strong>[execution time limit] 4 seconds (py3)</strong></p>
-</li>
-<li><p><strong>[input] integer param1</strong></p>
-<p>  <em>Guaranteed constraints :</em> <code>-1000 ≤ param1 ≤ 1000</code>.</p>
-</li>
-<li><p><strong>[input] integer param2</strong></p>
-<p>  <em>Guaranteed constraints :</em> <code>-1000 ≤ param2 ≤ 1000</code>.</p>
-</li>
-<li><p><strong>[output] integer</strong>  </p>
-<ul>
-<li>The sum of the two inputs.</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">add</span><span class="params">(param1, param2)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> param1 + param2</span><br></pre></td></tr></table></figure>
-<!-- toc -->
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
 
     
 <div class="card card-transparent">
@@ -745,7 +749,7 @@
         <div class="pagination-previous">
             <a class="is-flex-grow has-text-black-ter" href="/categories/Algorithm/CodeSignal/">이전</a>
         </div>
-        <div class="pagination-next is-invisible is-hidden-mobile">
+        <div class="pagination-next">
             <a class="is-flex-grow has-text-black-ter" href="/categories/Algorithm/CodeSignal/page/3/">다음</a>
         </div>
         <ul class="pagination-list is-hidden-mobile">
@@ -753,6 +757,8 @@
             <li><a class="pagination-link has-text-black-ter" href="/categories/Algorithm/CodeSignal/">1</a></li>
             
             <li><a class="pagination-link is-current" href="/categories/Algorithm/CodeSignal/page/2/">2</a></li>
+            
+            <li><a class="pagination-link has-text-black-ter" href="/categories/Algorithm/CodeSignal/page/3/">3</a></li>
             
         </ul>
     </nav>
@@ -802,7 +808,7 @@
                     </p>
                     <a href="/archives">
                         <p class="title has-text-weight-normal">
-                            20
+                            21
                         </p>
                     </a>
                 </div>
@@ -934,7 +940,7 @@
                 <span class="level-item">Algorithm</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">20</span>
+                <span class="level-item tag">21</span>
             </span>
         </a><ul><li>
         <a class="level is-marginless" href="/categories/Algorithm/CodeSignal/">
@@ -942,7 +948,7 @@
                 <span class="level-item">CodeSignal</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">20</span>
+                <span class="level-item tag">21</span>
             </span>
         </a></li></ul></li>
             </ul>
@@ -960,6 +966,19 @@
         <h3 class="menu-label">
             최근 글
         </h3>
+        
+        <article class="media">
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-08T16:44:35.000Z">2020-03-09</time></div>
+                    <a href="/2020/03/09/CodeSignal-21-isIPv4Address/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #21 isIPv4Address</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -1013,19 +1032,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-08T04:50:40.000Z">2020-03-08</time></div>
-                    <a href="/2020/03/08/CodeSignal-16-Are-Similar/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #16 Are Similar?</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
         
@@ -1043,7 +1049,7 @@
                     <span class="level-item">3월 2020</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">17</span>
+                    <span class="level-item tag">18</span>
                 </span>
             </a>
         </li>
@@ -1098,6 +1104,19 @@
             
             <div class="media-content">
                 <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-08T16:44:35.000Z">2020-03-09</time></div>
+                    <a href="/2020/03/09/CodeSignal-21-isIPv4Address/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #21 isIPv4Address</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <div class="media-content">
+                <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-08T16:33:25.000Z">2020-03-09</time></div>
                     <a href="/2020/03/09/CodeSignal-20-arrayMaximalAdjacentDifference/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #20 arrayMaximalAdjacentDifference</a>
                     <p class="is-size-7 is-uppercase">
@@ -1146,19 +1165,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-08T04:50:40.000Z">2020-03-08</time></div>
-                    <a href="/2020/03/08/CodeSignal-16-Are-Similar/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #16 Are Similar?</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
     
@@ -1176,7 +1182,7 @@
                     <span class="level-item">3월 2020</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">17</span>
+                    <span class="level-item tag">18</span>
                 </span>
             </a>
         </li>
