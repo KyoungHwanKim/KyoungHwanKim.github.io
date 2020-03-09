@@ -144,6 +144,69 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-02-28T03:55:24.000Z">2020-02-28</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2020/02/28/CodeSignal-3-checkPalindrome/">[CodeSignal] #3 checkPalindrome</a>
+            
+        </h1>
+        <div class="content">
+            <!-- excerpt -->
+<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Given the string, check if it is a palindrome<sup><a href="#footnote_1">1</a></sup>.</p>
+<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><ul>
+<li>For <code>inputString = &quot;aabaa&quot;</code>, the output should be <code>checkPalindrome(inputString) = true</code>;</li>
+<li>For <code>inputString = &quot;abac&quot;</code>, the output should be <code>checkPalindrome(inputString) = false</code>;</li>
+<li>For <code>inputString = &quot;a&quot;</code>, the output should be <code>checkPalindrome(inputString) = true</code>.</li>
+</ul>
+<h3 id="Input-Output"><a href="#Input-Output" class="headerlink" title="Input/Output"></a>Input/Output</h3><ul>
+<li><p><strong>[execution time limit] 4 seconds (py3)</strong></p>
+</li>
+<li><p><strong>[input] string inputString</strong></p>
+<p>  A non-empty string consisting of lowercase characters.<br>  <em>Guaranteed constraints :</em> 1 ≤ inputString.length ≤ 10<sup>5</sup>.</p>
+</li>
+<li><p><strong>[output] boolean</strong>  </p>
+<ul>
+<li><code>true</code> if <code>inputString</code> is palindrome, <code>false</code> otherwise.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">checkPalindrome</span><span class="params">(inputString)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> inputString == inputString[::<span class="number">-1</span>] <span class="comment">#[::-1]은 문자열을 뒤집어 준다.</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id=""><a href="#" class="headerlink" title=""></a></h1><p><a name="footnote_1">1.</a> A palindrome is a string that reads the same left-to-right and right-to-left.</p>
+<!-- toc -->
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    
+<div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
                 <time class="level-item has-text-grey" datetime="2020-02-28T03:29:24.000Z">2020-02-28</time>
                 
                 <div class="level-item">
@@ -321,7 +384,7 @@
                     </p>
                     <a href="/archives">
                         <p class="title has-text-weight-normal">
-                            22
+                            23
                         </p>
                     </a>
                 </div>
@@ -453,7 +516,7 @@
                 <span class="level-item">Algorithm</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">22</span>
+                <span class="level-item tag">23</span>
             </span>
         </a><ul><li>
         <a class="level is-marginless" href="/categories/Algorithm/CodeSignal/">
@@ -461,7 +524,7 @@
                 <span class="level-item">CodeSignal</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">22</span>
+                <span class="level-item tag">23</span>
             </span>
         </a></li></ul></li>
             </ul>
@@ -479,6 +542,19 @@
         <h3 class="menu-label">
             최근 글
         </h3>
+        
+        <article class="media">
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-09T03:41:03.000Z">2020-03-09</time></div>
+                    <a href="/2020/03/09/CodeSignal-23-Box-Blur/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #23 Box Blur</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -532,19 +608,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-08T14:12:01.000Z">2020-03-08</time></div>
-                    <a href="/2020/03/08/CodeSignal-18-palindromeRearranging/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #18 palindromeRearranging</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
         
@@ -562,7 +625,7 @@
                     <span class="level-item">3월 2020</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">19</span>
+                    <span class="level-item tag">20</span>
                 </span>
             </a>
         </li>
@@ -617,6 +680,19 @@
             
             <div class="media-content">
                 <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-09T03:41:03.000Z">2020-03-09</time></div>
+                    <a href="/2020/03/09/CodeSignal-23-Box-Blur/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #23 Box Blur</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <div class="media-content">
+                <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-09T02:48:08.000Z">2020-03-09</time></div>
                     <a href="/2020/03/09/CodeSignal-22-avoidObstacles/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #22 avoidObstacles</a>
                     <p class="is-size-7 is-uppercase">
@@ -665,19 +741,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-08T14:12:01.000Z">2020-03-08</time></div>
-                    <a href="/2020/03/08/CodeSignal-18-palindromeRearranging/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #18 palindromeRearranging</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
     
@@ -695,7 +758,7 @@
                     <span class="level-item">3월 2020</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">19</span>
+                    <span class="level-item tag">20</span>
                 </span>
             </a>
         </li>
@@ -864,7 +927,7 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
 
 
-<a id="back-to-top" title="Back to Top" href="javascript:;">
+<a id="back-to-top" title="Zurück nach oben" href="javascript:;">
     <i class="fas fa-chevron-up"></i>
 </a>
 <script src="/js/back-to-top.js" defer></script>
