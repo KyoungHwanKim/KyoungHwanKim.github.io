@@ -19,7 +19,7 @@
 <meta property="og:locale" content="ko_KR">
 <meta property="og:image" content="https://kyounghwankim.github.io/images/og_image.png">
 <meta property="article:published_time" content="2020-03-09T02:48:08.000Z">
-<meta property="article:modified_time" content="2020-03-09T02:55:37.742Z">
+<meta property="article:modified_time" content="2020-03-09T03:14:36.748Z">
 <meta property="article:author" content="Cuws">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://kyounghwankim.github.io/images/og_image.png">
@@ -159,22 +159,23 @@
 <p>Find the minimal length of the jump enough to avoid all the obstacles.</p>
 <h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><p>For <code>inputArray = [5, 3, 6, 7, 9]</code>, the output should be <code>avoidObstacles(inputArray) = 4</code>.</p>
 <p>Check out the image below for better understanding:</p>
-<p><img src="img/avoidObstacles1.png" alt="dfd"></p>
+<center><img src="/img/avoidObstacles1.png"></center>
+
 <h3 id="Input-Output"><a href="#Input-Output" class="headerlink" title="Input/Output"></a>Input/Output</h3><ul>
 <li><p><strong>[execution time limit] 4 seconds (py3)</strong></p>
 </li>
-<li><p><strong>[input] string inputString</strong></p>
-<p>  A string consisting of digits, full stops and lowercase English letters.</p>
-<p>  <em>Guaranteed constraints :</em> <code>1 ≤ inputString.length ≤ 30</code>.</p>
+<li><p><strong>[input] array.integer inputArray</strong></p>
+<p>  Non-empty array of positive integers.</p>
+<p>  <em>Guaranteed constraints :</em> <code>2 ≤ inputArray.length ≤ 1000</code>, <code>1 ≤ inputArray[i] ≤ 1000</code>.</p>
 </li>
-<li><p><strong>[output] boolean</strong></p>
+<li><p><strong>[output] integer</strong></p>
 <ul>
-<li><code>true</code> if <code>inputString</code> satisfies the IPv4 address naming rules, <code>false</code> otherwise.</li>
+<li>The desired length.</li>
 </ul>
 </li>
 </ul>
 <hr>
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">isIPv4Address</span><span class="params">(inputString)</span>:</span></span><br><span class="line">    <span class="keyword">if</span> inputString.count(<span class="string">'.'</span>) != <span class="number">3</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">    arr = list(inputString.split(<span class="string">'.'</span>))</span><br><span class="line">    <span class="keyword">if</span> len(arr) != <span class="number">4</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> arr:</span><br><span class="line">        <span class="keyword">if</span> i == <span class="string">''</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">        <span class="keyword">elif</span> i.isdigit():</span><br><span class="line">            <span class="keyword">if</span> <span class="number">0</span> &gt; int(i) <span class="keyword">or</span> int(i) &gt; <span class="number">255</span>:</span><br><span class="line">                <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">True</span></span><br></pre></td></tr></table></figure>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">avoidObstacles</span><span class="params">(inputArray)</span>:</span></span><br><span class="line">    inputArray = set(sorted(inputArray))</span><br><span class="line">    temp = set([i <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>, max(inputArray)+<span class="number">1</span>)])</span><br><span class="line">    result = sorted(temp - inputArray)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> result:</span><br><span class="line">        flag = <span class="literal">True</span></span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> inputArray:</span><br><span class="line">            <span class="keyword">if</span> j % i == <span class="number">0</span>:</span><br><span class="line">                flag = <span class="literal">False</span></span><br><span class="line">                <span class="keyword">break</span></span><br><span class="line">        <span class="keyword">if</span> flag:</span><br><span class="line">            <span class="keyword">return</span> i</span><br><span class="line">    <span class="keyword">return</span> max(inputArray) + <span class="number">1</span></span><br></pre></td></tr></table></figure>
 <!-- toc -->
         </div>
         
@@ -790,7 +791,7 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
 
 
-<a id="back-to-top" title="Zurück nach oben" href="javascript:;">
+<a id="back-to-top" title="Back to Top" href="javascript:;">
     <i class="fas fa-chevron-up"></i>
 </a>
 <script src="/js/back-to-top.js" defer></script>
