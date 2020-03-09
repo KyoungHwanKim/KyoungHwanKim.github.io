@@ -7,19 +7,19 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>[CodeSignal] #6 Make Array Consecutive 2 - Cuws&#39;s Note</title>
+<title>[CodeSignal] #28 alphabeticShift - Cuws&#39;s Note</title>
 
 
-    <meta name="description" content="DescriptionRatiorg got statues of different sizes as a present from CodeMaster for his birthday, each statue having an non-negative integer size. Since he likes to make things perfect, he wants to ar">
+    <meta name="description" content="DescriptionGiven a string, your task is to replace each of its characters by the next one in the English alphabet; i.e. replace a with b, replace b with c, etc (z would be replaced by a). ExampleFor">
 <meta property="og:type" content="article">
-<meta property="og:title" content="[CodeSignal] #6 Make Array Consecutive 2">
-<meta property="og:url" content="https://kyounghwankim.github.io/2020/03/03/CodeSignal-6-Make-Array-Consecutive-2/index.html">
+<meta property="og:title" content="[CodeSignal] #28 alphabeticShift">
+<meta property="og:url" content="https://kyounghwankim.github.io/2020/03/09/CodeSignal-28-alphabeticShift/index.html">
 <meta property="og:site_name" content="Cuws&#39;s Note">
-<meta property="og:description" content="DescriptionRatiorg got statues of different sizes as a present from CodeMaster for his birthday, each statue having an non-negative integer size. Since he likes to make things perfect, he wants to ar">
+<meta property="og:description" content="DescriptionGiven a string, your task is to replace each of its characters by the next one in the English alphabet; i.e. replace a with b, replace b with c, etc (z would be replaced by a). ExampleFor">
 <meta property="og:locale" content="ko_KR">
 <meta property="og:image" content="https://kyounghwankim.github.io/images/og_image.png">
-<meta property="article:published_time" content="2020-03-03T14:23:23.000Z">
-<meta property="article:modified_time" content="2020-03-03T14:35:26.126Z">
+<meta property="article:published_time" content="2020-03-09T06:02:24.000Z">
+<meta property="article:modified_time" content="2020-03-09T09:05:26.050Z">
 <meta property="article:author" content="Cuws">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://kyounghwankim.github.io/images/og_image.png">
@@ -80,7 +80,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.svg" alt="[CodeSignal] #6 Make Array Consecutive 2" height="28">
+                <img src="/images/logo.svg" alt="[CodeSignal] #28 alphabeticShift" height="28">
             
             </a>
         </div>
@@ -136,7 +136,7 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-03-03T14:23:23.000Z">2020-03-03</time>
+                <time class="level-item has-text-grey" datetime="2020-03-09T06:02:24.000Z">2020-03-09</time>
                 
                 <div class="level-item">
                 <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
@@ -149,29 +149,28 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                [CodeSignal] #6 Make Array Consecutive 2
+                [CodeSignal] #28 alphabeticShift
             
         </h1>
         <div class="content">
             <!-- excerpt -->
-<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Ratiorg got <code>statues</code> of different sizes as a present from CodeMaster for his birthday, each statue having an non-negative integer size. Since he likes to make things perfect, he wants to arrange them from smallest to largest so that each statue will be bigger than the previous one exactly by <code>1</code>. He may need some additional statues to be able to accomplish that. Help him figure out the minimum number of additional statues needed.</p>
-<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><p>For <code>statues = [6, 2, 3, 8]</code>, the output should be <code>makeArrayConsecutive2(statues) = 3</code>.</p>
-<p>Ratiorg needs statues of sizes <code>4</code>, <code>5</code> and <code>7</code>.</p>
+<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Given a string, your task is to replace each of its characters by the next one in the English alphabet; i.e. replace <code>a</code> with <code>b</code>, replace <code>b</code> with <code>c</code>, etc (<code>z</code> would be replaced by <code>a</code>).</p>
+<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><p>For <code>inputString = &quot;crazy&quot;</code>, the output should be <code>alphabeticShift(inputString) = &quot;dsbaz&quot;</code>.</p>
 <h3 id="Input-Output"><a href="#Input-Output" class="headerlink" title="Input/Output"></a>Input/Output</h3><ul>
 <li><p><strong>[execution time limit] 4 seconds (py3)</strong></p>
 </li>
-<li><p><strong>[input] array.integer statues</strong></p>
-<p>  An array of distinct non-negative integers.</p>
-<p>  <em>Guaranteed constraints :</em> <code>1 ≤ statues.length ≤ 10</code>, <code>0 ≤ statues[i] ≤ 20</code>.</p>
+<li><p><strong>[input] string inputString</strong></p>
+<p>  A non-empty string consisting of lowercase English characters.</p>
+<p>  <em>Guaranteed constraints :</em> <code>1 ≤ inputString.length ≤ 1000</code>.</p>
 </li>
-<li><p><strong>[output] integer</strong>  </p>
+<li><p><strong>[output] string</strong></p>
 <ul>
-<li>The minimal number of statues that need to be added to existing <code>statues</code> such that it contains every integer size from an interval <code>[L, R]</code> (for some <code>L, R</code>) and no other sizes.</li>
+<li>The resulting string after replacing each of its characters.</li>
 </ul>
 </li>
 </ul>
 <hr>
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">makeArrayConsecutive2</span><span class="params">(statues)</span>:</span></span><br><span class="line">    statues.sort()</span><br><span class="line">    check = [<span class="number">0</span> <span class="keyword">for</span> _ <span class="keyword">in</span> range(statues[<span class="number">-1</span>]+<span class="number">1</span>)]</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> statues:</span><br><span class="line">        check[i] = <span class="number">1</span></span><br><span class="line">    answer = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(statues[<span class="number">0</span>], statues[<span class="number">-1</span>]+<span class="number">1</span>):</span><br><span class="line">        <span class="keyword">if</span> check[i] != <span class="number">1</span>:</span><br><span class="line">            answer += <span class="number">1</span></span><br><span class="line">    <span class="keyword">return</span> answer</span><br></pre></td></tr></table></figure>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">alphabeticShift</span><span class="params">(inputString)</span>:</span></span><br><span class="line">    result = <span class="string">''</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> inputString:</span><br><span class="line">        result += chr(((ord(i) - ord(<span class="string">'a'</span>) + <span class="number">1</span>) % <span class="number">26</span>) + ord(<span class="string">'a'</span>))</span><br><span class="line">    <span class="keyword">return</span> result</span><br></pre></td></tr></table></figure>
 <!-- toc -->
         </div>
         
@@ -187,17 +186,10 @@
 <div class="card card-transparent">
     <div class="level post-navigation is-flex-wrap is-mobile">
         
-        <div class="level-start">
-            <a class="level level-item has-link-grey  article-nav-prev" href="/2020/03/03/CodeSignal-7-almostIncreasingSequence/">
-                <i class="level-item fas fa-chevron-left"></i>
-                <span class="level-item">[CodeSignal] #7 almostIncreasingSequence</span>
-            </a>
-        </div>
-        
         
         <div class="level-end">
-            <a class="level level-item has-link-grey  article-nav-next" href="/2020/03/02/CodeSignal-5-shapeArea/">
-                <span class="level-item">[CodeSignal] #5 shapeArea</span>
+            <a class="level level-item has-link-grey  article-nav-next" href="/2020/03/09/CodeSignal-27-variableName/">
+                <span class="level-item">[CodeSignal] #27 variableName</span>
                 <i class="level-item fas fa-chevron-right"></i>
             </a>
         </div>
@@ -671,7 +663,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.svg" alt="[CodeSignal] #6 Make Array Consecutive 2" height="28">
+                    <img src="/images/logo.svg" alt="[CodeSignal] #28 alphabeticShift" height="28">
                 
                 </a>
                 <p class="is-size-7">

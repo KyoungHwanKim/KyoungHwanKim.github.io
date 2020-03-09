@@ -144,6 +144,67 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-03-08T14:12:01.000Z">2020-03-08</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2020/03/08/CodeSignal-18-palindromeRearranging/">[CodeSignal] #18 palindromeRearranging</a>
+            
+        </h1>
+        <div class="content">
+            <!-- excerpt -->
+<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Given a string, find out if its characters can be rearranged to form a palindrome<sup><a href="#footnote_1">1</a></sup>.</p>
+<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><p>For <code>inputString = &quot;aabb&quot;</code>, the output should be <code>palindromeRearranging(inputString) = true</code>.</p>
+<p>We can rearrange <code>&quot;aabb&quot;</code> to make <code>&quot;abba&quot;</code>, which is a palindrome.</p>
+<h3 id="Input-Output"><a href="#Input-Output" class="headerlink" title="Input/Output"></a>Input/Output</h3><ul>
+<li><p><strong>[execution time limit] 4 seconds (py3)</strong></p>
+</li>
+<li><p><strong>[input] string inputString</strong></p>
+<p>  A string consisting of lowercase English letters.</p>
+<p>  <em>Guaranteed constraints :</em> <code>1 ≤ inputString.length ≤ 50</code>.</p>
+</li>
+<li><p><strong>[output] boolean</strong></p>
+<ul>
+<li><code>true</code> if the characters of the <code>inputString</code> can be rearranged to form a palindrome, <code>false</code> otherwise.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">palindromeRearranging</span><span class="params">(inputString)</span>:</span></span><br><span class="line">    check = [<span class="number">0</span> <span class="keyword">for</span> _ <span class="keyword">in</span> range(<span class="number">26</span>)]</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> inputString:</span><br><span class="line">        check[ord(i) - ord(<span class="string">'a'</span>)] += <span class="number">1</span></span><br><span class="line">    <span class="keyword">if</span> len(inputString) % <span class="number">2</span> == <span class="number">0</span>:</span><br><span class="line">        flag = <span class="literal">False</span></span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> check:</span><br><span class="line">            <span class="keyword">if</span> j % <span class="number">2</span> == <span class="number">1</span>:</span><br><span class="line">                flag = <span class="literal">True</span></span><br><span class="line">                <span class="keyword">break</span></span><br><span class="line">        <span class="keyword">if</span> flag:</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        cnt = <span class="number">0</span></span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> check:</span><br><span class="line">            <span class="keyword">if</span> j % <span class="number">2</span> == <span class="number">1</span>:</span><br><span class="line">                cnt += <span class="number">1</span></span><br><span class="line">        <span class="keyword">if</span> cnt &gt; <span class="number">2</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">True</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id=""><a href="#" class="headerlink" title=""></a></h1><p><a name="footnote_1">1.</a> A palindrome is a string that reads the same left-to-right and right-to-left.</p>
+<!-- toc -->
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    
+<div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
                 <time class="level-item has-text-grey" datetime="2020-03-08T13:53:25.000Z">2020-03-08</time>
                 
                 <div class="level-item">
@@ -687,75 +748,6 @@
 
 
 
-    
-<div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-03-05T05:45:26.000Z">2020-03-05</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
-                </div>
-                
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2020/03/05/CodeSignal-8-matrixElementsSum/">[CodeSignal] #8 matrixElementsSum</a>
-            
-        </h1>
-        <div class="content">
-            <!-- excerpt -->
-<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>After becoming famous, the CodeBots decided to move into a new building together. Each of the rooms has a different cost, and some of them are free, but there’s a rumour that all the free rooms are haunted! Since the CodeBots are quite superstitious, they refuse to stay in any of the free rooms, <strong>or any of the rooms below any of the free rooms.</strong></p>
-<p>Given <code>matrix</code>, a rectangular matrix of integers, where each value represents the cost of the room, your task is to return the total sum of all rooms that are suitable for the CodeBots (ie: add up all the values that don’t appear below a <code>0</code>).</p>
-<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><ul>
-<li><p>For <code>matrix = [[0, 1, 1, 2], [0, 5, 0, 0], [2, 0, 3, 3]]</code> the output should be <code>matrixElementsSum(matrix) = 9</code>.</p>
-  <center><img src="/img/matrixElementsSum1.png"></center>
-
-<p>  There are several haunted rooms, so we’ll disregard them as well as any rooms beneath them. Thus, the answer is <code>1 + 5 + 1 + 2 = 9</code>.</p>
-</li>
-<li><p>For <code>matrix = [[1, 1, 1, 0], [0, 5, 0, 1], [2, 1, 3, 10]]</code> the output should be <code>matrixElementsSum(matrix) = 9</code>.</p>
-  <center><img src="/img/matrixElementsSum2.png"></center>
-
-<p>  Note that the free room in the final column makes the full column unsuitable for bots (not just the room directly beneath it). Thus, the answer is <code>1 + 1 + 1 + 5 + 1 = 9</code>.</p>
-</li>
-</ul>
-<h3 id="Input-Output"><a href="#Input-Output" class="headerlink" title="Input/Output"></a>Input/Output</h3><ul>
-<li><p><strong>[execution time limit] 4 seconds (py3)</strong></p>
-</li>
-<li><p><strong>[input] array.array.integer matrix</strong></p>
-<p>  A 2-dimensional array of integers representing the cost of each room in the building. A value of <code>0</code> indicates that the room is haunted.</p>
-<p>  <em>Guaranteed constraints :</em> <code>1 ≤ matrix.length ≤ 5</code>, <code>1 ≤ matrix[i].length ≤ 5</code>, <code>0 ≤ matrix[i][j] ≤ 10</code>.</p>
-</li>
-<li><p><strong>[output] integer</strong>  </p>
-<ul>
-<li>The total price of all the rooms that are suitable for the CodeBots to live in.</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">matrixElementsSum</span><span class="params">(matrix)</span>:</span></span><br><span class="line">    answer = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(len(matrix[<span class="number">0</span>])):</span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> range(len(matrix)):</span><br><span class="line">            <span class="keyword">if</span> matrix[j][i] == <span class="number">0</span>:</span><br><span class="line">                <span class="keyword">break</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                answer += matrix[j][i]</span><br><span class="line">    <span class="keyword">return</span> answer</span><br></pre></td></tr></table></figure>
-<!-- toc -->
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
 
     
 <div class="card card-transparent">
@@ -822,7 +814,7 @@
                     </p>
                     <a href="/archives">
                         <p class="title has-text-weight-normal">
-                            27
+                            28
                         </p>
                     </a>
                 </div>
@@ -954,7 +946,7 @@
                 <span class="level-item">Algorithm</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">27</span>
+                <span class="level-item tag">28</span>
             </span>
         </a><ul><li>
         <a class="level is-marginless" href="/categories/Algorithm/CodeSignal/">
@@ -962,7 +954,7 @@
                 <span class="level-item">CodeSignal</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">27</span>
+                <span class="level-item tag">28</span>
             </span>
         </a></li></ul></li>
             </ul>
@@ -980,6 +972,19 @@
         <h3 class="menu-label">
             최근 글
         </h3>
+        
+        <article class="media">
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-09T06:02:24.000Z">2020-03-09</time></div>
+                    <a href="/2020/03/09/CodeSignal-28-alphabeticShift/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #28 alphabeticShift</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -1033,19 +1038,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-09T03:41:03.000Z">2020-03-09</time></div>
-                    <a href="/2020/03/09/CodeSignal-23-Box-Blur/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #23 Box Blur</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
         
@@ -1063,7 +1055,7 @@
                     <span class="level-item">3월 2020</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">24</span>
+                    <span class="level-item tag">25</span>
                 </span>
             </a>
         </li>
@@ -1118,6 +1110,19 @@
             
             <div class="media-content">
                 <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-09T06:02:24.000Z">2020-03-09</time></div>
+                    <a href="/2020/03/09/CodeSignal-28-alphabeticShift/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #28 alphabeticShift</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <div class="media-content">
+                <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-09T05:07:31.000Z">2020-03-09</time></div>
                     <a href="/2020/03/09/CodeSignal-27-variableName/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #27 variableName</a>
                     <p class="is-size-7 is-uppercase">
@@ -1166,19 +1171,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-09T03:41:03.000Z">2020-03-09</time></div>
-                    <a href="/2020/03/09/CodeSignal-23-Box-Blur/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #23 Box Blur</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
     
@@ -1196,7 +1188,7 @@
                     <span class="level-item">3월 2020</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">24</span>
+                    <span class="level-item tag">25</span>
                 </span>
             </a>
         </li>
