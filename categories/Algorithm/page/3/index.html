@@ -144,6 +144,63 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-03-05T06:07:26.000Z">2020-03-05</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2020/03/05/CodeSignal-9-All-Longest-Strings/">[CodeSignal] #9 All Longest Strings</a>
+            
+        </h1>
+        <div class="content">
+            <!-- excerpt -->
+<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Given an array of strings, return another array containing all of its longest strings.</p>
+<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><p>For <code>inputArray = [&quot;aba&quot;, &quot;aa&quot;, &quot;ad&quot;, &quot;vcd&quot;, &quot;aba&quot;]</code>, the output should be <code>allLongestStrings(inputArray) = [&quot;aba&quot;, &quot;vcd&quot;, &quot;aba&quot;]</code>.</p>
+<h3 id="Input-Output"><a href="#Input-Output" class="headerlink" title="Input/Output"></a>Input/Output</h3><ul>
+<li><p><strong>[execution time limit] 4 seconds (py3)</strong></p>
+</li>
+<li><p><strong>[input] array.string inputArray</strong></p>
+<p>  A non-empty array.</p>
+<p>  <em>Guaranteed constraints :</em> <code>1 ≤ inputArray.length ≤ 10</code>, <code>1 ≤ inputArray[i].length ≤ 10</code>.</p>
+</li>
+<li><p><strong>[output] array.string</strong>  </p>
+<ul>
+<li>Array of the longest strings, stored in the same order as in the <code>inputArray</code>.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">allLongestStrings</span><span class="params">(inputArray)</span>:</span></span><br><span class="line">    temp = []</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> inputArray:</span><br><span class="line">        temp.append(i)</span><br><span class="line">    temp.sort(key=<span class="keyword">lambda</span> x:len(x), reverse=<span class="literal">True</span>)</span><br><span class="line">    result = []</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> inputArray:</span><br><span class="line">        <span class="keyword">if</span> len(i) == len(temp[<span class="number">0</span>]):</span><br><span class="line">            result.append(i)</span><br><span class="line">    <span class="keyword">return</span> result</span><br></pre></td></tr></table></figure>
+<!-- toc -->
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    
+<div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
                 <time class="level-item has-text-grey" datetime="2020-03-05T05:45:26.000Z">2020-03-05</time>
                 
                 <div class="level-item">
@@ -689,7 +746,7 @@
                     </p>
                     <a href="/archives">
                         <p class="title has-text-weight-normal">
-                            28
+                            29
                         </p>
                     </a>
                 </div>
@@ -821,7 +878,7 @@
                 <span class="level-item">Algorithm</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">28</span>
+                <span class="level-item tag">29</span>
             </span>
         </a><ul><li>
         <a class="level is-marginless" href="/categories/Algorithm/CodeSignal/">
@@ -829,7 +886,7 @@
                 <span class="level-item">CodeSignal</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">28</span>
+                <span class="level-item tag">29</span>
             </span>
         </a></li></ul></li>
             </ul>
@@ -847,6 +904,19 @@
         <h3 class="menu-label">
             최근 글
         </h3>
+        
+        <article class="media">
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-09T09:07:31.000Z">2020-03-09</time></div>
+                    <a href="/2020/03/09/CodeSignal-29-chessBoardCellColor/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #29 chessBoardCellColor</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -900,19 +970,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-09T03:53:07.000Z">2020-03-09</time></div>
-                    <a href="/2020/03/09/CodeSignal-24-Minesweeper/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #24 Minesweeper</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
         
@@ -930,7 +987,7 @@
                     <span class="level-item">3월 2020</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">25</span>
+                    <span class="level-item tag">26</span>
                 </span>
             </a>
         </li>
@@ -985,6 +1042,19 @@
             
             <div class="media-content">
                 <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-09T09:07:31.000Z">2020-03-09</time></div>
+                    <a href="/2020/03/09/CodeSignal-29-chessBoardCellColor/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #29 chessBoardCellColor</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <div class="media-content">
+                <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-09T06:02:24.000Z">2020-03-09</time></div>
                     <a href="/2020/03/09/CodeSignal-28-alphabeticShift/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #28 alphabeticShift</a>
                     <p class="is-size-7 is-uppercase">
@@ -1033,19 +1103,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-09T03:53:07.000Z">2020-03-09</time></div>
-                    <a href="/2020/03/09/CodeSignal-24-Minesweeper/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #24 Minesweeper</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
     
@@ -1063,7 +1120,7 @@
                     <span class="level-item">3월 2020</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">25</span>
+                    <span class="level-item tag">26</span>
                 </span>
             </a>
         </li>
@@ -1232,7 +1289,7 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
 
 
-<a id="back-to-top" title="Zurück nach oben" href="javascript:;">
+<a id="back-to-top" title="Back to Top" href="javascript:;">
     <i class="fas fa-chevron-up"></i>
 </a>
 <script src="/js/back-to-top.js" defer></script>

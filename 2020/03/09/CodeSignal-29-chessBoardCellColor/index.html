@@ -7,19 +7,19 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>[CodeSignal] #27 variableName - Cuws&#39;s Note</title>
+<title>[CodeSignal] #29 chessBoardCellColor - Cuws&#39;s Note</title>
 
 
-    <meta name="description" content="DescriptionCorrect variable names consist only of English letters, digits and underscores and they can’t start with a digit. Check if the given string is a correct variable name. Example For name &#x3D; &amp;">
+    <meta name="description" content="DescriptionGiven two cells on the standard chess board, determine whether they have the same color or not. Example For cell1 &#x3D; &quot;A1&quot; and cell2 &#x3D; &quot;C3&quot;, the output should be chessBoa">
 <meta property="og:type" content="article">
-<meta property="og:title" content="[CodeSignal] #27 variableName">
-<meta property="og:url" content="https://kyounghwankim.github.io/2020/03/09/CodeSignal-27-variableName/index.html">
+<meta property="og:title" content="[CodeSignal] #29 chessBoardCellColor">
+<meta property="og:url" content="https://kyounghwankim.github.io/2020/03/09/CodeSignal-29-chessBoardCellColor/index.html">
 <meta property="og:site_name" content="Cuws&#39;s Note">
-<meta property="og:description" content="DescriptionCorrect variable names consist only of English letters, digits and underscores and they can’t start with a digit. Check if the given string is a correct variable name. Example For name &#x3D; &amp;">
+<meta property="og:description" content="DescriptionGiven two cells on the standard chess board, determine whether they have the same color or not. Example For cell1 &#x3D; &quot;A1&quot; and cell2 &#x3D; &quot;C3&quot;, the output should be chessBoa">
 <meta property="og:locale" content="ko_KR">
 <meta property="og:image" content="https://kyounghwankim.github.io/images/og_image.png">
-<meta property="article:published_time" content="2020-03-09T05:07:31.000Z">
-<meta property="article:modified_time" content="2020-03-09T05:16:21.898Z">
+<meta property="article:published_time" content="2020-03-09T09:07:31.000Z">
+<meta property="article:modified_time" content="2020-03-09T09:22:02.966Z">
 <meta property="article:author" content="Cuws">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://kyounghwankim.github.io/images/og_image.png">
@@ -80,7 +80,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.svg" alt="[CodeSignal] #27 variableName" height="28">
+                <img src="/images/logo.svg" alt="[CodeSignal] #29 chessBoardCellColor" height="28">
             
             </a>
         </div>
@@ -136,7 +136,7 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-03-09T05:07:31.000Z">2020-03-09</time>
+                <time class="level-item has-text-grey" datetime="2020-03-09T09:07:31.000Z">2020-03-09</time>
                 
                 <div class="level-item">
                 <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
@@ -149,35 +149,38 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                [CodeSignal] #27 variableName
+                [CodeSignal] #29 chessBoardCellColor
             
         </h1>
         <div class="content">
             <!-- excerpt -->
-<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Correct variable names consist only of English letters, digits and underscores and they can’t start with a digit.</p>
-<p>Check if the given string is a correct variable name.</p>
+<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Given two cells on the standard chess board, determine whether they have the same color or not.</p>
 <h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><ul>
-<li><p>For <code>name = &quot;var_1__Int&quot;</code>, the output should be <code>variableName(name) = true</code>;</p>
+<li><p>For <code>cell1 = &quot;A1&quot;</code> and <code>cell2 = &quot;C3&quot;</code>, the output should be <code>chessBoardCellColor(cell1, cell2) = true</code>.</p>
+<center><img src='img/chessBoardCellColor1.png'/></center>
 </li>
-<li><p>For <code>name = &quot;qq-q&quot;</code>, the output should be <code>variableName(name) = false</code>;</p>
-</li>
-<li><p>For <code>name = &quot;2w2&quot;</code>, the output should be <code>variableName(name) = false</code>.</p>
+<li><p>For <code>cell1 = &quot;A1&quot;</code> and <code>cell2 = &quot;H3&quot;</code>, the output should be <code>chessBoardCellColor(cell1, cell2) = false</code>.</p>
+<center><img src='img/chessBoardCellColor2.png'/></center>
+
 </li>
 </ul>
 <h3 id="Input-Output"><a href="#Input-Output" class="headerlink" title="Input/Output"></a>Input/Output</h3><ul>
 <li><p><strong>[execution time limit] 4 seconds (py3)</strong></p>
 </li>
-<li><p><strong>[input] string name</strong></p>
-<p>  <em>Guaranteed constraints :</em> <code>1 ≤ name.length ≤ 10</code>.</p>
+<li><p><strong>[input] string cell1</strong></p>
+<p>  <em>Guaranteed constraints :</em> <code>cell1.length = 2</code>, <code>&#39;A&#39; ≤ cell1[0] ≤ &#39;H&#39;</code>, <code>1 ≤ cell1[1] ≤ 8</code>.</p>
+</li>
+<li><p><strong>[input] string cell2</strong></p>
+<p>  <em>Guaranteed constraints :</em> <code>cell2.length = 2</code>, <code>&#39;A&#39; ≤ cell2[0] ≤ &#39;H&#39;</code>, <code>1 ≤ cell2[1] ≤ 8</code>.</p>
 </li>
 <li><p><strong>[output] boolean</strong></p>
 <ul>
-<li><code>true</code> if <code>name</code> is a correct variable name, <code>false</code> otherwise.</li>
+<li><code>true</code> if both cells have the same color, <code>false</code> otherwise.</li>
 </ul>
 </li>
 </ul>
 <hr>
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">variableName</span><span class="params">(name)</span>:</span></span><br><span class="line">    <span class="keyword">if</span> <span class="string">'0'</span> &lt;= name[<span class="number">0</span>] &lt;= <span class="string">'9'</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> name:</span><br><span class="line">        <span class="keyword">if</span> <span class="string">'0'</span> &lt;= i &lt;= <span class="string">'9'</span>:</span><br><span class="line">            <span class="keyword">continue</span></span><br><span class="line">        <span class="keyword">elif</span> i == <span class="string">'_'</span>:</span><br><span class="line">            <span class="keyword">continue</span></span><br><span class="line">        <span class="keyword">elif</span> <span class="string">'a'</span> &lt;= i &lt;= <span class="string">'z'</span> <span class="keyword">or</span> <span class="string">'A'</span> &lt;= i &lt;= <span class="string">'Z'</span>:</span><br><span class="line">            <span class="keyword">continue</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">True</span></span><br></pre></td></tr></table></figure>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">chessBoardCellColor</span><span class="params">(cell1, cell2)</span>:</span></span><br><span class="line">    <span class="keyword">if</span> (ord(cell1[<span class="number">0</span>]) - ord(<span class="string">'A'</span>)) % <span class="number">2</span> == (ord(cell2[<span class="number">0</span>]) - ord(<span class="string">'A'</span>)) % <span class="number">2</span>:</span><br><span class="line">        <span class="keyword">if</span> int(cell1[<span class="number">1</span>]) % <span class="number">2</span> == int(cell2[<span class="number">1</span>]) % <span class="number">2</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">if</span> int(cell1[<span class="number">1</span>]) % <span class="number">2</span> != int(cell2[<span class="number">1</span>]) % <span class="number">2</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">False</span></span><br></pre></td></tr></table></figure>
 <!-- toc -->
         </div>
         
@@ -193,17 +196,10 @@
 <div class="card card-transparent">
     <div class="level post-navigation is-flex-wrap is-mobile">
         
-        <div class="level-start">
-            <a class="level level-item has-link-grey  article-nav-prev" href="/2020/03/09/CodeSignal-28-alphabeticShift/">
-                <i class="level-item fas fa-chevron-left"></i>
-                <span class="level-item">[CodeSignal] #28 alphabeticShift</span>
-            </a>
-        </div>
-        
         
         <div class="level-end">
-            <a class="level level-item has-link-grey  article-nav-next" href="/2020/03/09/CodeSignal-26-evenDigitsOnly/">
-                <span class="level-item">[CodeSignal] #26 evenDigitsOnly</span>
+            <a class="level level-item has-link-grey  article-nav-next" href="/2020/03/09/CodeSignal-28-alphabeticShift/">
+                <span class="level-item">[CodeSignal] #28 alphabeticShift</span>
                 <i class="level-item fas fa-chevron-right"></i>
             </a>
         </div>
@@ -677,7 +673,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.svg" alt="[CodeSignal] #27 variableName" height="28">
+                    <img src="/images/logo.svg" alt="[CodeSignal] #29 chessBoardCellColor" height="28">
                 
                 </a>
                 <p class="is-size-7">
