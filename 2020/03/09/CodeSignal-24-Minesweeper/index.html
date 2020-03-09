@@ -7,19 +7,19 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>[CodeSignal] #11 isLucky - Cuws&#39;s Note</title>
+<title>[CodeSignal] #24 Minesweeper - Cuws&#39;s Note</title>
 
 
-    <meta name="description" content="DescriptionTicket numbers usually consist of an even number of digits. A ticket number is considered lucky if the sum of the first half of the digits is equal to the sum of the second half. Given a t">
+    <meta name="description" content="DescriptionIn the popular Minesweeper game you have a board with some mines and those cells that don’t contain a mine have a number in it that indicates the total number of mines in the neighboring c">
 <meta property="og:type" content="article">
-<meta property="og:title" content="[CodeSignal] #11 isLucky">
-<meta property="og:url" content="https://kyounghwankim.github.io/2020/03/07/CodeSignal-11-isLucky/index.html">
+<meta property="og:title" content="[CodeSignal] #24 Minesweeper">
+<meta property="og:url" content="https://kyounghwankim.github.io/2020/03/09/CodeSignal-24-Minesweeper/index.html">
 <meta property="og:site_name" content="Cuws&#39;s Note">
-<meta property="og:description" content="DescriptionTicket numbers usually consist of an even number of digits. A ticket number is considered lucky if the sum of the first half of the digits is equal to the sum of the second half. Given a t">
+<meta property="og:description" content="DescriptionIn the popular Minesweeper game you have a board with some mines and those cells that don’t contain a mine have a number in it that indicates the total number of mines in the neighboring c">
 <meta property="og:locale" content="ko_KR">
 <meta property="og:image" content="https://kyounghwankim.github.io/images/og_image.png">
-<meta property="article:published_time" content="2020-03-07T07:23:47.000Z">
-<meta property="article:modified_time" content="2020-03-07T07:34:50.578Z">
+<meta property="article:published_time" content="2020-03-09T03:53:07.000Z">
+<meta property="article:modified_time" content="2020-03-09T04:54:07.358Z">
 <meta property="article:author" content="Cuws">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://kyounghwankim.github.io/images/og_image.png">
@@ -80,7 +80,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.svg" alt="[CodeSignal] #11 isLucky" height="28">
+                <img src="/images/logo.svg" alt="[CodeSignal] #24 Minesweeper" height="28">
             
             </a>
         </div>
@@ -136,7 +136,7 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-03-07T07:23:47.000Z">2020-03-07</time>
+                <time class="level-item has-text-grey" datetime="2020-03-09T03:53:07.000Z">2020-03-09</time>
                 
                 <div class="level-item">
                 <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
@@ -149,34 +149,34 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                [CodeSignal] #11 isLucky
+                [CodeSignal] #24 Minesweeper
             
         </h1>
         <div class="content">
             <!-- excerpt -->
-<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Ticket numbers usually consist of an even number of digits. A ticket number is considered lucky if the sum of the first half of the digits is equal to the sum of the second half.</p>
-<p>Given a ticket number <code>n</code>, determine if it’s lucky or not.</p>
-<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><ul>
-<li><p>For <code>n = 1230</code>, the output should be <code>isLucky(n) = true</code>;</p>
-</li>
-<li><p>For <code>n = 239017</code>, the output should be <code>isLucky(n) = false</code>.</p>
-</li>
-</ul>
+<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>In the popular <strong>Minesweeper</strong> game you have a board with some mines and those cells that don’t contain a mine have a number in it that indicates the total number of mines in the neighboring cells. Starting off with some arrangement of mines we want to create a <strong>Minesweeper</strong> game setup.</p>
+<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><p>For</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">matrix &#x3D; [[true, false, false],</span><br><span class="line">          [false, true, false],</span><br><span class="line">          [false, false, false]]</span><br></pre></td></tr></table></figure>
+<p>the output should be</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">minesweeper(matrix) &#x3D; [[1, 2, 1],</span><br><span class="line">                       [2, 1, 1],</span><br><span class="line">                       [1, 1, 1]]</span><br></pre></td></tr></table></figure>
+<p>Check out the image below for better understanding:</p>
+<center><img src="/img/Minesweeper1.png"></center>
+
 <h3 id="Input-Output"><a href="#Input-Output" class="headerlink" title="Input/Output"></a>Input/Output</h3><ul>
 <li><p><strong>[execution time limit] 4 seconds (py3)</strong></p>
 </li>
-<li><p><strong>[input] integer n</strong></p>
-<p>  A ticket number represented as a positive integer with an even number of digits.</p>
-<p>  <em>Guaranteed constraints :</em> 10 ≤ n &lt; 10<sup>6</sup>.</p>
+<li><p><strong>[input] array.array.boolean matrix</strong></p>
+<p>  A non-empty rectangular matrix consisting of boolean values - <code>true</code> if the corresponding cell contains a mine, <code>false</code> otherwise.</p>
+<p>  <em>Guaranteed constraints :</em> <code>2 ≤ matrix.length ≤ 100</code>, <code>2 ≤ matrix[0].length ≤ 100</code>.</p>
 </li>
-<li><p><strong>[output] boolean</strong></p>
+<li><p><strong>[output] array.array.integer</strong></p>
 <ul>
-<li><code>true</code> if <code>n</code> is a lucky ticket number, <code>false</code> otherwise.</li>
+<li>Rectangular matrix of the same size as <code>matrix</code> each cell of which contains an integer equal to the number of mines in the neighboring cells. Two cells are called neighboring if they share at least one corner.</li>
 </ul>
 </li>
 </ul>
 <hr>
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">isLucky</span><span class="params">(n)</span>:</span></span><br><span class="line">    n = str(n)</span><br><span class="line">    result1 = result2 = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> n[:len(n)//<span class="number">2</span>]:</span><br><span class="line">        result1 += int(i)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> n[len(n)//<span class="number">2</span>:]:</span><br><span class="line">        result2 += int(i)</span><br><span class="line">    <span class="keyword">return</span> result1 == result2</span><br></pre></td></tr></table></figure>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">dx = [<span class="number">-1</span>, <span class="number">-1</span>, <span class="number">-1</span>, <span class="number">0</span>, +<span class="number">1</span>, +<span class="number">1</span>, +<span class="number">1</span>, <span class="number">0</span>]</span><br><span class="line">dy = [<span class="number">-1</span>, <span class="number">0</span>, +<span class="number">1</span>, +<span class="number">1</span>, +<span class="number">1</span>, <span class="number">0</span>, <span class="number">-1</span>, <span class="number">-1</span>]</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">minesweeper</span><span class="params">(matrix)</span>:</span></span><br><span class="line">    result = []</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(len(matrix)):</span><br><span class="line">        temp = []</span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> range(len(matrix[<span class="number">0</span>])):</span><br><span class="line">            s = <span class="number">0</span></span><br><span class="line">            <span class="keyword">for</span> k <span class="keyword">in</span> range(<span class="number">8</span>):</span><br><span class="line">                nx = i + dx[k]</span><br><span class="line">                ny = j + dy[k]</span><br><span class="line">                <span class="keyword">if</span> <span class="number">0</span> &lt;= nx &lt; len(matrix) <span class="keyword">and</span> <span class="number">0</span> &lt;= ny &lt; len(matrix[<span class="number">0</span>]):</span><br><span class="line">                    <span class="keyword">if</span> matrix[nx][ny]:</span><br><span class="line">                        s += <span class="number">1</span></span><br><span class="line">            temp.append(s)</span><br><span class="line">        result.append(temp)</span><br><span class="line">    <span class="keyword">return</span> result</span><br></pre></td></tr></table></figure>
 <!-- toc -->
         </div>
         
@@ -193,16 +193,16 @@
     <div class="level post-navigation is-flex-wrap is-mobile">
         
         <div class="level-start">
-            <a class="level level-item has-link-grey  article-nav-prev" href="/2020/03/07/CodeSignal-12-sortByHeight/">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/2020/03/09/CodeSignal-25-Array-Replace/">
                 <i class="level-item fas fa-chevron-left"></i>
-                <span class="level-item">[CodeSignal] #12 sortByHeight</span>
+                <span class="level-item">[CodeSignal] #25 Array Replace</span>
             </a>
         </div>
         
         
         <div class="level-end">
-            <a class="level level-item has-link-grey  article-nav-next" href="/2020/03/05/CodeSignal-10-commonCharacterCount/">
-                <span class="level-item">[CodeSignal] #10 commonCharacterCount</span>
+            <a class="level level-item has-link-grey  article-nav-next" href="/2020/03/09/CodeSignal-23-Box-Blur/">
+                <span class="level-item">[CodeSignal] #23 Box Blur</span>
                 <i class="level-item fas fa-chevron-right"></i>
             </a>
         </div>
@@ -676,7 +676,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.svg" alt="[CodeSignal] #11 isLucky" height="28">
+                    <img src="/images/logo.svg" alt="[CodeSignal] #24 Minesweeper" height="28">
                 
                 </a>
                 <p class="is-size-7">
