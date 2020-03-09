@@ -7,19 +7,19 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>[CodeSignal] #20 arrayMaximalAdjacentDifference - Cuws&#39;s Note</title>
+<title>[CodeSignal] #36 differentSymbolsNaive - Cuws&#39;s Note</title>
 
 
-    <meta name="description" content="DescriptionGiven an array of integers, find the maximal absolute difference between any two of its adjacent elements. ExampleFor inputArray &#x3D; [2, 4, 1, 0], the output should be arrayMaximalAdjacentDi">
+    <meta name="description" content="DescriptionGiven a string, find the number of different characters in it. ExampleFor s &#x3D; &quot;cabca&quot;, the output should be differentSymbolsNaive(s) &#x3D; 3. There are 3 different characters a, b an">
 <meta property="og:type" content="article">
-<meta property="og:title" content="[CodeSignal] #20 arrayMaximalAdjacentDifference">
-<meta property="og:url" content="https://kyounghwankim.github.io/2020/03/09/CodeSignal-20-arrayMaximalAdjacentDifference/index.html">
+<meta property="og:title" content="[CodeSignal] #36 differentSymbolsNaive">
+<meta property="og:url" content="https://kyounghwankim.github.io/2020/03/09/CodeSignal-36-differentSymbolsNaive/index.html">
 <meta property="og:site_name" content="Cuws&#39;s Note">
-<meta property="og:description" content="DescriptionGiven an array of integers, find the maximal absolute difference between any two of its adjacent elements. ExampleFor inputArray &#x3D; [2, 4, 1, 0], the output should be arrayMaximalAdjacentDi">
+<meta property="og:description" content="DescriptionGiven a string, find the number of different characters in it. ExampleFor s &#x3D; &quot;cabca&quot;, the output should be differentSymbolsNaive(s) &#x3D; 3. There are 3 different characters a, b an">
 <meta property="og:locale" content="ko_KR">
 <meta property="og:image" content="https://kyounghwankim.github.io/images/og_image.png">
-<meta property="article:published_time" content="2020-03-08T16:33:25.000Z">
-<meta property="article:modified_time" content="2020-03-08T16:42:41.079Z">
+<meta property="article:published_time" content="2020-03-09T13:23:26.000Z">
+<meta property="article:modified_time" content="2020-03-09T13:25:39.820Z">
 <meta property="article:author" content="Cuws">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://kyounghwankim.github.io/images/og_image.png">
@@ -80,7 +80,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.svg" alt="[CodeSignal] #20 arrayMaximalAdjacentDifference" height="28">
+                <img src="/images/logo.svg" alt="[CodeSignal] #36 differentSymbolsNaive" height="28">
             
             </a>
         </div>
@@ -136,7 +136,7 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-03-08T16:33:25.000Z">2020-03-09</time>
+                <time class="level-item has-text-grey" datetime="2020-03-09T13:23:26.000Z">2020-03-09</time>
                 
                 <div class="level-item">
                 <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
@@ -149,27 +149,26 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                [CodeSignal] #20 arrayMaximalAdjacentDifference
+                [CodeSignal] #36 differentSymbolsNaive
             
         </h1>
         <div class="content">
             <!-- excerpt -->
-<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Given an array of integers, find the maximal absolute difference between any two of its adjacent elements.</p>
-<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><p>For <code>inputArray = [2, 4, 1, 0]</code>, the output should be <code>arrayMaximalAdjacentDifference(inputArray) = 3</code>.</p>
+<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Given a string, find the number of different characters in it.</p>
+<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><p>For <code>s = &quot;cabca&quot;</code>, the output should be <code>differentSymbolsNaive(s) = 3</code>.</p>
+<p>There are <code>3</code> different characters <code>a</code>, <code>b</code> and <code>c</code>.</p>
 <h3 id="Input-Output"><a href="#Input-Output" class="headerlink" title="Input/Output"></a>Input/Output</h3><ul>
 <li><p><strong>[execution time limit] 4 seconds (py3)</strong></p>
 </li>
-<li><p><strong>[input] array.integer inputArray</strong></p>
-<p>  <em>Guaranteed constraints :</em> <code>3 ≤ inputArray.length ≤ 10</code>, <code>-15 ≤ inputArray[i] ≤ 15</code>.</p>
+<li><p><strong>[input] string s</strong></p>
+<p>  A string of lowercase English letters.</p>
+<p>  <em>Guaranteed constraints :</em> <code>3 ≤ s.length ≤ 1000</code>.</p>
 </li>
 <li><p><strong>[output] integer</strong></p>
-<ul>
-<li>The maximal absolute difference.</li>
-</ul>
 </li>
 </ul>
 <hr>
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">arrayMaximalAdjacentDifference</span><span class="params">(inputArray)</span>:</span></span><br><span class="line">    result = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>, len(inputArray)):</span><br><span class="line">        result = max(result, abs(inputArray[i] - inputArray[i<span class="number">-1</span>]))</span><br><span class="line">    <span class="keyword">return</span> result</span><br></pre></td></tr></table></figure>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">differentSymbolsNaive</span><span class="params">(s)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> len(set(list(s)))</span><br></pre></td></tr></table></figure>
 <!-- toc -->
         </div>
         
@@ -185,17 +184,10 @@
 <div class="card card-transparent">
     <div class="level post-navigation is-flex-wrap is-mobile">
         
-        <div class="level-start">
-            <a class="level level-item has-link-grey  article-nav-prev" href="/2020/03/09/CodeSignal-21-isIPv4Address/">
-                <i class="level-item fas fa-chevron-left"></i>
-                <span class="level-item">[CodeSignal] #21 isIPv4Address</span>
-            </a>
-        </div>
-        
         
         <div class="level-end">
-            <a class="level level-item has-link-grey  article-nav-next" href="/2020/03/09/CodeSignal-19-areEquallyStrong/">
-                <span class="level-item">[CodeSignal] #19 areEquallyStrong</span>
+            <a class="level level-item has-link-grey  article-nav-next" href="/2020/03/09/CodeSignal-35-firstDigit/">
+                <span class="level-item">[CodeSignal] #35 firstDigit</span>
                 <i class="level-item fas fa-chevron-right"></i>
             </a>
         </div>
@@ -669,7 +661,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.svg" alt="[CodeSignal] #20 arrayMaximalAdjacentDifference" height="28">
+                    <img src="/images/logo.svg" alt="[CodeSignal] #36 differentSymbolsNaive" height="28">
                 
                 </a>
                 <p class="is-size-7">

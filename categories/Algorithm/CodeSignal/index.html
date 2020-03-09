@@ -146,6 +146,252 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-03-09T13:23:26.000Z">2020-03-09</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2020/03/09/CodeSignal-36-differentSymbolsNaive/">[CodeSignal] #36 differentSymbolsNaive</a>
+            
+        </h1>
+        <div class="content">
+            <!-- excerpt -->
+<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Given a string, find the number of different characters in it.</p>
+<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><p>For <code>s = &quot;cabca&quot;</code>, the output should be <code>differentSymbolsNaive(s) = 3</code>.</p>
+<p>There are <code>3</code> different characters <code>a</code>, <code>b</code> and <code>c</code>.</p>
+<h3 id="Input-Output"><a href="#Input-Output" class="headerlink" title="Input/Output"></a>Input/Output</h3><ul>
+<li><p><strong>[execution time limit] 4 seconds (py3)</strong></p>
+</li>
+<li><p><strong>[input] string s</strong></p>
+<p>  A string of lowercase English letters.</p>
+<p>  <em>Guaranteed constraints :</em> <code>3 ≤ s.length ≤ 1000</code>.</p>
+</li>
+<li><p><strong>[output] integer</strong></p>
+</li>
+</ul>
+<hr>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">differentSymbolsNaive</span><span class="params">(s)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> len(set(list(s)))</span><br></pre></td></tr></table></figure>
+<!-- toc -->
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    
+<div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-03-09T13:19:09.000Z">2020-03-09</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2020/03/09/CodeSignal-35-firstDigit/">[CodeSignal] #35 firstDigit</a>
+            
+        </h1>
+        <div class="content">
+            <!-- excerpt -->
+<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Find the leftmost digit that occurs in a given string.</p>
+<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><ul>
+<li>For <code>inputString = &quot;var_1__Int&quot;</code>, the output should be <code>firstDigit(inputString) = &#39;1&#39;</code>;</li>
+<li>For <code>inputString = &quot;q2q-q&quot;</code>, the output should be <code>firstDigit(inputString) = &#39;2&#39;</code>;</li>
+<li>For <code>inputString = &quot;0ss&quot;</code>, the output should be <code>firstDigit(inputString) = &#39;0&#39;</code>.</li>
+</ul>
+<h3 id="Input-Output"><a href="#Input-Output" class="headerlink" title="Input/Output"></a>Input/Output</h3><ul>
+<li><p><strong>[execution time limit] 4 seconds (py3)</strong></p>
+</li>
+<li><p><strong>[input] string inputString</strong></p>
+<p>  A string containing at least one digit.</p>
+<p>  <em>Guaranteed constraints :</em> <code>3 ≤ inputString.length ≤ 10</code>.</p>
+</li>
+<li><p><strong>[output] char</strong></p>
+</li>
+</ul>
+<hr>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">firstDigit</span><span class="params">(inputString)</span>:</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> inputString:</span><br><span class="line">        <span class="keyword">if</span> <span class="string">'0'</span> &lt;= i &lt;= <span class="string">'9'</span>:</span><br><span class="line">            <span class="keyword">return</span> i</span><br></pre></td></tr></table></figure>
+<!-- toc -->
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    
+<div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-03-09T13:03:46.000Z">2020-03-09</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2020/03/09/CodeSignal-34-extractEachKth/">[CodeSignal] #34 extractEachKth</a>
+            
+        </h1>
+        <div class="content">
+            <!-- excerpt -->
+<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Given array of integers, remove each k<sup>th</sup> element from it.</p>
+<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><p>For <code>inputArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]</code> and <code>k = 3</code>, the output should be <code>extractEachKth(inputArray, k) = [1, 2, 4, 5, 7, 8, 10]</code>.</p>
+<h3 id="Input-Output"><a href="#Input-Output" class="headerlink" title="Input/Output"></a>Input/Output</h3><ul>
+<li><p><strong>[execution time limit] 4 seconds (py3)</strong></p>
+</li>
+<li><p><strong>[input] array.integer inputArray</strong></p>
+<p>  <em>Guaranteed constraints :</em> <code>5 ≤ inputArray.length ≤ 15</code>, <code>-20 ≤ inputArray[i] ≤ 20</code>.</p>
+</li>
+<li><p><strong>[input] integer k</strong></p>
+<p>  <em>Guaranteed constraints :</em> <code>1 ≤ k ≤ 10</code>.</p>
+</li>
+<li><p><strong>[output] array.integer</strong></p>
+<ul>
+<li><code>inputArray</code> without elements <code>k - 1</code>, <code>2k - 1</code>, <code>3k - 1</code> etc.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">extractEachKth</span><span class="params">(inputArray, k)</span>:</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(k, len(inputArray) + <span class="number">1</span>, k):</span><br><span class="line">        inputArray[i - <span class="number">1</span>] = <span class="number">999</span></span><br><span class="line">    result = []</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> inputArray:</span><br><span class="line">        <span class="keyword">if</span> i != <span class="number">999</span>:</span><br><span class="line">            result.append(i)</span><br><span class="line">    <span class="keyword">return</span> result</span><br></pre></td></tr></table></figure>
+<!-- toc -->
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    
+<div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-03-09T09:58:03.000Z">2020-03-09</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2020/03/09/CodeSignal-33-stringsRearrangement/">[CodeSignal] #33 stringsRearrangement</a>
+            
+        </h1>
+        <div class="content">
+            <!-- excerpt -->
+<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Given an array of equal-length strings, you’d like to know if it’s possible to rearrange the order of the elements in such a way that each consecutive pair of strings differ by exactly one character. Return <code>true</code> if it’s possible, and <code>false</code> if not.</p>
+<p><strong>Note: You’re only rearranging the order of the strings, not the order of the letters within the strings!</strong></p>
+<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><ul>
+<li><p>For <code>inputArray = [&quot;aba&quot;, &quot;bbb&quot;, &quot;bab&quot;]</code>, the output should be <code>stringsRearrangement(inputArray) = false</code>.</p>
+<p>  There are 6 possible arrangements for these strings:</p>
+<ul>
+<li><code>[&quot;aba&quot;, &quot;bbb&quot;, &quot;bab&quot;]</code></li>
+<li><code>[&quot;aba&quot;, &quot;bab&quot;, &quot;bbb&quot;]</code></li>
+<li><code>[&quot;bbb&quot;, &quot;aba&quot;, &quot;bab&quot;]</code></li>
+<li><code>[&quot;bbb&quot;, &quot;bab&quot;, &quot;aba&quot;]</code></li>
+<li><code>[&quot;bab&quot;, &quot;bbb&quot;, &quot;aba&quot;]</code></li>
+<li><code>[&quot;bab&quot;, &quot;aba&quot;, &quot;bbb&quot;]</code></li>
+</ul>
+<p>None of these satisfy the condition of consecutive strings differing by 1 character, so the answer is <code>false</code>.</p>
+</li>
+<li><p>For <code>inputArray = [&quot;ab&quot;, &quot;bb&quot;, &quot;aa&quot;]</code>, the output should be <code>stringsRearrangement(inputArray) = true</code>.</p>
+<p>  It’s possible to arrange these strings in a way that each consecutive pair of strings differ by 1 character (eg: <code>&quot;aa&quot;, &quot;ab&quot;, &quot;bb&quot;</code> or <code>&quot;bb&quot;, &quot;ab&quot;, &quot;aa&quot;</code>), so return <code>true</code>.</p>
+</li>
+</ul>
+<h3 id="Input-Output"><a href="#Input-Output" class="headerlink" title="Input/Output"></a>Input/Output</h3><ul>
+<li><p><strong>[execution time limit] 4 seconds (py3)</strong></p>
+</li>
+<li><p><strong>[input] array.string inputArray</strong></p>
+<p>  A non-empty array of strings of lowercase letters.</p>
+<p>  <em>Guaranteed constraints :</em> <code>2 ≤ inputArray.length ≤ 10</code>, <code>1 ≤ inputArray[i].length ≤ 15</code>.</p>
+</li>
+<li><p><strong>[output] boolean</strong></p>
+<ul>
+<li>Return <code>true</code> if the strings can be reordered in such a way that each neighbouring pair of strings differ by exactly one character (<code>false</code> otherwise).</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> itertools <span class="keyword">import</span> permutations</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">stringsRearrangement</span><span class="params">(inputArray)</span>:</span></span><br><span class="line">    per = list(permutations(inputArray))</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> per:</span><br><span class="line">        flag = <span class="literal">True</span></span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> range(len(i) - <span class="number">1</span>):</span><br><span class="line">            s1 = i[j]</span><br><span class="line">            s2 = i[j + <span class="number">1</span>]</span><br><span class="line">            cnt = <span class="number">0</span></span><br><span class="line">            <span class="keyword">for</span> k, l <span class="keyword">in</span> zip(s1, s2):</span><br><span class="line">                <span class="keyword">if</span> k != l:</span><br><span class="line">                    cnt += <span class="number">1</span></span><br><span class="line">            <span class="keyword">if</span> cnt != <span class="number">1</span>:</span><br><span class="line">                flag = <span class="literal">False</span></span><br><span class="line">        <span class="keyword">if</span> flag:</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">False</span></span><br></pre></td></tr></table></figure>
+<!-- toc -->
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    
+<div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
                 <time class="level-item has-text-grey" datetime="2020-03-09T09:46:14.000Z">2020-03-09</time>
                 
                 <div class="level-item">
@@ -538,256 +784,6 @@
 
 
 
-    
-<div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-03-09T05:04:10.000Z">2020-03-09</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
-                </div>
-                
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2020/03/09/CodeSignal-26-evenDigitsOnly/">[CodeSignal] #26 evenDigitsOnly</a>
-            
-        </h1>
-        <div class="content">
-            <!-- excerpt -->
-<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Check if all digits of the given integer are even.</p>
-<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><ul>
-<li><p>For <code>n = 248622</code>, the output should be <code>evenDigitsOnly(n) = true</code>;</p>
-</li>
-<li><p>For <code>n = 642386</code>, the output should be <code>evenDigitsOnly(n) = false</code>.</p>
-</li>
-</ul>
-<h3 id="Input-Output"><a href="#Input-Output" class="headerlink" title="Input/Output"></a>Input/Output</h3><ul>
-<li><p><strong>[execution time limit] 4 seconds (py3)</strong></p>
-</li>
-<li><p><strong>[input] integer n</strong></p>
-<p>  <em>Guaranteed constraints :</em> 0 ≤ inputArray.length ≤ 10<sup>4</sup>, 0 ≤ n ≤ 10<sup>9</sup>.</p>
-</li>
-<li><p><strong>[output] boolean</strong></p>
-<ul>
-<li><code>true</code> if all digits of <code>n</code> are even, <code>false</code> otherwise.</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">evenDigitsOnly</span><span class="params">(n)</span>:</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> str(n):</span><br><span class="line">        <span class="keyword">if</span> int(i) % <span class="number">2</span> == <span class="number">1</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">True</span></span><br></pre></td></tr></table></figure>
-<!-- toc -->
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    
-<div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-03-09T04:57:29.000Z">2020-03-09</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
-                </div>
-                
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2020/03/09/CodeSignal-25-Array-Replace/">[CodeSignal] #25 Array Replace</a>
-            
-        </h1>
-        <div class="content">
-            <!-- excerpt -->
-<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Given an array of integers, replace all the occurrences of <code>elemToReplace</code> with <code>substitutionElem</code>.</p>
-<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><p>For <code>inputArray = [1, 2, 1]</code>, <code>elemToReplace = 1</code>, and <code>substitutionElem = 3</code>, the output should be <code>arrayReplace(inputArray, elemToReplace, substitutionElem) = [3, 2, 3]</code>.</p>
-<h3 id="Input-Output"><a href="#Input-Output" class="headerlink" title="Input/Output"></a>Input/Output</h3><ul>
-<li><p><strong>[execution time limit] 4 seconds (py3)</strong></p>
-</li>
-<li><p><strong>[input] array.integer inputArray</strong></p>
-<p>  <em>Guaranteed constraints :</em> 0 ≤ inputArray.length ≤ 10<sup>4</sup>, 0 ≤ inputArray[i] ≤ 10<sup>9</sup>.</p>
-</li>
-<li><p><strong>[input] integer elemToReplace</strong></p>
-<p>  <em>Guaranteed constraints :</em> 0 ≤ elemToReplace ≤ 10<sup>9</sup>.</p>
-</li>
-<li><p><strong>[input] integer substitutionElem</strong></p>
-<p>  <em>Guaranteed constraints :</em> 0 ≤ substitutionElem ≤ 10<sup>9</sup>.</p>
-</li>
-<li><p><strong>[output] array.integer</strong></p>
-</li>
-</ul>
-<hr>
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">arrayReplace</span><span class="params">(inputArray, elemToReplace, substitutionElem)</span>:</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(len(inputArray)):</span><br><span class="line">        <span class="keyword">if</span> inputArray[i] == elemToReplace:</span><br><span class="line">            inputArray[i] = substitutionElem</span><br><span class="line">    <span class="keyword">return</span> inputArray</span><br></pre></td></tr></table></figure>
-<!-- toc -->
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    
-<div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-03-09T03:53:07.000Z">2020-03-09</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
-                </div>
-                
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2020/03/09/CodeSignal-24-Minesweeper/">[CodeSignal] #24 Minesweeper</a>
-            
-        </h1>
-        <div class="content">
-            <!-- excerpt -->
-<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>In the popular <strong>Minesweeper</strong> game you have a board with some mines and those cells that don’t contain a mine have a number in it that indicates the total number of mines in the neighboring cells. Starting off with some arrangement of mines we want to create a <strong>Minesweeper</strong> game setup.</p>
-<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><p>For</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">matrix &#x3D; [[true, false, false],</span><br><span class="line">          [false, true, false],</span><br><span class="line">          [false, false, false]]</span><br></pre></td></tr></table></figure>
-<p>the output should be</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">minesweeper(matrix) &#x3D; [[1, 2, 1],</span><br><span class="line">                       [2, 1, 1],</span><br><span class="line">                       [1, 1, 1]]</span><br></pre></td></tr></table></figure>
-<p>Check out the image below for better understanding:</p>
-<center><img src="/img/Minesweeper1.png"></center>
-
-<h3 id="Input-Output"><a href="#Input-Output" class="headerlink" title="Input/Output"></a>Input/Output</h3><ul>
-<li><p><strong>[execution time limit] 4 seconds (py3)</strong></p>
-</li>
-<li><p><strong>[input] array.array.boolean matrix</strong></p>
-<p>  A non-empty rectangular matrix consisting of boolean values - <code>true</code> if the corresponding cell contains a mine, <code>false</code> otherwise.</p>
-<p>  <em>Guaranteed constraints :</em> <code>2 ≤ matrix.length ≤ 100</code>, <code>2 ≤ matrix[0].length ≤ 100</code>.</p>
-</li>
-<li><p><strong>[output] array.array.integer</strong></p>
-<ul>
-<li>Rectangular matrix of the same size as <code>matrix</code> each cell of which contains an integer equal to the number of mines in the neighboring cells. Two cells are called neighboring if they share at least one corner.</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">dx = [<span class="number">-1</span>, <span class="number">-1</span>, <span class="number">-1</span>, <span class="number">0</span>, +<span class="number">1</span>, +<span class="number">1</span>, +<span class="number">1</span>, <span class="number">0</span>]</span><br><span class="line">dy = [<span class="number">-1</span>, <span class="number">0</span>, +<span class="number">1</span>, +<span class="number">1</span>, +<span class="number">1</span>, <span class="number">0</span>, <span class="number">-1</span>, <span class="number">-1</span>]</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">minesweeper</span><span class="params">(matrix)</span>:</span></span><br><span class="line">    result = []</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(len(matrix)):</span><br><span class="line">        temp = []</span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> range(len(matrix[<span class="number">0</span>])):</span><br><span class="line">            s = <span class="number">0</span></span><br><span class="line">            <span class="keyword">for</span> k <span class="keyword">in</span> range(<span class="number">8</span>):</span><br><span class="line">                nx = i + dx[k]</span><br><span class="line">                ny = j + dy[k]</span><br><span class="line">                <span class="keyword">if</span> <span class="number">0</span> &lt;= nx &lt; len(matrix) <span class="keyword">and</span> <span class="number">0</span> &lt;= ny &lt; len(matrix[<span class="number">0</span>]):</span><br><span class="line">                    <span class="keyword">if</span> matrix[nx][ny]:</span><br><span class="line">                        s += <span class="number">1</span></span><br><span class="line">            temp.append(s)</span><br><span class="line">        result.append(temp)</span><br><span class="line">    <span class="keyword">return</span> result</span><br></pre></td></tr></table></figure>
-<!-- toc -->
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    
-<div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-03-09T03:41:03.000Z">2020-03-09</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
-                </div>
-                
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2020/03/09/CodeSignal-23-Box-Blur/">[CodeSignal] #23 Box Blur</a>
-            
-        </h1>
-        <div class="content">
-            <!-- excerpt -->
-<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Last night you partied a little too hard. Now there’s a black and white photo of you that’s about to go viral! You can’t let this ruin your reputation, so you want to apply the <em>box blur</em> algorithm<sup><a href="#footnote_1">1</a></sup> to the photo to hide its content.</p>
-<p>The pixels in the input image are represented as integers. The algorithm distorts the input image in the following way: Every pixel <code>x</code> in the output image has a value equal to the average value of the pixel values from the <code>3 × 3</code> square that has its center at <code>x</code>, including <code>x</code> itself. All the pixels on the border of <code>x</code> are then removed.</p>
-<p>Return the blurred image as an integer, with the fractions rounded down.</p>
-<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><p>For </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">image &#x3D; [[1, 1, 1], </span><br><span class="line">         [1, 7, 1], </span><br><span class="line">         [1, 1, 1]]</span><br></pre></td></tr></table></figure>
-<p>the output should be <code>boxBlur(image) = [[1]]</code>.</p>
-<p>To get the value of the middle pixel in the input <code>3 × 3</code> square: <code>(1 + 1 + 1 + 1 + 7 + 1 + 1 + 1 + 1) = 15 / 9 = 1.66666 = 1</code>. The border pixels are cropped from the final result.</p>
-<p>For</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">image &#x3D; [[7, 4, 0, 1], </span><br><span class="line">         [5, 6, 2, 2], </span><br><span class="line">         [6, 10, 7, 8], </span><br><span class="line">         [1, 4, 2, 0]]</span><br></pre></td></tr></table></figure>
-<p>the output should be</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">boxBlur(image) &#x3D; [[5, 4], </span><br><span class="line">                  [4, 4]]</span><br></pre></td></tr></table></figure>
-<p>There are four <code>3 × 3</code> squares in the input image, so there should be four integers in the blurred output. To get the first value: <code>(7 + 4 + 0 + 5 + 6 + 2 + 6 + 10 + 7) = 47 / 9 = 5.2222 = 5</code>. The other three integers are obtained the same way, then the surrounding integers are cropped from the final result.</p>
-<h3 id="Input-Output"><a href="#Input-Output" class="headerlink" title="Input/Output"></a>Input/Output</h3><ul>
-<li><p><strong>[execution time limit] 4 seconds (py3)</strong></p>
-</li>
-<li><p><strong>[input] array.array.integer image</strong></p>
-<p>  An image, stored as a rectangular matrix of non-negative integers.</p>
-<p>  <em>Guaranteed constraints :</em> <code>3 ≤ image.length ≤ 100</code>, <code>3 ≤ image[0].length ≤ 100</code>, <code>0 ≤ image[i][j] ≤ 255</code>.</p>
-</li>
-<li><p><strong>[output] array.array.integer</strong></p>
-<ul>
-<li>A blurred image represented as integers, obtained through the process in the description.</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">boxBlur</span><span class="params">(image)</span>:</span></span><br><span class="line">    result = []</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>, len(image)<span class="number">-1</span>):</span><br><span class="line">        temp = []</span><br><span class="line">        s = <span class="number">0</span></span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> range(<span class="number">1</span>, len(image[<span class="number">0</span>])<span class="number">-1</span>):</span><br><span class="line">            s = image[i][j] + image[i<span class="number">-1</span>][j<span class="number">-1</span>] + image[i][j<span class="number">-1</span>] + image[i<span class="number">-1</span>][j] + image[i+<span class="number">1</span>][j] + image[i][j+<span class="number">1</span>] + image[i<span class="number">-1</span>][j+<span class="number">1</span>] + image[i+<span class="number">1</span>][j<span class="number">-1</span>] + image[i+<span class="number">1</span>][j+<span class="number">1</span>]</span><br><span class="line">            temp.append(s//<span class="number">9</span>)</span><br><span class="line">        result.append(temp)</span><br><span class="line">    <span class="keyword">return</span> result</span><br></pre></td></tr></table></figure>
-<!-- toc -->
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
 
     
 <div class="card card-transparent">
@@ -856,7 +852,7 @@
                     </p>
                     <a href="/archives">
                         <p class="title has-text-weight-normal">
-                            33
+                            36
                         </p>
                     </a>
                 </div>
@@ -988,7 +984,7 @@
                 <span class="level-item">Algorithm</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">32</span>
+                <span class="level-item tag">36</span>
             </span>
         </a><ul><li>
         <a class="level is-marginless" href="/categories/Algorithm/CodeSignal/">
@@ -996,7 +992,7 @@
                 <span class="level-item">CodeSignal</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">32</span>
+                <span class="level-item tag">36</span>
             </span>
         </a></li></ul></li>
             </ul>
@@ -1019,10 +1015,49 @@
             
             <div class="media-content">
                 <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-09T13:23:26.000Z">2020-03-09</time></div>
+                    <a href="/2020/03/09/CodeSignal-36-differentSymbolsNaive/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #36 differentSymbolsNaive</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-09T13:19:09.000Z">2020-03-09</time></div>
+                    <a href="/2020/03/09/CodeSignal-35-firstDigit/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #35 firstDigit</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-09T13:03:46.000Z">2020-03-09</time></div>
+                    <a href="/2020/03/09/CodeSignal-34-extractEachKth/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #34 extractEachKth</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <div class="media-content">
+                <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-09T09:58:03.000Z">2020-03-09</time></div>
                     <a href="/2020/03/09/CodeSignal-33-stringsRearrangement/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #33 stringsRearrangement</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
                     </p>
                 </div>
             </div>
@@ -1034,45 +1069,6 @@
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-09T09:46:14.000Z">2020-03-09</time></div>
                     <a href="/2020/03/09/CodeSignal-32-absoluteValuesSumMinimization/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #32 absoluteValuesSumMinimization</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-09T09:39:48.000Z">2020-03-09</time></div>
-                    <a href="/2020/03/09/CodeSignal-31-depositProfit/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #31 depositProfit</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-09T09:22:43.000Z">2020-03-09</time></div>
-                    <a href="/2020/03/09/CodeSignal-30-Circle-of-Numbers/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #30 Circle of Numbers</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-09T09:07:31.000Z">2020-03-09</time></div>
-                    <a href="/2020/03/09/CodeSignal-29-chessBoardCellColor/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #29 chessBoardCellColor</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
                     </p>
@@ -1097,7 +1093,7 @@
                     <span class="level-item">3월 2020</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">30</span>
+                    <span class="level-item tag">33</span>
                 </span>
             </a>
         </li>
@@ -1152,10 +1148,49 @@
             
             <div class="media-content">
                 <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-09T13:23:26.000Z">2020-03-09</time></div>
+                    <a href="/2020/03/09/CodeSignal-36-differentSymbolsNaive/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #36 differentSymbolsNaive</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-09T13:19:09.000Z">2020-03-09</time></div>
+                    <a href="/2020/03/09/CodeSignal-35-firstDigit/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #35 firstDigit</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-09T13:03:46.000Z">2020-03-09</time></div>
+                    <a href="/2020/03/09/CodeSignal-34-extractEachKth/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #34 extractEachKth</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <div class="media-content">
+                <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-09T09:58:03.000Z">2020-03-09</time></div>
                     <a href="/2020/03/09/CodeSignal-33-stringsRearrangement/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #33 stringsRearrangement</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
                     </p>
                 </div>
             </div>
@@ -1167,45 +1202,6 @@
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-09T09:46:14.000Z">2020-03-09</time></div>
                     <a href="/2020/03/09/CodeSignal-32-absoluteValuesSumMinimization/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #32 absoluteValuesSumMinimization</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-09T09:39:48.000Z">2020-03-09</time></div>
-                    <a href="/2020/03/09/CodeSignal-31-depositProfit/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #31 depositProfit</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-09T09:22:43.000Z">2020-03-09</time></div>
-                    <a href="/2020/03/09/CodeSignal-30-Circle-of-Numbers/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #30 Circle of Numbers</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-09T09:07:31.000Z">2020-03-09</time></div>
-                    <a href="/2020/03/09/CodeSignal-29-chessBoardCellColor/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #29 chessBoardCellColor</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
                     </p>
@@ -1230,7 +1226,7 @@
                     <span class="level-item">3월 2020</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">30</span>
+                    <span class="level-item tag">33</span>
                 </span>
             </a>
         </li>
@@ -1399,7 +1395,7 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
 
 
-<a id="back-to-top" title="Back to Top" href="javascript:;">
+<a id="back-to-top" title="Zurück nach oben" href="javascript:;">
     <i class="fas fa-chevron-up"></i>
 </a>
 <script src="/js/back-to-top.js" defer></script>
