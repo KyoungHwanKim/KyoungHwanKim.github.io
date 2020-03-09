@@ -7,19 +7,19 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>[CodeSignal] #1 add - Cuws&#39;s Note</title>
+<title>[CodeSignal] #30 Circle of Numbers - Cuws&#39;s Note</title>
 
 
-    <meta name="description" content="DescriptionWrite a function that returns the sum of two numbers. ExampleFor param1 &#x3D; 1 and param2 &#x3D; 2, the output should be add(param1, param2) &#x3D; 3. Input&#x2F;Output [execution time limit] 4 seconds (py3">
+    <meta name="description" content="DescriptionConsider integer numbers from 0 to n - 1 written down along the circle in such a way that the distance between any two neighboring numbers is equal (note that 0 and n - 1 are neighboring,">
 <meta property="og:type" content="article">
-<meta property="og:title" content="[CodeSignal] #1 add">
-<meta property="og:url" content="https://kyounghwankim.github.io/2020/02/28/CodeSignal-1-add/index.html">
+<meta property="og:title" content="[CodeSignal] #30 Circle of Numbers">
+<meta property="og:url" content="https://kyounghwankim.github.io/2020/03/09/CodeSignal-30-Circle-of-Numbers/index.html">
 <meta property="og:site_name" content="Cuws&#39;s Note">
-<meta property="og:description" content="DescriptionWrite a function that returns the sum of two numbers. ExampleFor param1 &#x3D; 1 and param2 &#x3D; 2, the output should be add(param1, param2) &#x3D; 3. Input&#x2F;Output [execution time limit] 4 seconds (py3">
+<meta property="og:description" content="DescriptionConsider integer numbers from 0 to n - 1 written down along the circle in such a way that the distance between any two neighboring numbers is equal (note that 0 and n - 1 are neighboring,">
 <meta property="og:locale" content="ko_KR">
 <meta property="og:image" content="https://kyounghwankim.github.io/images/og_image.png">
-<meta property="article:published_time" content="2020-02-28T02:34:45.000Z">
-<meta property="article:modified_time" content="2020-02-28T03:25:54.930Z">
+<meta property="article:published_time" content="2020-03-09T09:22:43.000Z">
+<meta property="article:modified_time" content="2020-03-09T09:25:24.097Z">
 <meta property="article:author" content="Cuws">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://kyounghwankim.github.io/images/og_image.png">
@@ -80,7 +80,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.svg" alt="[CodeSignal] #1 add" height="28">
+                <img src="/images/logo.svg" alt="[CodeSignal] #30 Circle of Numbers" height="28">
             
             </a>
         </div>
@@ -136,7 +136,7 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-02-28T02:34:45.000Z">2020-02-28</time>
+                <time class="level-item has-text-grey" datetime="2020-03-09T09:22:43.000Z">2020-03-09</time>
                 
                 <div class="level-item">
                 <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
@@ -149,30 +149,31 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                [CodeSignal] #1 add
+                [CodeSignal] #30 Circle of Numbers
             
         </h1>
         <div class="content">
             <!-- excerpt -->
-<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Write a function that returns the sum of two numbers.</p>
-<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><p>For <code>param1 = 1</code> and <code>param2 = 2</code>, the output should be <code>add(param1, param2) = 3</code>.</p>
+<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Consider integer numbers from <code>0</code> to <code>n - 1</code> written down along the circle in such a way that the distance between any two neighboring numbers is equal (note that <code>0</code> and <code>n - 1</code> are neighboring, too).</p>
+<p>Given <code>n</code> and <code>firstNumber</code>, find the number which is written in the radially opposite position to <code>firstNumber</code>.</p>
+<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><p>For <code>n = 10</code> and <code>firstNumber = 2</code>, the output should be <code>circleOfNumbers(n, firstNumber) = 7</code>.</p>
+<center><img src='img/CircleofNumbers1.png'/></center>
+
 <h3 id="Input-Output"><a href="#Input-Output" class="headerlink" title="Input/Output"></a>Input/Output</h3><ul>
 <li><p><strong>[execution time limit] 4 seconds (py3)</strong></p>
 </li>
-<li><p><strong>[input] integer param1</strong></p>
-<p>  <em>Guaranteed constraints :</em> <code>-1000 ≤ param1 ≤ 1000</code>.</p>
+<li><p><strong>[input] integer n</strong></p>
+<p>  A positive <strong>even</strong> integer.</p>
+<p>  <em>Guaranteed constraints :</em> <code>4 ≤ n ≤ 20</code>.</p>
 </li>
-<li><p><strong>[input] integer param2</strong></p>
-<p>  <em>Guaranteed constraints :</em> <code>-1000 ≤ param2 ≤ 1000</code>.</p>
+<li><p><strong>[input] integer firstNumber</strong></p>
+<p>  <em>Guaranteed constraints :</em> <code>0 ≤ firstNumber ≤ n - 1</code>.</p>
 </li>
-<li><p><strong>[output] integer</strong>  </p>
-<ul>
-<li>The sum of the two inputs.</li>
-</ul>
+<li><p><strong>[output] integer</strong></p>
 </li>
 </ul>
 <hr>
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">add</span><span class="params">(param1, param2)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> param1 + param2</span><br></pre></td></tr></table></figure>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">chessBoardCellColor</span><span class="params">(cell1, cell2)</span>:</span></span><br><span class="line">    <span class="keyword">if</span> (ord(cell1[<span class="number">0</span>]) - ord(<span class="string">'A'</span>)) % <span class="number">2</span> == (ord(cell2[<span class="number">0</span>]) - ord(<span class="string">'A'</span>)) % <span class="number">2</span>:</span><br><span class="line">        <span class="keyword">if</span> int(cell1[<span class="number">1</span>]) % <span class="number">2</span> == int(cell2[<span class="number">1</span>]) % <span class="number">2</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">if</span> int(cell1[<span class="number">1</span>]) % <span class="number">2</span> != int(cell2[<span class="number">1</span>]) % <span class="number">2</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">False</span></span><br></pre></td></tr></table></figure>
 <!-- toc -->
         </div>
         
@@ -188,13 +189,13 @@
 <div class="card card-transparent">
     <div class="level post-navigation is-flex-wrap is-mobile">
         
-        <div class="level-start">
-            <a class="level level-item has-link-grey  article-nav-prev" href="/2020/02/28/CodeSignal-2-centuryFromYear/">
-                <i class="level-item fas fa-chevron-left"></i>
-                <span class="level-item">[CodeSignal] #2 centuryFromYear</span>
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/2020/03/09/CodeSignal-29-chessBoardCellColor/">
+                <span class="level-item">[CodeSignal] #29 chessBoardCellColor</span>
+                <i class="level-item fas fa-chevron-right"></i>
             </a>
         </div>
-        
         
     </div>
 </div>
@@ -665,7 +666,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.svg" alt="[CodeSignal] #1 add" height="28">
+                    <img src="/images/logo.svg" alt="[CodeSignal] #30 Circle of Numbers" height="28">
                 
                 </a>
                 <p class="is-size-7">
