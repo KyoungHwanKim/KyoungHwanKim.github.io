@@ -7,19 +7,19 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>[CodeSignal] #8 matrixElementsSum - Cuws&#39;s Note</title>
+<title>[CodeSignal] #57 File Naming - Cuws&#39;s Note</title>
 
 
-    <meta name="description" content="DescriptionAfter becoming famous, the CodeBots decided to move into a new building together. Each of the rooms has a different cost, and some of them are free, but there’s a rumour that all the free">
+    <meta name="description" content="DescriptionYou are given an array of desired filenames in the order of their creation. Since two files cannot have equal names, the one which comes later will have an addition to its name in a form o">
 <meta property="og:type" content="article">
-<meta property="og:title" content="[CodeSignal] #8 matrixElementsSum">
-<meta property="og:url" content="https://kyounghwankim.github.io/2020/03/05/CodeSignal-8-matrixElementsSum/index.html">
+<meta property="og:title" content="[CodeSignal] #57 File Naming">
+<meta property="og:url" content="https://kyounghwankim.github.io/2020/03/11/CodeSignal-57-File-Naming/index.html">
 <meta property="og:site_name" content="Cuws&#39;s Note">
-<meta property="og:description" content="DescriptionAfter becoming famous, the CodeBots decided to move into a new building together. Each of the rooms has a different cost, and some of them are free, but there’s a rumour that all the free">
+<meta property="og:description" content="DescriptionYou are given an array of desired filenames in the order of their creation. Since two files cannot have equal names, the one which comes later will have an addition to its name in a form o">
 <meta property="og:locale" content="ko_KR">
 <meta property="og:image" content="https://kyounghwankim.github.io/images/og_image.png">
-<meta property="article:published_time" content="2020-03-05T05:45:26.000Z">
-<meta property="article:modified_time" content="2020-03-09T03:04:02.323Z">
+<meta property="article:published_time" content="2020-03-10T17:24:40.000Z">
+<meta property="article:modified_time" content="2020-03-10T18:21:34.135Z">
 <meta property="article:author" content="Cuws">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://kyounghwankim.github.io/images/og_image.png">
@@ -80,7 +80,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.svg" alt="[CodeSignal] #8 matrixElementsSum" height="28">
+                <img src="/images/logo.svg" alt="[CodeSignal] #57 File Naming" height="28">
             
             </a>
         </div>
@@ -136,7 +136,7 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-03-05T05:45:26.000Z">2020-03-05</time>
+                <time class="level-item has-text-grey" datetime="2020-03-10T17:24:40.000Z">2020-03-11</time>
                 
                 <div class="level-item">
                 <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
@@ -149,40 +149,25 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                [CodeSignal] #8 matrixElementsSum
+                [CodeSignal] #57 File Naming
             
         </h1>
         <div class="content">
             <!-- excerpt -->
-<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>After becoming famous, the CodeBots decided to move into a new building together. Each of the rooms has a different cost, and some of them are free, but there’s a rumour that all the free rooms are haunted! Since the CodeBots are quite superstitious, they refuse to stay in any of the free rooms, <strong>or any of the rooms below any of the free rooms.</strong></p>
-<p>Given <code>matrix</code>, a rectangular matrix of integers, where each value represents the cost of the room, your task is to return the total sum of all rooms that are suitable for the CodeBots (ie: add up all the values that don’t appear below a <code>0</code>).</p>
-<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><ul>
-<li><p>For <code>matrix = [[0, 1, 1, 2], [0, 5, 0, 0], [2, 0, 3, 3]]</code> the output should be <code>matrixElementsSum(matrix) = 9</code>.</p>
-  <center><img src="/img/matrixElementsSum1.png"></center>
-
-<p>  There are several haunted rooms, so we’ll disregard them as well as any rooms beneath them. Thus, the answer is <code>1 + 5 + 1 + 2 = 9</code>.</p>
-</li>
-<li><p>For <code>matrix = [[1, 1, 1, 0], [0, 5, 0, 1], [2, 1, 3, 10]]</code> the output should be <code>matrixElementsSum(matrix) = 9</code>.</p>
-  <center><img src="/img/matrixElementsSum2.png"></center>
-
-<p>  Note that the free room in the final column makes the full column unsuitable for bots (not just the room directly beneath it). Thus, the answer is <code>1 + 1 + 1 + 5 + 1 = 9</code>.</p>
-</li>
-</ul>
+<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>You are given an array of desired filenames in the order of their creation. Since two files cannot have equal names, the one which comes later will have an addition to its name in a form of <code>(k)</code>, where <code>k</code> is the smallest positive integer such that the obtained name is not used yet.</p>
+<p>Return an array of names that will be given to the files.</p>
+<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><p>For <code>names = [&quot;doc&quot;, &quot;doc&quot;, &quot;image&quot;, &quot;doc(1)&quot;, &quot;doc&quot;]</code>, the output should be <code>fileNaming(names) = [&quot;doc&quot;, &quot;doc(1)&quot;, &quot;image&quot;, &quot;doc(1)(1)&quot;, &quot;doc(2)&quot;]</code>.</p>
 <h3 id="Input-Output"><a href="#Input-Output" class="headerlink" title="Input/Output"></a>Input/Output</h3><ul>
 <li><p><strong>[execution time limit] 4 seconds (py3)</strong></p>
 </li>
-<li><p><strong>[input] array.array.integer matrix</strong></p>
-<p>  A 2-dimensional array of integers representing the cost of each room in the building. A value of <code>0</code> indicates that the room is haunted.</p>
-<p>  <em>Guaranteed constraints :</em> <code>1 ≤ matrix.length ≤ 5</code>, <code>1 ≤ matrix[i].length ≤ 5</code>, <code>0 ≤ matrix[i][j] ≤ 10</code>.</p>
+<li><p><strong>[input] array.string names</strong></p>
+<p>  <em>Guaranteed constraints :</em> <code>5 ≤ names.length ≤ 1000</code>, <code>1 ≤ names[i].length ≤ 15</code>.</p>
 </li>
-<li><p><strong>[output] integer</strong>  </p>
-<ul>
-<li>The total price of all the rooms that are suitable for the CodeBots to live in.</li>
-</ul>
+<li><p><strong>[output] array.string</strong></p>
 </li>
 </ul>
 <hr>
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">matrixElementsSum</span><span class="params">(matrix)</span>:</span></span><br><span class="line">    answer = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(len(matrix[<span class="number">0</span>])):</span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> range(len(matrix)):</span><br><span class="line">            <span class="keyword">if</span> matrix[j][i] == <span class="number">0</span>:</span><br><span class="line">                <span class="keyword">break</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                answer += matrix[j][i]</span><br><span class="line">    <span class="keyword">return</span> answer</span><br></pre></td></tr></table></figure>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">fileNaming</span><span class="params">(names)</span>:</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(len(names)):</span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> range(len(names)):</span><br><span class="line">            <span class="keyword">if</span> i != j <span class="keyword">and</span> names[i] == names[j]:</span><br><span class="line">                k = <span class="number">1</span></span><br><span class="line">                <span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">                    temp = names[j] + <span class="string">'('</span> + str(k) + <span class="string">')'</span></span><br><span class="line">                    <span class="keyword">if</span> temp <span class="keyword">not</span> <span class="keyword">in</span> names[:j]:</span><br><span class="line">                        names[j] = temp</span><br><span class="line">                        <span class="keyword">break</span></span><br><span class="line">                    k += <span class="number">1</span></span><br><span class="line">    <span class="keyword">return</span> names</span><br></pre></td></tr></table></figure>
 <!-- toc -->
         </div>
         
@@ -199,16 +184,16 @@
     <div class="level post-navigation is-flex-wrap is-mobile">
         
         <div class="level-start">
-            <a class="level level-item has-link-grey  article-nav-prev" href="/2020/03/05/CodeSignal-9-All-Longest-Strings/">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/2020/03/11/CodeSignal-58-messageFromBinaryCode/">
                 <i class="level-item fas fa-chevron-left"></i>
-                <span class="level-item">[CodeSignal] #9 All Longest Strings</span>
+                <span class="level-item">[CodeSignal] #58 messageFromBinaryCode</span>
             </a>
         </div>
         
         
         <div class="level-end">
-            <a class="level level-item has-link-grey  article-nav-next" href="/2020/03/03/CodeSignal-7-almostIncreasingSequence/">
-                <span class="level-item">[CodeSignal] #7 almostIncreasingSequence</span>
+            <a class="level level-item has-link-grey  article-nav-next" href="/2020/03/11/CodeSignal-56-digitsProduct/">
+                <span class="level-item">[CodeSignal] #56 digitsProduct</span>
                 <i class="level-item fas fa-chevron-right"></i>
             </a>
         </div>
@@ -682,7 +667,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.svg" alt="[CodeSignal] #8 matrixElementsSum" height="28">
+                    <img src="/images/logo.svg" alt="[CodeSignal] #57 File Naming" height="28">
                 
                 </a>
                 <p class="is-size-7">

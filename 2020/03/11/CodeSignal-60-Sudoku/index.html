@@ -7,19 +7,19 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>[CodeSignal] #8 matrixElementsSum - Cuws&#39;s Note</title>
+<title>[CodeSignal] #60 Sudoku - Cuws&#39;s Note</title>
 
 
-    <meta name="description" content="DescriptionAfter becoming famous, the CodeBots decided to move into a new building together. Each of the rooms has a different cost, and some of them are free, but there’s a rumour that all the free">
+    <meta name="description" content="DescriptionSudoku is a number-placement puzzle. The objective is to fill a 9 × 9 grid with digits so that each column, each row, and each of the nine 3 × 3 sub-grids that compose the grid contains al">
 <meta property="og:type" content="article">
-<meta property="og:title" content="[CodeSignal] #8 matrixElementsSum">
-<meta property="og:url" content="https://kyounghwankim.github.io/2020/03/05/CodeSignal-8-matrixElementsSum/index.html">
+<meta property="og:title" content="[CodeSignal] #60 Sudoku">
+<meta property="og:url" content="https://kyounghwankim.github.io/2020/03/11/CodeSignal-60-Sudoku/index.html">
 <meta property="og:site_name" content="Cuws&#39;s Note">
-<meta property="og:description" content="DescriptionAfter becoming famous, the CodeBots decided to move into a new building together. Each of the rooms has a different cost, and some of them are free, but there’s a rumour that all the free">
+<meta property="og:description" content="DescriptionSudoku is a number-placement puzzle. The objective is to fill a 9 × 9 grid with digits so that each column, each row, and each of the nine 3 × 3 sub-grids that compose the grid contains al">
 <meta property="og:locale" content="ko_KR">
 <meta property="og:image" content="https://kyounghwankim.github.io/images/og_image.png">
-<meta property="article:published_time" content="2020-03-05T05:45:26.000Z">
-<meta property="article:modified_time" content="2020-03-09T03:04:02.323Z">
+<meta property="article:published_time" content="2020-03-10T18:44:53.000Z">
+<meta property="article:modified_time" content="2020-03-10T19:00:01.496Z">
 <meta property="article:author" content="Cuws">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://kyounghwankim.github.io/images/og_image.png">
@@ -80,7 +80,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.svg" alt="[CodeSignal] #8 matrixElementsSum" height="28">
+                <img src="/images/logo.svg" alt="[CodeSignal] #60 Sudoku" height="28">
             
             </a>
         </div>
@@ -136,7 +136,7 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-03-05T05:45:26.000Z">2020-03-05</time>
+                <time class="level-item has-text-grey" datetime="2020-03-10T18:44:53.000Z">2020-03-11</time>
                 
                 <div class="level-item">
                 <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
@@ -149,40 +149,41 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                [CodeSignal] #8 matrixElementsSum
+                [CodeSignal] #60 Sudoku
             
         </h1>
         <div class="content">
             <!-- excerpt -->
-<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>After becoming famous, the CodeBots decided to move into a new building together. Each of the rooms has a different cost, and some of them are free, but there’s a rumour that all the free rooms are haunted! Since the CodeBots are quite superstitious, they refuse to stay in any of the free rooms, <strong>or any of the rooms below any of the free rooms.</strong></p>
-<p>Given <code>matrix</code>, a rectangular matrix of integers, where each value represents the cost of the room, your task is to return the total sum of all rooms that are suitable for the CodeBots (ie: add up all the values that don’t appear below a <code>0</code>).</p>
+<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p><em>Sudoku</em> is a number-placement puzzle. The objective is to fill a <code>9 × 9</code> grid with digits so that each column, each row, and each of the nine <code>3 × 3</code> sub-grids that compose the grid contains all of the digits from <code>1</code> to <code>9</code>.</p>
+<p>This algorithm should check if the given grid of numbers represents a correct solution to Sudoku.</p>
 <h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><ul>
-<li><p>For <code>matrix = [[0, 1, 1, 2], [0, 5, 0, 0], [2, 0, 3, 3]]</code> the output should be <code>matrixElementsSum(matrix) = 9</code>.</p>
-  <center><img src="/img/matrixElementsSum1.png"></center>
-
-<p>  There are several haunted rooms, so we’ll disregard them as well as any rooms beneath them. Thus, the answer is <code>1 + 5 + 1 + 2 = 9</code>.</p>
+<li><p>For</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">grid &#x3D; [[1, 3, 2, 5, 4, 6, 9, 8, 7],</span><br><span class="line">        [4, 6, 5, 8, 7, 9, 3, 2, 1],</span><br><span class="line">        [7, 9, 8, 2, 1, 3, 6, 5, 4],</span><br><span class="line">        [9, 2, 1, 4, 3, 5, 8, 7, 6],</span><br><span class="line">        [3, 5, 4, 7, 6, 8, 2, 1, 9],</span><br><span class="line">        [6, 8, 7, 1, 9, 2, 5, 4, 3],</span><br><span class="line">        [5, 7, 6, 9, 8, 1, 4, 3, 2],</span><br><span class="line">        [2, 4, 3, 6, 5, 7, 1, 9, 8],</span><br><span class="line">        [8, 1, 9, 3, 2, 4, 7, 6, 5]]</span><br></pre></td></tr></table></figure>
+<p>the output should be <code>sudoku(grid) = true</code>;</p>
 </li>
-<li><p>For <code>matrix = [[1, 1, 1, 0], [0, 5, 0, 1], [2, 1, 3, 10]]</code> the output should be <code>matrixElementsSum(matrix) = 9</code>.</p>
-  <center><img src="/img/matrixElementsSum2.png"></center>
-
-<p>  Note that the free room in the final column makes the full column unsuitable for bots (not just the room directly beneath it). Thus, the answer is <code>1 + 1 + 1 + 5 + 1 = 9</code>.</p>
+<li><p>For</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">grid &#x3D; [[1, 3, 2, 5, 4, 6, 9, 2, 7],</span><br><span class="line">        [4, 6, 5, 8, 7, 9, 3, 8, 1],</span><br><span class="line">        [7, 9, 8, 2, 1, 3, 6, 5, 4],</span><br><span class="line">        [9, 2, 1, 4, 3, 5, 8, 7, 6],</span><br><span class="line">        [3, 5, 4, 7, 6, 8, 2, 1, 9],</span><br><span class="line">        [6, 8, 7, 1, 9, 2, 5, 4, 3],</span><br><span class="line">        [5, 7, 6, 9, 8, 1, 4, 3, 2],</span><br><span class="line">        [2, 4, 3, 6, 5, 7, 1, 9, 8],</span><br><span class="line">        [8, 1, 9, 3, 2, 4, 7, 6, 5]]</span><br></pre></td></tr></table></figure>
+<p>the output should be <code>sudoku(grid) = false</code>.</p>
 </li>
 </ul>
+<p>The output should be <code>false</code>: each of the nine <code>3 × 3</code> sub-grids should contain all of the digits from <code>1</code> to <code>9</code>.<br>These examples are represented on the image below.</p>
+<center><img src="/img/Sudoku1.png"></center>
+
 <h3 id="Input-Output"><a href="#Input-Output" class="headerlink" title="Input/Output"></a>Input/Output</h3><ul>
 <li><p><strong>[execution time limit] 4 seconds (py3)</strong></p>
 </li>
-<li><p><strong>[input] array.array.integer matrix</strong></p>
-<p>  A 2-dimensional array of integers representing the cost of each room in the building. A value of <code>0</code> indicates that the room is haunted.</p>
-<p>  <em>Guaranteed constraints :</em> <code>1 ≤ matrix.length ≤ 5</code>, <code>1 ≤ matrix[i].length ≤ 5</code>, <code>0 ≤ matrix[i][j] ≤ 10</code>.</p>
+<li><p><strong>[input] array.array.integer grid</strong></p>
+<p>  A matrix representing <code>9 × 9</code> grid already filled with numbers from <code>1</code> to <code>9</code>.</p>
+<p>  <em>Guaranteed constraints :</em> <code>grid.length = 9</code>, <code>grid[i].length = 9</code>, <code>1 ≤ grid[i][j] ≤ 9</code>.</p>
 </li>
-<li><p><strong>[output] integer</strong>  </p>
+<li><p><strong>[output] boolean</strong></p>
 <ul>
-<li>The total price of all the rooms that are suitable for the CodeBots to live in.</li>
+<li><code>true</code> if the given grid represents a correct solution to Sudoku, <code>false</code> otherwise.</li>
 </ul>
 </li>
 </ul>
 <hr>
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">matrixElementsSum</span><span class="params">(matrix)</span>:</span></span><br><span class="line">    answer = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(len(matrix[<span class="number">0</span>])):</span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> range(len(matrix)):</span><br><span class="line">            <span class="keyword">if</span> matrix[j][i] == <span class="number">0</span>:</span><br><span class="line">                <span class="keyword">break</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                answer += matrix[j][i]</span><br><span class="line">    <span class="keyword">return</span> answer</span><br></pre></td></tr></table></figure>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">sudoku</span><span class="params">(grid)</span>:</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>, <span class="number">9</span>, <span class="number">3</span>):</span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> range(<span class="number">0</span>, <span class="number">9</span>, <span class="number">3</span>):</span><br><span class="line">            check = [<span class="number">0</span> <span class="keyword">for</span> _ <span class="keyword">in</span> range(<span class="number">10</span>)]</span><br><span class="line">            <span class="keyword">for</span> k <span class="keyword">in</span> range(i, i+<span class="number">3</span>):</span><br><span class="line">                <span class="keyword">for</span> l <span class="keyword">in</span> range(j, j+<span class="number">3</span>):</span><br><span class="line">                    check[grid[k][l]] += <span class="number">1</span></span><br><span class="line">            <span class="keyword">for</span> k <span class="keyword">in</span> range(<span class="number">1</span>, <span class="number">10</span>):</span><br><span class="line">                <span class="keyword">if</span> check[k] != <span class="number">1</span>:</span><br><span class="line">                    <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">9</span>):</span><br><span class="line">        checkrows = [<span class="number">0</span> <span class="keyword">for</span> _ <span class="keyword">in</span> range(<span class="number">10</span>)]</span><br><span class="line">        checkcols = [<span class="number">0</span> <span class="keyword">for</span> _ <span class="keyword">in</span> range(<span class="number">10</span>)]</span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> range(<span class="number">9</span>):</span><br><span class="line">            checkcols[grid[j][i]] += <span class="number">1</span></span><br><span class="line">            checkrows[grid[i][j]] += <span class="number">1</span></span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> range(<span class="number">1</span>, <span class="number">10</span>):</span><br><span class="line">            <span class="keyword">if</span> checkrows[j] != <span class="number">1</span>:</span><br><span class="line">                <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">            <span class="keyword">if</span> checkcols[j] != <span class="number">1</span>:</span><br><span class="line">                <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">True</span></span><br></pre></td></tr></table></figure>
 <!-- toc -->
         </div>
         
@@ -198,17 +199,10 @@
 <div class="card card-transparent">
     <div class="level post-navigation is-flex-wrap is-mobile">
         
-        <div class="level-start">
-            <a class="level level-item has-link-grey  article-nav-prev" href="/2020/03/05/CodeSignal-9-All-Longest-Strings/">
-                <i class="level-item fas fa-chevron-left"></i>
-                <span class="level-item">[CodeSignal] #9 All Longest Strings</span>
-            </a>
-        </div>
-        
         
         <div class="level-end">
-            <a class="level level-item has-link-grey  article-nav-next" href="/2020/03/03/CodeSignal-7-almostIncreasingSequence/">
-                <span class="level-item">[CodeSignal] #7 almostIncreasingSequence</span>
+            <a class="level level-item has-link-grey  article-nav-next" href="/2020/03/11/CodeSignal-59-spiralNumbers/">
+                <span class="level-item">[CodeSignal] #59 spiralNumbers</span>
                 <i class="level-item fas fa-chevron-right"></i>
             </a>
         </div>
@@ -682,7 +676,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.svg" alt="[CodeSignal] #8 matrixElementsSum" height="28">
+                    <img src="/images/logo.svg" alt="[CodeSignal] #60 Sudoku" height="28">
                 
                 </a>
                 <p class="is-size-7">
