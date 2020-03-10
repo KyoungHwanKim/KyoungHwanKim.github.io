@@ -146,6 +146,133 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-03-09T09:22:43.000Z">2020-03-09</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2020/03/09/CodeSignal-30-Circle-of-Numbers/">[CodeSignal] #30 Circle of Numbers</a>
+            
+        </h1>
+        <div class="content">
+            <!-- excerpt -->
+<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Consider integer numbers from <code>0</code> to <code>n - 1</code> written down along the circle in such a way that the distance between any two neighboring numbers is equal (note that <code>0</code> and <code>n - 1</code> are neighboring, too).</p>
+<p>Given <code>n</code> and <code>firstNumber</code>, find the number which is written in the radially opposite position to <code>firstNumber</code>.</p>
+<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><p>For <code>n = 10</code> and <code>firstNumber = 2</code>, the output should be <code>circleOfNumbers(n, firstNumber) = 7</code>.</p>
+<center><img src="/img/CircleofNumbers1.png"></center>
+
+<h3 id="Input-Output"><a href="#Input-Output" class="headerlink" title="Input/Output"></a>Input/Output</h3><ul>
+<li><p><strong>[execution time limit] 4 seconds (py3)</strong></p>
+</li>
+<li><p><strong>[input] integer n</strong></p>
+<p>  A positive <strong>even</strong> integer.</p>
+<p>  <em>Guaranteed constraints :</em> <code>4 ≤ n ≤ 20</code>.</p>
+</li>
+<li><p><strong>[input] integer firstNumber</strong></p>
+<p>  <em>Guaranteed constraints :</em> <code>0 ≤ firstNumber ≤ n - 1</code>.</p>
+</li>
+<li><p><strong>[output] integer</strong></p>
+</li>
+</ul>
+<hr>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">circleOfNumbers</span><span class="params">(n, firstNumber)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> (firstNumber + (n // <span class="number">2</span>)) % n</span><br></pre></td></tr></table></figure>
+<!-- toc -->
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    
+<div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-03-09T09:07:31.000Z">2020-03-09</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2020/03/09/CodeSignal-29-chessBoardCellColor/">[CodeSignal] #29 chessBoardCellColor</a>
+            
+        </h1>
+        <div class="content">
+            <!-- excerpt -->
+<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Given two cells on the standard chess board, determine whether they have the same color or not.</p>
+<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><ul>
+<li><p>For <code>cell1 = &quot;A1&quot;</code> and <code>cell2 = &quot;C3&quot;</code>, the output should be <code>chessBoardCellColor(cell1, cell2) = true</code>.</p>
+<center><img src="/img/chessBoardCellColor1.png"></center>
+</li>
+<li><p>For <code>cell1 = &quot;A1&quot;</code> and <code>cell2 = &quot;H3&quot;</code>, the output should be <code>chessBoardCellColor(cell1, cell2) = false</code>.</p>
+<center><img src="/img/chessBoardCellColor2.png"></center>
+
+</li>
+</ul>
+<h3 id="Input-Output"><a href="#Input-Output" class="headerlink" title="Input/Output"></a>Input/Output</h3><ul>
+<li><p><strong>[execution time limit] 4 seconds (py3)</strong></p>
+</li>
+<li><p><strong>[input] string cell1</strong></p>
+<p>  <em>Guaranteed constraints :</em> <code>cell1.length = 2</code>, <code>&#39;A&#39; ≤ cell1[0] ≤ &#39;H&#39;</code>, <code>1 ≤ cell1[1] ≤ 8</code>.</p>
+</li>
+<li><p><strong>[input] string cell2</strong></p>
+<p>  <em>Guaranteed constraints :</em> <code>cell2.length = 2</code>, <code>&#39;A&#39; ≤ cell2[0] ≤ &#39;H&#39;</code>, <code>1 ≤ cell2[1] ≤ 8</code>.</p>
+</li>
+<li><p><strong>[output] boolean</strong></p>
+<ul>
+<li><code>true</code> if both cells have the same color, <code>false</code> otherwise.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">chessBoardCellColor</span><span class="params">(cell1, cell2)</span>:</span></span><br><span class="line">    <span class="keyword">if</span> (ord(cell1[<span class="number">0</span>]) - ord(<span class="string">'A'</span>)) % <span class="number">2</span> == (ord(cell2[<span class="number">0</span>]) - ord(<span class="string">'A'</span>)) % <span class="number">2</span>:</span><br><span class="line">        <span class="keyword">if</span> int(cell1[<span class="number">1</span>]) % <span class="number">2</span> == int(cell2[<span class="number">1</span>]) % <span class="number">2</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">if</span> int(cell1[<span class="number">1</span>]) % <span class="number">2</span> != int(cell2[<span class="number">1</span>]) % <span class="number">2</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">False</span></span><br></pre></td></tr></table></figure>
+<!-- toc -->
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    
+<div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
                 <time class="level-item has-text-grey" datetime="2020-03-09T06:02:24.000Z">2020-03-09</time>
                 
                 <div class="level-item">
@@ -643,140 +770,6 @@
 
 
 
-    
-<div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-03-08T16:33:25.000Z">2020-03-09</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
-                </div>
-                
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2020/03/09/CodeSignal-20-arrayMaximalAdjacentDifference/">[CodeSignal] #20 arrayMaximalAdjacentDifference</a>
-            
-        </h1>
-        <div class="content">
-            <!-- excerpt -->
-<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Given an array of integers, find the maximal absolute difference between any two of its adjacent elements.</p>
-<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><p>For <code>inputArray = [2, 4, 1, 0]</code>, the output should be <code>arrayMaximalAdjacentDifference(inputArray) = 3</code>.</p>
-<h3 id="Input-Output"><a href="#Input-Output" class="headerlink" title="Input/Output"></a>Input/Output</h3><ul>
-<li><p><strong>[execution time limit] 4 seconds (py3)</strong></p>
-</li>
-<li><p><strong>[input] array.integer inputArray</strong></p>
-<p>  <em>Guaranteed constraints :</em> <code>3 ≤ inputArray.length ≤ 10</code>, <code>-15 ≤ inputArray[i] ≤ 15</code>.</p>
-</li>
-<li><p><strong>[output] integer</strong></p>
-<ul>
-<li>The maximal absolute difference.</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">arrayMaximalAdjacentDifference</span><span class="params">(inputArray)</span>:</span></span><br><span class="line">    result = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>, len(inputArray)):</span><br><span class="line">        result = max(result, abs(inputArray[i] - inputArray[i<span class="number">-1</span>]))</span><br><span class="line">    <span class="keyword">return</span> result</span><br></pre></td></tr></table></figure>
-<!-- toc -->
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    
-<div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-03-08T16:25:49.000Z">2020-03-09</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
-                </div>
-                
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2020/03/09/CodeSignal-19-areEquallyStrong/">[CodeSignal] #19 areEquallyStrong</a>
-            
-        </h1>
-        <div class="content">
-            <!-- excerpt -->
-<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Call two arms <em>equally strong</em> if the heaviest weights they each are able to lift are equal.</p>
-<p>Call two people <em>equally strong</em> if their strongest arms are equally strong (the strongest arm can be both the right and the left), and so are their weakest arms.</p>
-<p>Given your and your friend’s arms’ lifting capabilities find out if you two are equally strong.</p>
-<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><ul>
-<li><p>For <code>yourLeft = 10</code>, <code>yourRight = 15</code>, <code>friendsLeft = 15</code>, and <code>friendsRight = 10</code>, the output should be <code>areEquallyStrong(yourLeft, yourRight, friendsLeft, friendsRight) = true</code>;</p>
-</li>
-<li><p>For <code>yourLeft = 15</code>, <code>yourRight = 10</code>, <code>friendsLeft = 15</code>, and <code>friendsRight = 10</code>, the output should be <code>areEquallyStrong(yourLeft, yourRight, friendsLeft, friendsRight) = true</code>;</p>
-</li>
-<li><p>For <code>yourLeft = 15</code>, <code>yourRight = 10</code>, <code>friendsLeft = 15</code>, and <code>friendsRight = 9</code>, the output should be <code>areEquallyStrong(yourLeft, yourRight, friendsLeft, friendsRight) = false</code>.</p>
-</li>
-</ul>
-<h3 id="Input-Output"><a href="#Input-Output" class="headerlink" title="Input/Output"></a>Input/Output</h3><ul>
-<li><p><strong>[execution time limit] 4 seconds (py3)</strong></p>
-</li>
-<li><p><strong>[input] integer yourLeft</strong></p>
-<p>  A non-negative integer representing the heaviest weight you can lift with your left arm.</p>
-<p>  <em>Guaranteed constraints :</em> <code>0 ≤ yourLeft ≤ 20</code>.</p>
-</li>
-<li><p><strong>[input] integer yourRight</strong></p>
-<p>  A non-negative integer representing the heaviest weight you can lift with your right arm.</p>
-<p>  <em>Guaranteed constraints :</em> <code>0 ≤ yourRight ≤ 20</code>.</p>
-</li>
-<li><p><strong>[input] integer friendsLeft</strong></p>
-<p>  A non-negative integer representing the heaviest weight your friend can lift with his or her left arm.</p>
-<p>  <em>Guaranteed constraints :</em> <code>0 ≤ friendsLeft ≤ 20</code>.</p>
-</li>
-<li><p><strong>[input] integer friendsRight</strong></p>
-<p>  A non-negative integer representing the heaviest weight your friend can lift with his or her right arm.</p>
-<p>  <em>Guaranteed constraints :</em> <code>0 ≤ friendsRight ≤ 20</code>.</p>
-</li>
-<li><p><strong>[output] boolean</strong></p>
-<ul>
-<li><code>true</code> if you and your friend are equally strong, <code>false</code> otherwise.</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">areEquallyStrong</span><span class="params">(yourLeft, yourRight, friendsLeft, friendsRight)</span>:</span></span><br><span class="line">    <span class="keyword">if</span> min(yourLeft, yourRight) == min(friendsLeft, friendsRight) <span class="keyword">and</span> max(yourLeft, yourRight) == max(friendsLeft, friendsRight):</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">False</span></span><br></pre></td></tr></table></figure>
-<!-- toc -->
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
 
     
 <div class="card card-transparent">
@@ -845,7 +838,7 @@
                     </p>
                     <a href="/archives">
                         <p class="title has-text-weight-normal">
-                            38
+                            41
                         </p>
                     </a>
                 </div>
@@ -977,7 +970,7 @@
                 <span class="level-item">Algorithm</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">38</span>
+                <span class="level-item tag">40</span>
             </span>
         </a><ul><li>
         <a class="level is-marginless" href="/categories/Algorithm/CodeSignal/">
@@ -985,7 +978,7 @@
                 <span class="level-item">CodeSignal</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">38</span>
+                <span class="level-item tag">40</span>
             </span>
         </a></li></ul></li>
             </ul>
@@ -1003,6 +996,45 @@
         <h3 class="menu-label">
             최근 글
         </h3>
+        
+        <article class="media">
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-10T07:52:15.000Z">2020-03-10</time></div>
+                    <a href="/2020/03/10/CodeSignal-41-digitDegree/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #41 digitDegree</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-10T07:44:08.000Z">2020-03-10</time></div>
+                    <a href="/2020/03/10/CodeSignal-40-longestDigitsPrefix/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #40 longestDigitsPrefix</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-10T07:32:06.000Z">2020-03-10</time></div>
+                    <a href="/2020/03/10/CodeSignal-39-Knapsack-Light/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #39 Knapsack Light</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -1030,45 +1062,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-09T13:23:26.000Z">2020-03-09</time></div>
-                    <a href="/2020/03/09/CodeSignal-36-differentSymbolsNaive/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #36 differentSymbolsNaive</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-09T13:19:09.000Z">2020-03-09</time></div>
-                    <a href="/2020/03/09/CodeSignal-35-firstDigit/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #35 firstDigit</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-09T13:03:46.000Z">2020-03-09</time></div>
-                    <a href="/2020/03/09/CodeSignal-34-extractEachKth/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #34 extractEachKth</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
         
@@ -1086,7 +1079,7 @@
                     <span class="level-item">3월 2020</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">35</span>
+                    <span class="level-item tag">38</span>
                 </span>
             </a>
         </li>
@@ -1141,6 +1134,45 @@
             
             <div class="media-content">
                 <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-10T07:52:15.000Z">2020-03-10</time></div>
+                    <a href="/2020/03/10/CodeSignal-41-digitDegree/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #41 digitDegree</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-10T07:44:08.000Z">2020-03-10</time></div>
+                    <a href="/2020/03/10/CodeSignal-40-longestDigitsPrefix/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #40 longestDigitsPrefix</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-10T07:32:06.000Z">2020-03-10</time></div>
+                    <a href="/2020/03/10/CodeSignal-39-Knapsack-Light/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #39 Knapsack Light</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <div class="media-content">
+                <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-09T13:47:05.000Z">2020-03-09</time></div>
                     <a href="/2020/03/09/CodeSignal-38-growingPlant/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #38 growingPlant</a>
                     <p class="is-size-7 is-uppercase">
@@ -1156,45 +1188,6 @@
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-09T13:26:57.000Z">2020-03-09</time></div>
                     <a href="/2020/03/09/CodeSignal-37-arrayMaxConsecutiveSum/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #37 arrayMaxConsecutiveSum</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-09T13:23:26.000Z">2020-03-09</time></div>
-                    <a href="/2020/03/09/CodeSignal-36-differentSymbolsNaive/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #36 differentSymbolsNaive</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-09T13:19:09.000Z">2020-03-09</time></div>
-                    <a href="/2020/03/09/CodeSignal-35-firstDigit/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #35 firstDigit</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-09T13:03:46.000Z">2020-03-09</time></div>
-                    <a href="/2020/03/09/CodeSignal-34-extractEachKth/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #34 extractEachKth</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
                     </p>
@@ -1219,7 +1212,7 @@
                     <span class="level-item">3월 2020</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">35</span>
+                    <span class="level-item tag">38</span>
                 </span>
             </a>
         </li>

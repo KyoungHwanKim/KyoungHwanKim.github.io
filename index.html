@@ -133,6 +133,174 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-03-10T07:52:15.000Z">2020-03-10</time>
+                
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2020/03/10/CodeSignal-41-digitDegree/">[CodeSignal] #41 digitDegree</a>
+            
+        </h1>
+        <div class="content">
+            <!-- excerpt -->
+<!-- toc -->
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    
+<div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-03-10T07:44:08.000Z">2020-03-10</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2020/03/10/CodeSignal-40-longestDigitsPrefix/">[CodeSignal] #40 longestDigitsPrefix</a>
+            
+        </h1>
+        <div class="content">
+            <!-- excerpt -->
+<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Given a string, output its longest prefix<sup><a href="#footnote_1">1</a></sup> which contains only digits.</p>
+<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><p>For <code>inputString = &quot;123aa1&quot;</code>, the output should be <code>longestDigitsPrefix(inputString) = &quot;123&quot;</code>.</p>
+<h3 id="Input-Output"><a href="#Input-Output" class="headerlink" title="Input/Output"></a>Input/Output</h3><ul>
+<li><p><strong>[execution time limit] 4 seconds (py3)</strong></p>
+</li>
+<li><p><strong>[input] string inputString</strong></p>
+<p>  <em>Guaranteed constraints :</em> <code>3 ≤ inputString.length ≤ 100</code>.</p>
+</li>
+<li><p><strong>[output] string</strong></p>
+</li>
+</ul>
+<hr>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">longestDigitsPrefix</span><span class="params">(inputString)</span>:</span></span><br><span class="line">    result = <span class="string">''</span></span><br><span class="line">    <span class="keyword">if</span> <span class="string">'0'</span> &lt;= inputString[<span class="number">0</span>] &lt;= <span class="string">'9'</span>:</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(len(inputString)):</span><br><span class="line">            <span class="keyword">if</span> <span class="string">'0'</span> &lt;= inputString[i] &lt;= <span class="string">'9'</span>:</span><br><span class="line">                result += inputString[i]</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="keyword">break</span></span><br><span class="line">        <span class="keyword">return</span> result</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">return</span> result</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id=""><a href="#" class="headerlink" title=""></a></h1><p><a name="footnote_1">1.</a> A substring of a string is called a prefix if it starts at the string’s first character.</p>
+<!-- toc -->
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    
+<div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-03-10T07:32:06.000Z">2020-03-10</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2020/03/10/CodeSignal-39-Knapsack-Light/">[CodeSignal] #39 Knapsack Light</a>
+            
+        </h1>
+        <div class="content">
+            <!-- excerpt -->
+<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>You found two items in a treasure chest! The first item weighs <code>weight1</code> and is worth <code>value1</code>, and the second item weighs <code>weight2</code> and is worth <code>value2</code>. What is the total maximum value of the items you can take with you, assuming that your max weight capacity is <code>maxW</code> and you can’t come back for the items later?</p>
+<p><strong>Note: that there are only two items and you can’t bring more than one item of each type, i.e. you can’t take two first items or two second items.</strong></p>
+<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><ul>
+<li><p>For <code>value1 = 10</code>, <code>weight1 = 5</code>, <code>value2 = 6</code>, <code>weight2 = 4</code>, and <code>maxW = 8</code>, the output should be <code>knapsackLight(value1, weight1, value2, weight2, maxW) = 10</code>.</p>
+<p>  You can only carry the first item.</p>
+</li>
+<li><p>For <code>value1 = 10</code>, <code>weight1 = 5</code>, <code>value2 = 6</code>, <code>weight2 = 4</code>, and <code>maxW = 9</code>, the output should be <code>knapsackLight(value1, weight1, value2, weight2, maxW) = 16</code>.</p>
+<p>  You’re strong enough to take both of the items with you.</p>
+</li>
+<li><p>For <code>value1 = 5</code>, <code>weight1 = 3</code>, <code>value2 = 7</code>, <code>weight2 = 4</code>, and <code>maxW = 6</code>, the output should be <code>knapsackLight(value1, weight1, value2, weight2, maxW) = 7</code>.</p>
+<p>  You can’t take both items, but you can take any of them.</p>
+</li>
+</ul>
+<h3 id="Input-Output"><a href="#Input-Output" class="headerlink" title="Input/Output"></a>Input/Output</h3><ul>
+<li><p><strong>[execution time limit] 4 seconds (py3)</strong></p>
+</li>
+<li><p><strong>[input] integer value1</strong></p>
+<p>  <em>Guaranteed constraints :</em> <code>2 ≤ value1 ≤ 20</code>.</p>
+</li>
+<li><p><strong>[input] integer weight1</strong></p>
+<p>  <em>Guaranteed constraints :</em> <code>2 ≤ weight1 ≤ 10</code>.</p>
+</li>
+<li><p><strong>[input] integer value2</strong></p>
+<p>  <em>Guaranteed constraints :</em> <code>2 ≤ value2 ≤ 20</code>.</p>
+</li>
+<li><p><strong>[input] integer weight2</strong></p>
+<p>  <em>Guaranteed constraints :</em> <code>2 ≤ weight2 ≤ 10</code>.</p>
+</li>
+<li><p><strong>[input] integer maxW</strong></p>
+<p>  <em>Guaranteed constraints :</em> <code>1 ≤ maxW ≤ 20</code>.</p>
+</li>
+<li><p><strong>[output] integer</strong></p>
+</li>
+</ul>
+<hr>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">knapsackLight</span><span class="params">(value1, weight1, value2, weight2, maxW)</span>:</span></span><br><span class="line">    result = <span class="number">0</span></span><br><span class="line">    v = [[value1, weight1], [value2, weight2]]</span><br><span class="line">    v.sort(key=<span class="keyword">lambda</span> x:x[<span class="number">0</span>], reverse=<span class="literal">True</span>)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> v:</span><br><span class="line">        <span class="keyword">if</span> maxW &gt;= i[<span class="number">1</span>]:</span><br><span class="line">            result += i[<span class="number">0</span>]</span><br><span class="line">            maxW -= i[<span class="number">1</span>]</span><br><span class="line">    <span class="keyword">return</span> result</span><br></pre></td></tr></table></figure>
+<!-- toc -->
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    
+<div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
                 <time class="level-item has-text-grey" datetime="2020-03-09T13:47:05.000Z">2020-03-09</time>
                 
                 <div class="level-item">
@@ -587,206 +755,6 @@
 
 
 
-    
-<div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-03-09T09:39:48.000Z">2020-03-09</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
-                </div>
-                
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2020/03/09/CodeSignal-31-depositProfit/">[CodeSignal] #31 depositProfit</a>
-            
-        </h1>
-        <div class="content">
-            <!-- excerpt -->
-<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>You have deposited a specific amount of money into your bank account. Each year your balance increases at the same growth <code>rate</code>. With the assumption that you don’t make any additional deposits, find out how long it would take for your balance to pass a specific <code>threshold</code>.</p>
-<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><p>For <code>deposit = 100</code>, <code>rate = 20</code>, and <code>threshold = 170</code>, the output should be <code>depositProfit(deposit, rate, threshold) = 3</code>.</p>
-<p>Each year the amount of money in your account increases by <code>20%</code>. So throughout the years, your balance would be:</p>
-<ul>
-<li>year 0: <code>100</code>;</li>
-<li>year 1: <code>120</code>;</li>
-<li>year 2: <code>144</code>;</li>
-<li>year 3: <code>172.8</code>.</li>
-</ul>
-<p>Thus, it will take <code>3</code> years for your balance to pass the <code>threshold</code>, so the answer is <code>3</code>.</p>
-<h3 id="Input-Output"><a href="#Input-Output" class="headerlink" title="Input/Output"></a>Input/Output</h3><ul>
-<li><p><strong>[execution time limit] 4 seconds (py3)</strong></p>
-</li>
-<li><p><strong>[input] integer deposit</strong></p>
-<p>  The initial deposit, guaranteed to be a positive integer.</p>
-<p>  <em>Guaranteed constraints :</em> <code>1 ≤ deposit ≤ 100</code>.</p>
-</li>
-<li><p><strong>[input] integer rate</strong></p>
-<p>  The rate of increase. Each year the balance increases by the <code>rate</code> <em>percent</em> of the current sum.</p>
-<p>  <em>Guaranteed constraints :</em> <code>1 ≤ rate ≤ 100</code>.</p>
-</li>
-<li><p><strong>[input] integer threshold</strong></p>
-<p>  The target balance.</p>
-<p>  <em>Guaranteed constraints :</em> <code>deposit &lt; threshold ≤ 200</code>.</p>
-</li>
-<li><p><strong>[output] integer</strong></p>
-<ul>
-<li>The number of years it would take to hit the <code>threshold</code>.</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">depositProfit</span><span class="params">(deposit, rate, threshold)</span>:</span></span><br><span class="line">    cnt = <span class="number">0</span></span><br><span class="line">    <span class="keyword">while</span> deposit &lt; threshold:</span><br><span class="line">        deposit += deposit * (rate / <span class="number">100</span>)</span><br><span class="line">        cnt += <span class="number">1</span></span><br><span class="line">    <span class="keyword">return</span> cnt</span><br></pre></td></tr></table></figure>
-<!-- toc -->
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    
-<div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-03-09T09:22:43.000Z">2020-03-09</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
-                </div>
-                
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2020/03/09/CodeSignal-30-Circle-of-Numbers/">[CodeSignal] #30 Circle of Numbers</a>
-            
-        </h1>
-        <div class="content">
-            <!-- excerpt -->
-<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Consider integer numbers from <code>0</code> to <code>n - 1</code> written down along the circle in such a way that the distance between any two neighboring numbers is equal (note that <code>0</code> and <code>n - 1</code> are neighboring, too).</p>
-<p>Given <code>n</code> and <code>firstNumber</code>, find the number which is written in the radially opposite position to <code>firstNumber</code>.</p>
-<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><p>For <code>n = 10</code> and <code>firstNumber = 2</code>, the output should be <code>circleOfNumbers(n, firstNumber) = 7</code>.</p>
-<center><img src="/img/CircleofNumbers1.png"></center>
-
-<h3 id="Input-Output"><a href="#Input-Output" class="headerlink" title="Input/Output"></a>Input/Output</h3><ul>
-<li><p><strong>[execution time limit] 4 seconds (py3)</strong></p>
-</li>
-<li><p><strong>[input] integer n</strong></p>
-<p>  A positive <strong>even</strong> integer.</p>
-<p>  <em>Guaranteed constraints :</em> <code>4 ≤ n ≤ 20</code>.</p>
-</li>
-<li><p><strong>[input] integer firstNumber</strong></p>
-<p>  <em>Guaranteed constraints :</em> <code>0 ≤ firstNumber ≤ n - 1</code>.</p>
-</li>
-<li><p><strong>[output] integer</strong></p>
-</li>
-</ul>
-<hr>
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">circleOfNumbers</span><span class="params">(n, firstNumber)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> (firstNumber + (n // <span class="number">2</span>)) % n</span><br></pre></td></tr></table></figure>
-<!-- toc -->
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    
-<div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-03-09T09:07:31.000Z">2020-03-09</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
-                </div>
-                
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2020/03/09/CodeSignal-29-chessBoardCellColor/">[CodeSignal] #29 chessBoardCellColor</a>
-            
-        </h1>
-        <div class="content">
-            <!-- excerpt -->
-<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Given two cells on the standard chess board, determine whether they have the same color or not.</p>
-<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><ul>
-<li><p>For <code>cell1 = &quot;A1&quot;</code> and <code>cell2 = &quot;C3&quot;</code>, the output should be <code>chessBoardCellColor(cell1, cell2) = true</code>.</p>
-<center><img src="/img/chessBoardCellColor1.png"></center>
-</li>
-<li><p>For <code>cell1 = &quot;A1&quot;</code> and <code>cell2 = &quot;H3&quot;</code>, the output should be <code>chessBoardCellColor(cell1, cell2) = false</code>.</p>
-<center><img src="/img/chessBoardCellColor2.png"></center>
-
-</li>
-</ul>
-<h3 id="Input-Output"><a href="#Input-Output" class="headerlink" title="Input/Output"></a>Input/Output</h3><ul>
-<li><p><strong>[execution time limit] 4 seconds (py3)</strong></p>
-</li>
-<li><p><strong>[input] string cell1</strong></p>
-<p>  <em>Guaranteed constraints :</em> <code>cell1.length = 2</code>, <code>&#39;A&#39; ≤ cell1[0] ≤ &#39;H&#39;</code>, <code>1 ≤ cell1[1] ≤ 8</code>.</p>
-</li>
-<li><p><strong>[input] string cell2</strong></p>
-<p>  <em>Guaranteed constraints :</em> <code>cell2.length = 2</code>, <code>&#39;A&#39; ≤ cell2[0] ≤ &#39;H&#39;</code>, <code>1 ≤ cell2[1] ≤ 8</code>.</p>
-</li>
-<li><p><strong>[output] boolean</strong></p>
-<ul>
-<li><code>true</code> if both cells have the same color, <code>false</code> otherwise.</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">chessBoardCellColor</span><span class="params">(cell1, cell2)</span>:</span></span><br><span class="line">    <span class="keyword">if</span> (ord(cell1[<span class="number">0</span>]) - ord(<span class="string">'A'</span>)) % <span class="number">2</span> == (ord(cell2[<span class="number">0</span>]) - ord(<span class="string">'A'</span>)) % <span class="number">2</span>:</span><br><span class="line">        <span class="keyword">if</span> int(cell1[<span class="number">1</span>]) % <span class="number">2</span> == int(cell2[<span class="number">1</span>]) % <span class="number">2</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">if</span> int(cell1[<span class="number">1</span>]) % <span class="number">2</span> != int(cell2[<span class="number">1</span>]) % <span class="number">2</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">False</span></span><br></pre></td></tr></table></figure>
-<!-- toc -->
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
 
     
 <div class="card card-transparent">
@@ -803,9 +771,9 @@
             
             <li><a class="pagination-link has-text-black-ter" href="/page/2/">2</a></li>
             
-            <li><a class="pagination-link has-text-black-ter" href="/page/3/">3</a></li>
+            <li><span class="pagination-ellipsis has-text-black-ter">&hellip;</span></li>
             
-            <li><a class="pagination-link has-text-black-ter" href="/page/4/">4</a></li>
+            <li><a class="pagination-link has-text-black-ter" href="/page/5/">5</a></li>
             
         </ul>
     </nav>
@@ -855,7 +823,7 @@
                     </p>
                     <a href="/archives">
                         <p class="title has-text-weight-normal">
-                            38
+                            41
                         </p>
                     </a>
                 </div>
@@ -987,7 +955,7 @@
                 <span class="level-item">Algorithm</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">38</span>
+                <span class="level-item tag">40</span>
             </span>
         </a><ul><li>
         <a class="level is-marginless" href="/categories/Algorithm/CodeSignal/">
@@ -995,7 +963,7 @@
                 <span class="level-item">CodeSignal</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">38</span>
+                <span class="level-item tag">40</span>
             </span>
         </a></li></ul></li>
             </ul>
@@ -1013,6 +981,45 @@
         <h3 class="menu-label">
             최근 글
         </h3>
+        
+        <article class="media">
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-10T07:52:15.000Z">2020-03-10</time></div>
+                    <a href="/2020/03/10/CodeSignal-41-digitDegree/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #41 digitDegree</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-10T07:44:08.000Z">2020-03-10</time></div>
+                    <a href="/2020/03/10/CodeSignal-40-longestDigitsPrefix/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #40 longestDigitsPrefix</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-10T07:32:06.000Z">2020-03-10</time></div>
+                    <a href="/2020/03/10/CodeSignal-39-Knapsack-Light/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #39 Knapsack Light</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -1040,45 +1047,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-09T13:23:26.000Z">2020-03-09</time></div>
-                    <a href="/2020/03/09/CodeSignal-36-differentSymbolsNaive/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #36 differentSymbolsNaive</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-09T13:19:09.000Z">2020-03-09</time></div>
-                    <a href="/2020/03/09/CodeSignal-35-firstDigit/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #35 firstDigit</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-09T13:03:46.000Z">2020-03-09</time></div>
-                    <a href="/2020/03/09/CodeSignal-34-extractEachKth/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #34 extractEachKth</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
         
@@ -1096,7 +1064,7 @@
                     <span class="level-item">3월 2020</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">35</span>
+                    <span class="level-item tag">38</span>
                 </span>
             </a>
         </li>
@@ -1151,6 +1119,45 @@
             
             <div class="media-content">
                 <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-10T07:52:15.000Z">2020-03-10</time></div>
+                    <a href="/2020/03/10/CodeSignal-41-digitDegree/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #41 digitDegree</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-10T07:44:08.000Z">2020-03-10</time></div>
+                    <a href="/2020/03/10/CodeSignal-40-longestDigitsPrefix/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #40 longestDigitsPrefix</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-10T07:32:06.000Z">2020-03-10</time></div>
+                    <a href="/2020/03/10/CodeSignal-39-Knapsack-Light/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #39 Knapsack Light</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <div class="media-content">
+                <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-09T13:47:05.000Z">2020-03-09</time></div>
                     <a href="/2020/03/09/CodeSignal-38-growingPlant/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #38 growingPlant</a>
                     <p class="is-size-7 is-uppercase">
@@ -1166,45 +1173,6 @@
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-09T13:26:57.000Z">2020-03-09</time></div>
                     <a href="/2020/03/09/CodeSignal-37-arrayMaxConsecutiveSum/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #37 arrayMaxConsecutiveSum</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-09T13:23:26.000Z">2020-03-09</time></div>
-                    <a href="/2020/03/09/CodeSignal-36-differentSymbolsNaive/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #36 differentSymbolsNaive</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-09T13:19:09.000Z">2020-03-09</time></div>
-                    <a href="/2020/03/09/CodeSignal-35-firstDigit/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #35 firstDigit</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-09T13:03:46.000Z">2020-03-09</time></div>
-                    <a href="/2020/03/09/CodeSignal-34-extractEachKth/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[CodeSignal] #34 extractEachKth</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/CodeSignal/">CodeSignal</a>
                     </p>
@@ -1229,7 +1197,7 @@
                     <span class="level-item">3월 2020</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">35</span>
+                    <span class="level-item tag">38</span>
                 </span>
             </a>
         </li>
