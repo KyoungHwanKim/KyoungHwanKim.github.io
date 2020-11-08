@@ -1,0 +1,28 @@
+# Permalinks
+permalink:      /:year-:month-:day/:title
+
+# Setup
+title:          KyoungHwan Kim
+baseurl:        ""
+url:            "https://kyounghwankim.github.io"
+
+# Assets
+sass:
+  sass_dir:     _sass
+  style:        :compressed
+
+# Build settings
+markdown:       kramdown
+
+# About
+author:
+  name:         KyoungHwan Kim
+  url:          https://kyounghwankim.github.io/
+  email:        kimkh7534@naver.com
+  github:       kyounghwankim
+  twitter:      
+
+# Custom vars
+version:        3.4.1
+github:
+  repo:         https://github.com/kyounghwankim/kyounghwankim.github.io
