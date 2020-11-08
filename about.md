@@ -12,6 +12,8 @@ __App & Web & AI Model Developer__
 
 컴퓨터 비전 및 패턴 인식에 관심이 많아 열심히 공부하고 있는 학생입니다.
 
+<br />
+
 # 📚 Project
 ---
 ### 원클릭 제사 - 양 / 음력 API와 Google ARCore를 활용한 제사 교육용 애플리케이션
