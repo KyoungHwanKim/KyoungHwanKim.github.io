@@ -7,7 +7,7 @@ note: true
 text: true
 author: "KyoungHwan Kim"
 post-header: true
-header-img:
+header-img: None
 order: 1
 ---
 
