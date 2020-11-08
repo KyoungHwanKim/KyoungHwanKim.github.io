@@ -2,7 +2,7 @@
 layout: default
 title: "KyoungHwan Kim"
 main: true
-subtitle: Digital Product Designer Jihye Leee at RIDI
+subtitle: 김경환
 description: I'm KyoungHwan Kim.
 ---
 <div class="intro-animation">
