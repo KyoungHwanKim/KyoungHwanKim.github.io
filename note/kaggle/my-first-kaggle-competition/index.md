@@ -7,7 +7,7 @@ note: true
 text: true
 author: "KyoungHwan Kim"
 post-header: true
-header-img: "이미지 경로를 입력하세요. 없으면 None"
+header-img:
 order: 1
 ---
 
