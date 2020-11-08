@@ -3,7 +3,7 @@ layout: post
 title: "My First Kaggle Competition"
 subtitle: "캐글을 처음 접하다."
 type: "Kaggle"
-note: true  # true로 변경.
+note: true
 text: true
 author: "KyoungHwan Kim"
 post-header: true
