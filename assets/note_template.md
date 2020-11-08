@@ -7,8 +7,8 @@ note: false
 text: true
 author: "KyoungHwan Kim"
 post-header: true
-header-img: "이미지 경로를 입력하세요. 없으면 None"
-order: 글의 순서를 숫자로 입력하세요. 오름차순으로.
+header-img:
+order:
 ---
 
 본문 입력.
