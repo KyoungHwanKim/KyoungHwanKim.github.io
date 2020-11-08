@@ -1,21 +1,20 @@
 ---
 layout: post
-author: "Jihye Leee"
-title:  "이미지로 멋지게 형광펜 공유하기"
-subtitle: "마음에 드는 전자책 속 문장을 멋지게 공유하는 방법"
-type: "RIDIBOOKS"
+author: "KyoungHwan Kim"
+title:  "원클릭 제사"
+subtitle: "양 / 음력 API와 Google ARCore를 활용한 제사 교육용 앱"
+type: "App Service"
 projects: true
 text: true
-ridi: true
 portfolio: true
 post-header: true
 header-img: "img/card.jpg"
-main-img: "thumbnail/ridi-highlight.jpg"
-role-title: "프로덕트 디자이너"
-role-specific: "User flows, Sketching, Wireframing, Visual Design, Interaction, Prototyping"
-team: "프로덕트 디자이너 1명, 엔지니어 1명"
-platforms: "iOS & Android"
-date: "Sep 2016 - Dec 2016"
+main-img: "img/ridi-highlight.jpg"
+team: "개인 프로젝트"
+role-title: "개인 프로젝트"
+role-specific: "Design & Develop"
+platforms: "Android"
+date: "2019.03 - 2020.02"
 order: 1
 ---
 
