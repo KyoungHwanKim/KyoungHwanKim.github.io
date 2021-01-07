@@ -8,9 +8,15 @@ permalink: /about/
 post-header: true
 header-img: img/about.jpg
 ---
-__App & Web & AI Model Developer__
 
-컴퓨터 비전 및 패턴 인식에 관심이 많아 열심히 공부하고 있는 학생입니다.
+# 🎓 Affiliation
+---
+- 신정고등학교
+2018 ~ 2021
+- 차세대 보안리더 양성 프로그램 (Best of the Best) 9기 보안제품개발 트랙
+2020 ~ 2021
+- 부산대학교 정보컴퓨터공학부
+2021 ~
 
 <br />
 
@@ -18,7 +24,7 @@ __App & Web & AI Model Developer__
 ---
 ### 원클릭 제사 - 양 / 음력 API와 Google ARCore를 활용한 제사 교육용 애플리케이션
 - Google Play Store
-- 2020.02 이용자 수 1,000명 달성
+- 2019.12 이용자 수 1,000명 달성
 
 ### Inception 모듈 기반의 경량화된 한자 필기체 인식 모델
 
@@ -29,11 +35,10 @@ __App & Web & AI Model Developer__
 # 🎞️ Experience
 ---
 - 부산 정보영재교육원 초등, 중등 과정 수료
-- 2020 ISEF 한국대표 선발전 진출 및 발표
-- 2020 KCC 한국정보학술회 논문 투고
-- 차세대 보안리더 양성 프로그램 Best of the Best 9기 보안제품개발트랙
-- 2020 NYPC 예선 TOP500 이내 진입
-- 2020 고교 SW인재육성 프로그램 수료
+- 2020 ISEF(국제과학기술경진대회) 한국대표 선발전 진출 및 발표
+- 2020 KCC 한국컴퓨터종합학술대회 논문 투고 및 발표
+- 차세대 보안리더 양성 프로그램 Best of the Best 9기 보안제품개발 트랙 교육생
+- 2019, 2020 NYPC 예선 TOP 500 이내 진입
 
 <br />
 
