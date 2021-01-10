@@ -8,7 +8,8 @@ project-header: true
 header-img: None
 ---
 <div class="catalogue">
-{% assign sorted = site.pages | sort: 'order' | reverse %}
+<!--{% assign sorted = site.pages | sort: 'order' | reverse %}-->
+{% assign sorted = site.pages | sort: 'order' %}
 {% for page in sorted %}
 {% if page.projects == true %}
 

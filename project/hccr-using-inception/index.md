@@ -1,21 +1,21 @@
 ---
 layout: post
 author: "KyoungHwan Kim"
-title:  "원클릭 제사 - One Click JESA"
+title:  "Inception 모듈 기반의 경량화된 한자 필기체 인식 모델 개발"
 subtitle: "양 / 음력 API와 Google ARCore를 활용한 제사 교육용 애플리케이션"
 type: "App Service"
 projects: true
 text: true
 portfolio: true
 post-header: true
-header-img: "img/thumb1.jpg"
-main-img: "thumbnail/thumb1.jpg"
+header-img: "img/card.jpg"
+main-img: "img/ridi-highlight.jpg"
 team: "개인 프로젝트"
 role-title: "개인 프로젝트"
 role-specific: "Design & Develop"
 platforms: "Android"
 date: "2019.03 - 2020.02"
-order: 1
+order: 2
 ---
 
 ## 개발 동기

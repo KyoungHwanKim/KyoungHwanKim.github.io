@@ -16,7 +16,7 @@ role-specific: "User flows, Sketching, Wireframing, Visual Design, Interaction, 
 team: "프로덕트 디자이너 1명, 엔지니어 1명"
 platforms: "iOS & Android"
 date: "Sep 2016 - Dec 2016"
-order: 1
+order: 4
 ---
 
 # Overview
