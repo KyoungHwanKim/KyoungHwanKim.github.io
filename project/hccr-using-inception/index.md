@@ -4,7 +4,7 @@ author: "KyoungHwan Kim"
 title:  "Inception 모듈 기반의 경량화된 한자 필기체 인식 모델 개발"
 subtitle: "Building Light-weight Convolutional Neural Networks
 for Handwritten Chinese Character Recognition Based on Inception modules"
-type: "Pattern Recognition, Deep Learning"
+type: "Deep Learning, Pattern Recognition"
 projects: true
 text: true
 portfolio: true
@@ -123,6 +123,12 @@ Dynamic Range Quantization은 가중치 파라미터들의 부동 소수점 값�
 이 연구를 통해, 상당히 작은 크기의 모델만을 가지고 기존의 HCCR(Handwritten Chinese Character Recognition) 모델들과 비슷한 성능을 낼 수 있음을 확인하였고, 모바일 환경에서 적은 공간만을 사용해 상당한 성능을 내는 모델을 만들 수 있음을 확인하였다.
 
 모델 압축, 모델 경량화, 양자화 관련 기술 연구가 활발히 진행된다면, 기존의 모델들보다 더 가벼우면서도 상당한 성능을 보여주는 모델을 만들 수 있을 것이라 생각한다.
+
+# 관련 링크
+
+Inception 모듈 기반의 경량화된 한자 필기체 인식 모델 개발 (1st-author)
+- [DBpia](http://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE09874847)
+- [EIRIC](https://www.eiric.or.kr/literature/ser_view.php?SnxGubun=INKO&mode=total&searchCate=literature&gu=INME000G0&cmd=qryview&SnxIndxNum=234020&rownum=&totalCnt=2&rownum=2&q1_t=aW5jZXB0aW9uIOuqqOuTiA==&listUrl=L3NlYXJjaC9yZXN1bHQucGhwP1NueEd1YnVuPUlOS08mbW9kZT10b3RhbCZzZWFyY2hDYXRlPWxpdGVyYXR1cmUmcTE9aW5jZXB0aW9uKyVCOCVGMCVCNSVFMiZ4PTAmeT0w&q1=inception+%B8%F0%B5%E2&kci=)
 
 [^1]: Cheng-Lin Liu, Fei Yin, Da-Han Wang, Qiu-Feng Wang, “CASIA Online and Offline Chinese Handwriting Databases”, 2011 IEEE, pp.37-41, 2011.
 [^2]: Christian Szegedy, Wei Liu, Yangqing Jia, Pierre Sermanet, Scott Reed, Dragomir Anguelov, Dumitru Erhan, Vincent Vanhoucke, Andrew Rabinovich, “Going deeper with convolutions”, in Proceeding of the Computer Vision and Pattern Recognition (CVPR), pp. 1-9, 2015. some deep representations”. CoRR, abs/1310.6343, 2013.

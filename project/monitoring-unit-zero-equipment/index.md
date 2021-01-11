@@ -15,7 +15,7 @@ role-title: "크롤링 서버 개발 & 모듈 서버 연동"
 role-specific: "Crawling Server & Module Server Develop"
 platforms: "Web, Python"
 date: "2020.09 - 2020.12"
-order: 3
+order: 5
 ---
 
 ## 개발 동기
