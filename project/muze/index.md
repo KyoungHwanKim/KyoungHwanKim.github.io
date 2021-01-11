@@ -2,7 +2,7 @@
 layout: post
 author: "KyoungHwan Kim"
 title:  "Equipmentless 고객사 모니터링 관제 서비스"
-subtitle: "양 / 음력 API와 Google ARCore를 활용한 제사 교육용 애플리케이션"
+subtitle: "서비스에 대한 원격 관제를 대상 인프라에 설치 없이 외부에서 수행"
 type: "Web Service"
 projects: true
 text: true
@@ -10,10 +10,10 @@ portfolio: true
 post-header: true
 header-img: "img/card.jpg"
 main-img: "thumbnail/muze1.jpg"
-team: "Best of the Best 보안제품개발 트랙 6명"
+team: "Best of the Best 보안제품개발 트랙 MUZE 팀"
 role-title: "크롤링 서버 개발 & 모듈 서버 연동"
-role-specific: "Design & Develop"
-platforms: "Android"
+role-specific: "Crawling Server & Module Server Develop"
+platforms: "Web, Python"
 date: "2020.09 - 2020.12"
 order: 3
 ---

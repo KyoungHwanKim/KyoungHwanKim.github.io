@@ -5,6 +5,7 @@ subtitle: "캐글을 처음 접하다."
 type: "Kaggle"
 note: true
 text: true
+draft: true
 author: "KyoungHwan Kim"
 post-header: true
 header-img: None

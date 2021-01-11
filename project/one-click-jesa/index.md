@@ -13,7 +13,7 @@ main-img: "thumbnail/thumb1.jpg"
 team: "개인 프로젝트"
 role-title: "개인 프로젝트"
 role-specific: "Design & Develop"
-platforms: "Android"
+platforms: "Android, Java"
 date: "2019.03 - 2020.02"
 order: 1
 ---
@@ -82,7 +82,8 @@ order: 1
 제사상 퀴즈 메뉴에서는 앞서 공부한 정보들을 바탕으로 문제들을 해결할 수 있습니다. 총 10문제가 랜덤으로 주어지고, 문제당 10초의 시간이 주어집니다.
 
 ![제사 정보](img/info1.png)
+###### 제사상 정보와 제사상 퀴즈.
 
 # 관련 링크
 
-play store : 
+[Google Play 스토어](https://play.google.com/store/apps/details?id=com.jesa)
