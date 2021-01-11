@@ -21,7 +21,7 @@ order: 2
 
 <img src="img/hccr_model2.gif" width="300px" style="text-align: center;">
 
-###### 모바일 환경에서 모델을 적용한 화면.
+###### 안드로이드 환경에서 모델을 적용한 화면.
 
 # Overview
 
