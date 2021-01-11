@@ -19,7 +19,7 @@ date: "2019.06 - 2020.04"
 order: 2
 ---
 
-<img src="img/hccr_model2.gif" width="400px" style="text-align: center;">
+<img src="img/hccr_model2.gif" width="300px" style="text-align: center;">
 
 ###### 모바일 환경에서 모델을 적용한 화면.
 
