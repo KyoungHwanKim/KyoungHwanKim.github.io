@@ -1,20 +1,20 @@
 ---
 layout: post
 author: "KyoungHwan Kim"
-title:  "MUZE"
+title:  "Equipmentless 고객사 모니터링 관제 서비스"
 subtitle: "양 / 음력 API와 Google ARCore를 활용한 제사 교육용 애플리케이션"
-type: "App Service"
+type: "Web Service"
 projects: true
 text: true
 portfolio: true
 post-header: true
 header-img: "img/card.jpg"
-main-img: "img/ridi-highlight.jpg"
-team: "개인 프로젝트"
-role-title: "개인 프로젝트"
+main-img: "thumbnail/muze1.jpg"
+team: "Best of the Best 보안제품개발 트랙 6명"
+role-title: "크롤링 서버 개발 & 모듈 서버 연동"
 role-specific: "Design & Develop"
 platforms: "Android"
-date: "2019.03 - 2020.02"
+date: "2020.09 - 2020.12"
 order: 3
 ---
 

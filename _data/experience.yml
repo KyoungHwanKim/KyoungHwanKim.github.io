@@ -1,7 +1,7 @@
 third-place:
 - name: App Service
   role: 원클릭 제사 - 제사 교육용 애플리케이션
-  date: 2019.01 - 2019.12
+  date: 2019.03 - 2020.02
 
 second-place:
 - name: Pattern Recognition
@@ -9,6 +9,6 @@ second-place:
   date: 2019.06 - 2020.04
 
 first-place:
-- name: Web & App Service
-  role: 온 - 디바이스 한자 / 고사성어 학습 서비스
-  date: 2019.09 - 2020.07
+- name: Web Service
+  role: Equipmentless 고객사 모니터링 관제 서비스
+  date: 2020.09 - 2020.12

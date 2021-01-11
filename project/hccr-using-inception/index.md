@@ -2,19 +2,20 @@
 layout: post
 author: "KyoungHwan Kim"
 title:  "Inception 모듈 기반의 경량화된 한자 필기체 인식 모델 개발"
-subtitle: "양 / 음력 API와 Google ARCore를 활용한 제사 교육용 애플리케이션"
-type: "App Service"
+subtitle: "Building Light-weight Convolutional Neural Networks
+for Handwritten Chinese Character Recognition Based on Inception modules"
+type: "Pattern Recognition, Deep Learning"
 projects: true
 text: true
 portfolio: true
 post-header: true
 header-img: "img/card.jpg"
-main-img: "img/ridi-highlight.jpg"
+main-img: "thumbnail/inception1.jpg"
 team: "개인 프로젝트"
 role-title: "개인 프로젝트"
-role-specific: "Design & Develop"
-platforms: "Android"
-date: "2019.03 - 2020.02"
+role-specific: "Model Design & Develop"
+platforms: "Python (Tensorflow, Keras)"
+date: "2019.06 - 2020.04"
 order: 2
 ---
 
