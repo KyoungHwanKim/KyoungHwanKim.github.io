@@ -5,12 +5,14 @@ subtitle: "자바스크립트 스터디 1"
 type: "JavaScript"
 note: true
 text: true
-draft: true
+draft: false
 author: "KyoungHwan Kim"
 post-header: true
 header-img: None
 order: 2
 ---
+
+#### 생활코딩 JavaScript 강좌 OT ~ 비교 까지의 정리본.
 
 ### 간단한 코드 작성과 실행
 
@@ -97,4 +99,92 @@ alert("Hello" + " World."); // Hello World.
 
 ```javascript
 alert("Hello World.".length); // 결과 : 12
+```
+
+### 변수
+
+변수는 문자나 숫자 같은 값을 담는 컨테이너 역할을 한다. 변수에 담겨진 값은 연산할 때 사용할 수 있고, 언제든지 바꿀 수 있다.
+
+자바스크립트에서 변수를 선언하려면 `var`로 시작하고 변수명을 지정해주면 된다.
+
+```javascript
+var a = 1;
+alert(a); // 결과 : 1
+aleart(a + 1); // 결과 : 2
+
+var a = 2;
+alert(a); // 결과 : 2
+alert(a + 1); // 결과 : 3
+
+var a = "Hello";
+alert(a + " World."); // 결과 : Hello World.
+
+var a = "Hello", b = "World";
+alert(a); // 결과 : Hello
+alert(b); // 결과 : World
+```
+
+### 비교
+
+비교 연산자를 통해 주어진 값들이 같은지, 다른지, 큰지 등을 판단할 수 있다. 비교의 결과는 `true` or `false`이다.
+
+#### ==
+
+두 값이 같은지 판단하는 연산자이다. 서로의 값이 같다면 `true`를 반환하고, 다르다면 `false`를 반환한다.
+
+```javascript
+alert(1 == 2) // false
+alert(1 == 1) // true
+alert("one" == "two") // false 
+alert("one" == "one") // true
+```
+
+#### ===
+
+앞서 설명한 `==` 연산자와 유사하지만, 이 연산자는 해당 값의 자료형까지 일치해야 `true`를 반환한다. 그 이외에는 `false`를 반환한다.
+
+```javascript
+alert(1 == '1'); // true
+alert(1 === '1'); // false
+```
+
+`==` 연산자 보다는 `===` 연산자를 사용하는 것을 강력히 권한다고 한다.
+
+```javascript
+alert(null == undefined); // true
+alert(null === undefined); // false
+alert(true == 1); // true
+alert(true === 1); // false
+alert(true == '1'); // true
+alert(true === '1'); // false
+ 
+alert(0 === -0); // true
+alert(NaN === NaN); // false
+```
+
+#### !=
+
+프로그래밍에서 `!`는 부정을 의미한다. 따라서 서로 다른 값인지 확인하는 연산자이다. `==` 연산자와 정반대의 결과를 보여준다.
+
+```javascript
+alert(1 != 2); // true
+alert(1 != 1); // false
+alert("one" != "two"); // true
+alert("one" != "one"); // false
+```
+
+`!=` 연산자가 있다면 `!==` 연산자도 있다. 설명은 생략...
+
+#### >, >=, <, <=
+
+다양한 비교 연산자이다. 수학에서의 의미와 같으니 설명은 생략...
+
+```javascript
+alert(10 > 20); // false
+alert(10 > 1); // true
+alert(10 > 10); // false
+
+alert(10 >= 20); // false
+alert(10 >= 1); // true
+alert(10 >= 10); // true
 ```
