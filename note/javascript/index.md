@@ -72,3 +72,29 @@ alert(typeof "1"); // 결과 : string
 alert(typeof 1); // 결과 : number
 ```
 
+만약 따옴표 문자를 표현하고 싶다면, `\`와 따옴표를 같이 입력해 주면 된다.
+
+```javascript
+alert("kyounghwan's javascript"); // syntax error
+alert("kyounghwan\'s javascript"); // kyounghwan's javascript
+```
+
+이런 식으로 입력해야 하는 문자들이 몇 가지 있는데, 이를 "이스케이프 시퀀스"라고 한다.
+
+여러 줄에 걸쳐 표시하고 싶다면, `\n`을 입력해 주면 된다.
+
+```javascript
+alert("안녕하세요.\n자바스크립트입니다.");
+```
+
+문자들도 숫자와 마찬자기로 연산을 진행할 수 있는데, 문자와 문자를 더할 때에는 `+`로 더해준다.
+
+```javascript
+alert("Hello" + " World."); // Hello World.
+```
+
+문자의 길이를 구할 때에는, 문자 뒤에 `.length`를 붙여 준다.
+
+```javascript
+alert("Hello World.".length); // 결과 : 12
+```
