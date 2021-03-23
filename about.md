@@ -83,6 +83,6 @@ header-img: img/about.jpg
 ---
 #### 📞 010-9208-7534
 
-#### 📧 kimkh7534@naver.com
+#### 📧 kyounghwankim@pusan.ac.kr
 
 <br />
